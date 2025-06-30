@@ -57,9 +57,12 @@ A continuación el diseño 3D de las diversas bases de lego que se usan en la es
 
 ![Image](https://github.com/user-attachments/assets/dd3a7d52-695a-4912-9071-1e9b083b1505)
 
+El archivo original del diseño 3D se encuentra en el apartado models.
+
+Principales compentes de los sistemas de tracción: 
 
 | Imagen | Nombre de Componente | Descripción |
-| :----: | :------------------- | :---------- |
+| :----: | :-------------------: | :----------: |
 | ![servo pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/57aaa91d-b5e5-4360-aef2-06025d15f8b0) | **Servo motor de Rev Robotics** | Es un motor eléctrico con sensor de retroalimentación de posición integrado, que permite realizar movimientos angulares perfectos, utilizando una señal que va de 0V a 5V, donde cada valor que pueda tener el voltaje representa un ángulo exacto, cumpliendo con excelencia la función de realizar los giros. |
 | ![Image](https://github.com/user-attachments/assets/05c10969-e9a6-404b-a141-5e44218d54df) | **Motor lego ev3** | Dispositivo que convierte la energía eléctrica en movimiento mecánico, permitiendo en este caso mover una caja de cambios y movilizar las ruedas. La velocidad y el par que tiene vienen determinados por la tensión enviada a través del puente en H, siendo moderados por el Arduino. |
 
@@ -67,40 +70,20 @@ A continuación el diseño 3D de las diversas bases de lego que se usan en la es
 ## Componentes electrónicos 
 A pesar de que la construcción del robot fue hecha con piezas de lego, para todo el apartado electrónico el equipo se decidió por utilizar piezas externas con las que ya se han familiarizado. Entre estas se encuentran los siguientes sensores y actuadores:
 
-
-Arduino Mega 2560: Es una placa microcontroladora basada en el ATmega2560. Tiene 54 pines de entrada/salida digital y 16 entradas analógicas, un oscilador de cristal de 16 MHz, una conexión USB, una toma de alimentación, una cabecera ICSP y un botón reset. El arduino es la placa que contiene el código para el funcionamiento de pompo, encargándose de analizar toda la información obtenida por los sensores para así lograr cumplir con el reto. 
-
-![mega 2560](https://github.com/user-attachments/assets/edc71e77-3581-48eb-af96-6dfae65660ac)
-
-
-Puente-H: Es un tipo de controlador que permite cambiar la polaridad de un motor de corriente continua, hacia delante y hacia atrás, además de ser la fuente de energía de diversos sensores. El modelo de puente H utilizado es el L298N, que nos permite cambiar la velocidad de los motores en función de la tensión enviada por el Arduino.
-
-![puente H pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/264757f2-118f-42c9-9dd8-2a3c91455834)
-
-Sensor de ultrasonido: Es un sensor que utiliza sonidos ultrasónicos para detectar el tiempo de rebote del sonido de un lado a otro. Utilizando el Arduino Mega 2560 se determina la distancia en base al tiempo que tarda la onda en volver, teniendo así este sensor la función de determinar cuando hay una pared cerca para así realizar el giro correspondiente.
-El modelo utilizado de este sensor es el HC-sr04.
-
-![HC-sr04](https://github.com/user-attachments/assets/a59b0102-8994-4ac4-aa06-3d6553ae1a2d)
-
-Giroscopio: Es un sensor que mide la orientación del robot en grados. Se utiliza para poder realizar giros precisos, principalmente con la función de los giros para cambio de sección (giros de 90°), y mantener el robot con un movimiento en línea recta. 
-El modelo utilizado de este sensor es 
-
-![BNO055](https://github.com/user-attachments/assets/02c487ce-d624-411f-9db3-a2a3ef82a514)
-
-Pixy 2.1: Es una cámara que tiene guardados valores que corresponden a los colores rgb de las señales de tráfico. Para detectar, la cámara busca esos valores en los píxeles de la imagen y, cuando se detecta un número exacto de pixeles de alguno de los colores anexados, pixy envía los datos al arduino, el cual se encarga luego de realizar los movimientos precisos para evitar los semáforos. 
-
-![pixy2 1 2](https://github.com/user-attachments/assets/6397d5c9-d6fe-4c80-a7b9-d097bee0ba3e)
+| Imagen | Nombre de Componente | Descripción |
+| :----: | :-------------------: | :----------: |
+| ![HC-sr04](https://github.com/user-attachments/assets/a59b0102-8994-4ac4-aa06-3d6553ae1a2d) | **Sensor de ultrasonido** | Es un sensor que utiliza sonidos ultrasónicos para detectar el tiempo de rebote del sonido de un lado a otro. Utilizando el Arduino Mega 2560 se determina la distancia en base al tiempo que tarda la onda en volver, teniendo así este sensor la función de determinar cuando hay una pared cerca para así realizar el giro correspondiente. El modelo utilizado de este sensor es el ***HC-sr04***. |
+| ![BNO055](https://github.com/user-attachments/assets/02c487ce-d624-411f-9db3-a2a3ef82a514) | **Giroscopio** | Es un sensor que mide la orientación del robot en grados. Se utiliza para poder realizar giros precisos, principalmente con la función de los giros para cambio de sección (giros de 90°), y mantener el robot con un movimiento en línea recta.  El modelo utilizado de este sensor es ***MPU6050*** |
+| ![pixy2 1 2](https://github.com/user-attachments/assets/6397d5c9-d6fe-4c80-a7b9-d097bee0ba3e) | **Pixy 2.1** | Es una cámara que tiene guardados valores que corresponden a los colores rgb de las señales de tráfico. Para detectar, la cámara busca esos valores en los píxeles de la imagen y, cuando se detecta un número exacto de pixeles de alguno de los colores anexados, pixy envía los datos al arduino, el cual se encarga luego de realizar los movimientos precisos para evitar los semáforos.  |
 
 
-Raspberry pi 5: Es la última versión de las computadoras de placa única desarrolladas por la Fundación Raspberry Pi, lanzada en 2023. Esta versión incluye un procesador Broadcom BCM2712 de cuatro núcleos Arm Cortex-A76 a 2,4 GHz, lo que la hace entre dos y tres veces más rápida que la generación anterior. Viene en versiones de 4 GB y 8 GB de memoria RAM LPDDR4X, incorpora una GPU mejorada compatible con OpenGL ES 3.1 y Vulkan 1.2, y permite conectar dos monitores 4K a 60 Hz al mismo tiempo. Además, ofrece conectividad avanzada con Wi-Fi 5, Bluetooth 5.0, Ethernet Gigabit, dos puertos USB 3.0, dos USB 2.0, dos micro HDMI, ranura microSD de alta velocidad, conectores MIPI para cámaras y pantallas, y un puerto PCIe para discos SSD u otros periféricos rápidos (usando un adaptador). También cuenta con un botón de encendido, reloj en tiempo real, soporte para ventilador y mejoras en la gestión de energía. Gracias a estas características, la Raspberry Pi 5 es ideal tanto para proyectos de electrónica y robótica como para usarse como mini PC, servidor, centro multimedia o incluso para tareas más exigentes como inteligencia artificial y procesamiento de imágenes, representando un gran avance en potencia y versatilidad dentro del mundo de las computadoras compactas y económicas.
 
-![Image](https://github.com/user-attachments/assets/33d23ad4-043a-4c6b-8bab-c31a648c3e4a)
 
-Sensor LiDAR: Un sensor LiDAR (Light Detection and Ranging) es un dispositivo de teledetección que utiliza pulsos de luz láser para medir distancias con gran precisión y crear mapas tridimensionales del entorno. Su funcionamiento se basa en emitir miles de pulsos de láser por segundo hacia los objetos; estos pulsos rebotan y regresan al sensor, que mide el tiempo que tarda cada pulso en ir y volver. Como la velocidad de la luz es conocida, este tiempo de vuelo permite calcular la distancia exacta entre el sensor y los objetos o superficies. Los datos recolectados se procesan para formar una nube de puntos, que es una representación 3D detallada del área escaneada.
 
-![Image](https://github.com/user-attachments/assets/234ebb64-bf87-4ec4-82ca-5e8cac3d7af3)
 
-En este momento la raspberry y el sensor LiDAR estan incluidos en la estructura del robot, sin embargo no se utilizan para la realización del reto.
+| ![mega 2560](https://github.com/user-attachments/assets/edc71e77-3581-48eb-af96-6dfae65660ac) | **Arduino Mega 2560** | Es una placa microcontroladora basada en el ATmega2560. Tiene 54 pines de entrada/salida digital y 16 entradas analógicas, un oscilador de cristal de 16 MHz, una conexión USB, una toma de alimentación, una cabecera ICSP y un botón reset. El arduino es la placa que contiene el código para el funcionamiento de pompo, encargándose de analizar toda la información obtenida por los sensores para así lograr cumplir con el reto.  |
+| ![puente H pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/264757f2-118f-42c9-9dd8-2a3c91455834) | **Puente-H** | Es un tipo de controlador que permite cambiar la polaridad de un motor de corriente continua, hacia delante y hacia atrás, además de ser la fuente de energía de diversos sensores. El modelo de puente H utilizado es el ***L298N***, que nos permite cambiar la velocidad de los motores en función de la tensión enviada por el Arduino. |
+
 
 El Arduino está alimentado por una batería de 9v, y enciende mediante un interruptor. Se encarga de alimentar y dar las respectivas señales al servomotor, para que sea capaz de realizar los cruces de forma efectiva con facilidad al giroscopio, además de dar y recibir señales del resto de sensores. 
 
