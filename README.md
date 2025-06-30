@@ -89,6 +89,35 @@ El Arduino está alimentado por una batería de 9v, y enciende mediante un inter
 
 Por último, el puente H está conectado y alimentado por dos baterías de 3,7v y se enciende con el mismo interruptor que enciende el Arduino.
 El puente H recibe señales del Arduino que llevan a mover el motor en diferentes direcciones y velocidades. También se encarga de alimentar los sensores ultrasónicos.
+### 🔋 Cálculo del Consumo Energético Total
+
+| Componente                      | Cantidad | Consumo estimado (mA) | Total (mA) |
+|--------------------------------|----------|------------------------|------------|
+| Motor grande LEGO EV3          | 1        | 250 mA (típico)        | 250 mA     |
+| Servo motor REV Robotics       | 1        | 180 mA (típico)        | 180 mA     |
+| Sensor ultrasónico HC-SR04     | 3        | 15 mA c/u              | 45 mA      |
+| PixyCam (CMUcam5)              | 1        | 140 mA                 | 140 mA     |
+| Sensor MPU6050                 | 1        | 6 mA                   | 6 mA       |
+| **TOTAL**                      | —        | —                      | **621 mA** |
+
+---
+
+### ⚡ Distribución de Energía y Estimación de Autonomía
+
+El sistema se alimenta de forma distribuida para mejorar la eficiencia y facilitar la gestión energética:
+
+- 🔌 **2 baterías de 9V**: Alimentan el Arduino y el servo motor.
+- 🔋 **1 batería de 9V**: Suministra energía a todos los sensores (ultrasónicos, MPU6050, PixyCam).
+- 🔋 **2 baterías 18650 (3.7V, 2000 mAh c/u, conectadas en serie para 7.4V)**: Alimentan el motor grande EV3.
+
+| Fuente de Energía            | Componentes Alimentados           | Consumo estimado (mA) | Capacidad Aprox. | Autonomía Estimada |
+|------------------------------|------------------------------------|------------------------|------------------|---------------------|
+| 2x 9V                        | Arduino + Servo REV                | ~230 mA               | ~500 mAh         | ~2 horas            |
+| 1x 9V                        | Sensores (PixyCam, HC-SR04, MPU)   | ~191 mA               | ~500 mAh         | ~2.6 horas          |
+| 2x 18650 (7.4V, 4000 mAh)    | Motor grande EV3                   | ~250 mA               | 4000 mAh         | ~16 horas           |
+
+> 💡 *Nota: Los valores de autonomía son teóricos y pueden variar según condiciones reales como carga del motor, procesamiento visual o intensidad de uso de sensores.*
+
 
 ### 🧪 Registro de Pruebas – Primer Reto
 
