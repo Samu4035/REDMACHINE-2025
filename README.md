@@ -5,7 +5,7 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 ![Image](https://github.com/user-attachments/assets/86d8b3ba-9f00-4d94-9a0b-7fb3f87d222e)
 
 
-# Contenido
+# Índice
 
  -  [Miembros del equipo Red Machine](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Miembros-de-Red-Machine)
  -  [Introduccion](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Introducción)
@@ -14,6 +14,21 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
  -  [Videos del funcionamiento de pompo](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Videos-del-funcionamiento-de-pompo)
  -  [Historia y cronología](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Historia-y-cronología)
 
+# Contenido del repositorio
+
+Este repositorio contiene los siguientes directorios para organizar nuestro proyecto:
+
+* `t-photos`: Incluye fotos del equipo, además de fotos del trabajo realizado durante todos los años de competencia y fotos de los robots construidos por el equipo
+* `v-photos`: Contiene 6 fotos del vehículo (desde todos los ángulos).
+* `video`: Archivo `video.md` con el enlace a los videos de rendimiento del robot.
+* `schemes`: Diagramas esquemáticos (JPEG, PNG o PDF) de los componentes electromecánicos, ilustrando la conexión de elementos electrónicos y motores, además de la explicación del funcionamiento de cada uno de estos.
+* `src`: Código del software de control para todos los componentes programados para la competición.
+* `models`: Archivos para el diseño 3D del vehículo.
+* `other`: Archivos adicionales para entender cómo preparar el vehículo para la competición.
+     
+# Introducción
+El equipo ha hecho su mayor esfuerzo para conseguir construir el mejor robot posible. Nuestra preparación para estas olimpiadas se ha basado en un largo aprendizaje en construcción, diseño y programación, y la experiencia de competencias anteriores ha sido fundamental. Largas horas de análisis y estudio de la pista ha llevado a la creación de una estrategia propia, basada en los componentes con los que el equipo deseó trabajar, y esperando conseguir la mejor participación posible en las diversas etapas de esta competencia. 
+A lo largo de este documento y de todo el repositorio se explica con precisión todo el trabajo de diseño, programación y construcción del robot. 
 
 # Miembros de Red Machine
 -Samuel Jose Galban Franco
@@ -24,10 +39,11 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 
 ![red machine 2024](https://github.com/RoboticaLLR/redmachine2024/assets/146040533/d5bb5fc0-b1bd-47a8-9ac3-c190587ae5ae)
 
-   
-# Introducción
-El equipo ha hecho su mayor esfuerzo para conseguir construir el mejor robot posible. Nuestra preparación para estas olimpiadas se ha basado en un largo aprendizaje en construcción, diseño y programación, y la experiencia de competencias anteriores ha sido fundamental. Largas horas de análisis y estudio de la pista ha llevado a la creación de una estrategia propia, basada en los componentes con los que el equipo deseó trabajar, y esperando conseguir la mejor participación posible en las diversas etapas de esta competencia. 
+# Fotos del robot (todos los ángulos)
 
+| ![Image](https://github.com/user-attachments/assets/eec7817b-bb41-493e-9b78-a5a6004a4a2e)  |  ![Izquierda](https://github.com/user-attachments/assets/4f20ba4c-f271-4861-a9cf-31022f7be0d2)  |  ![Frontal](https://github.com/user-attachments/assets/4b648131-29e0-4cb0-a01b-d3b699d62968) |
+| :----: | :-------------------: | :----------: |
+| ![Debajo](https://github.com/user-attachments/assets/45f55e40-cd16-4492-b856-0ac1671db0f4)  |  ![Derecha](https://github.com/user-attachments/assets/15a16250-3cc5-4dcb-8e0c-482e2bc499f7)  |  ![Atras](https://github.com/user-attachments/assets/f761cfdf-7320-499f-b884-d6290f5e50bb) |
 
 # Diseño mecánico
 "Pompo" es un robot autónomo diseñado con piezas de lego, con la finalidad de conseguir la mayor presición y estabilidad posible durante las rondas de competencia. Dichas piezas fueron extraídas de un kit lego spike prime código 45678 y spike prime expansion set código 45681. 
@@ -41,6 +57,11 @@ A continuación el diseño 3D de las diversas bases de lego que se usan en la es
 
 ![Image](https://github.com/user-attachments/assets/dd3a7d52-695a-4912-9071-1e9b083b1505)
 
+
+| Imagen | Nombre de Componente | Descripción |
+| :----: | :------------------- | :---------- |
+| ![servo pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/57aaa91d-b5e5-4360-aef2-06025d15f8b0) | **Servo motor de Rev Robotics** | Es un motor eléctrico con sensor de retroalimentación de posición integrado, que permite realizar movimientos angulares perfectos, utilizando una señal que va de 0V a 5V, donde cada valor que pueda tener el voltaje representa un ángulo exacto, cumpliendo con excelencia la función de realizar los giros. |
+| ![Image](https://github.com/user-attachments/assets/05c10969-e9a6-404b-a141-5e44218d54df) | **Motor lego ev3** | Dispositivo que convierte la energía eléctrica en movimiento mecánico, permitiendo en este caso mover una caja de cambios y movilizar las ruedas. La velocidad y el par que tiene vienen determinados por la tensión enviada a través del puente en H, siendo moderados por el Arduino. |
 
 
 ## Componentes electrónicos 
@@ -70,14 +91,6 @@ Pixy 2.1: Es una cámara que tiene guardados valores que corresponden a los colo
 
 ![pixy2 1 2](https://github.com/user-attachments/assets/6397d5c9-d6fe-4c80-a7b9-d097bee0ba3e)
 
-
-Servo motor de Rev Robotics: Es un motor eléctrico con sensor de retroalimentación de posición integrado, que permite realizar movimientos angulares perfectos, utilizando una señal que va de 0V a 5V, donde cada valor que pueda tener el voltaje representa un ángulo exacto, cumpliendo con excelencia la función de realizar los giros.
-
-![servo pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/57aaa91d-b5e5-4360-aef2-06025d15f8b0)
-
-Motor lego ev3: Dispositivo que convierte la energía eléctrica en movimiento mecánico, permitiendo en este caso mover una caja de cambios y movilizar las ruedas. La velocidad y el par que tiene vienen determinados por la tensión enviada a través del puente en H, siendo moderados por el Arduino.
-
-![Image](https://github.com/user-attachments/assets/05c10969-e9a6-404b-a141-5e44218d54df)
 
 Raspberry pi 5: Es la última versión de las computadoras de placa única desarrolladas por la Fundación Raspberry Pi, lanzada en 2023. Esta versión incluye un procesador Broadcom BCM2712 de cuatro núcleos Arm Cortex-A76 a 2,4 GHz, lo que la hace entre dos y tres veces más rápida que la generación anterior. Viene en versiones de 4 GB y 8 GB de memoria RAM LPDDR4X, incorpora una GPU mejorada compatible con OpenGL ES 3.1 y Vulkan 1.2, y permite conectar dos monitores 4K a 60 Hz al mismo tiempo. Además, ofrece conectividad avanzada con Wi-Fi 5, Bluetooth 5.0, Ethernet Gigabit, dos puertos USB 3.0, dos USB 2.0, dos micro HDMI, ranura microSD de alta velocidad, conectores MIPI para cámaras y pantallas, y un puerto PCIe para discos SSD u otros periféricos rápidos (usando un adaptador). También cuenta con un botón de encendido, reloj en tiempo real, soporte para ventilador y mejoras en la gestión de energía. Gracias a estas características, la Raspberry Pi 5 es ideal tanto para proyectos de electrónica y robótica como para usarse como mini PC, servidor, centro multimedia o incluso para tareas más exigentes como inteligencia artificial y procesamiento de imágenes, representando un gran avance en potencia y versatilidad dentro del mundo de las computadoras compactas y económicas.
 
