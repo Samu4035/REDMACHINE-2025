@@ -140,9 +140,13 @@ El puente H recibe señales del Arduino que llevan a mover el motor en diferente
 
 Tiempo promedio de recorrido, precisión, errores frecuentes.
 Durante la etapa de pruebas del primer reto, se llevaron a cabo 25 intentos consecutivos para evaluar el rendimiento y la estabilidad del sistema robótico bajo condiciones controladas. Los resultados obtenidos permiten estimar métricas clave sobre el comportamiento del vehículo autónomo:
+
 ⏱ Tiempo promedio de recorrido: 120 segundos
-🎯 Precisión en la ejecución de la trayectoria: 93%
+
+🎯 Precisión en la ejecución de la trayectoria: 76%
+
 ❌ Errores frecuentes detectados:
+
 El error más común consistió en una detección incorrecta del lado de inicio, lo que ocasionó desvíos temporales o reinicios de la lógica de navegación.
 En menor medida, se registraron leves oscilaciones en línea recta provocadas por variaciones de lectura del giroscopio en las primeras etapas del recorrido.
 
