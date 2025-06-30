@@ -106,6 +106,36 @@ El Arduino está alimentado por una batería de 9v, y enciende mediante un inter
 
 Por último, el puente H está conectado y alimentado por dos baterías de 3,7v y se enciende con el mismo interruptor que enciende el Arduino.
 El puente H recibe señales del Arduino que llevan a mover el motor en diferentes direcciones y velocidades. También se encarga de alimentar los sensores ultrasónicos.
+
+### 🧪 Registro de Pruebas – Primer Reto
+
+| #  | ¿Lo logró?   | Tiempo (s) | Error Detectado                            |
+|----|--------------|------------|---------------------------------------------|
+| 1  | Sí           | 118        | Ninguno                                     |
+| 2  | Sí           | 121        | Ninguno                                     |
+| 3  | No           | 10         | Detección incorrecta del lado de inicio     |
+| 4  | Sí           | 119        | Ninguno                                     |
+| 5  | Sí           | 117        | Ninguno                                     |
+| 6  | Sí           | 122        | Ninguno                                     |
+| 7  | Sí           | 120        | Ninguno                                     |
+| 8  | No           | 10         | Detección incorrecta del lado de inicio     |
+| 9  | Sí           | 118        | Ninguno                                     |
+|10  | Sí           | 123        | Ninguno                                     |
+|11  | Sí           | 120        | Ninguno                                     |
+|12  | Sí           | 119        | Ninguno                                     |
+|13  | No           | 10         | Detección incorrecta del lado de inicio     |
+|14  | Sí           | 118        | Ninguno                                     |
+|15  | Sí           | 120        | Ninguno                                     |
+|16  | No           | 10         | Detección incorrecta del lado de inicio     |
+|17  | Sí           | 117        | Ninguno                                     |
+|18  | Sí           | 121        | Ninguno                                     |
+|19  | Sí           | 122        | Ninguno                                     |
+|20  | No           | 10         | Detección incorrecta del lado de inicio     |
+|21  | Sí           | 120        | Ninguno                                     |
+|22  | Sí           | 119        | Ninguno                                     |
+|23  | Sí           | 118        | Ninguno                                     |
+|24  | Sí           | 121        | Ninguno                                     |
+|25  | No           | 10         | Detección incorrecta del lado de inicio     |
   
 
 # Diseño del software
