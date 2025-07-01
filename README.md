@@ -34,6 +34,9 @@ A lo largo de este documento y de todo el repositorio se explica con precisión 
 
 ## 👤 Samuel José Galban Franco
 
+### Rol en el equipo
+Encargado de la electrónica del robot. 
+
 ### 🧠 Logros Académicos
 
 - 🥈 **Subcampeón – Olimpiada Nacional de Química (2024)**  
@@ -63,6 +66,9 @@ Conocer Gente, Disfrutar los viajes y buscar oportunidades de estudio
 
 ## 👤 Juan Diego Cano Barros
 
+### Rol en el equipo
+Encargado de la programación del robot. 
+
 ### 🧠 Logros Académicos
 
 - 🥉 **Medalla de Bronce – Olimpiada Iberoamericana de Matemáticas (2023)**  
@@ -90,7 +96,11 @@ Conocer Gente, Disfrutar los viajes y buscar oportunidades de estudio
 Comer, Dormir, Conocer Gente, Disfrutar los viajes y Dormir 
 
 
--Angel Saul Rodriguez Guerra
+## 👤 Angel Saul Rodriguez Guerra
+
+### Rol en el equipo
+Encargado de la mecánica del robot. 
+
 
 ![red machine 2024](https://github.com/RoboticaLLR/redmachine2024/assets/146040533/d5bb5fc0-b1bd-47a8-9ac3-c190587ae5ae)
 
