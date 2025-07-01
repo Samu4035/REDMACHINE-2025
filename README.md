@@ -31,7 +31,35 @@ El equipo ha hecho su mayor esfuerzo para conseguir construir el mejor robot pos
 A lo largo de este documento y de todo el repositorio se explica con precisión todo el trabajo de diseño, programación y construcción del robot. 
 
 # Miembros de Red Machine
--Samuel Jose Galban Franco
+
+## 👤 Samuel José Galban Franco
+
+### 🧠 Logros Académicos
+
+- 🥈 **Subcampeón – Olimpiada Nacional de Química (2024)**  
+  Representó a el Liceo Los Robles en la última edición de esta competencia organizada por AVOQUIM.
+
+- 🥈 **Subcampeón – VIRTUAL MISSIONS PANAMÁ 2023 CHALLENGE**  
+  Segundo puesto en esta competencia internacional, representando a Venezuela durante la final internacional de la WRO 2023, celebrada en Panamá.
+
+---
+
+### 🤖 Trayectoria en Robótica
+
+- 🇻🇪 **Bicampeón Nacional – Categoría Futuros Ingenieros (WRO Venezuela)**  
+  Ganador de la Olimpiada Nacional de Robótica en dos ediciones consecutivas, representando al estado Zulia y clasificando a la final internacional.
+
+- 🌍 **Finalista Internacional – WRO Panamá 2023**  
+  Representó a Venezuela en la Olimpiada Mundial de Robótica, obteniendo el puesto 25 de 40 equipos en la categoría *Futuros Ingenieros*.
+
+- 🇹🇷 **Participación Internacional – WRO Turquía 2024**  
+  Formó parte de la delegación venezolana que compitió en la edición mundial celebrada en Turquía, consolidando su experiencia en escenarios globales de alto nivel.
+
+---
+
+### 💡 Motivación y Enfoque
+Conocer Gente, Disfrutar los viajes y buscar oportunidades de estudio
+
 
 ## 👤 Juan Diego Cano Barros
 
@@ -60,7 +88,7 @@ A lo largo de este documento y de todo el repositorio se explica con precisión 
 
 ### 💡 Motivación y Enfoque
 Comer, Dormir, Conocer Gente, Disfrutar los viajes y Dormir 
----
+
 
 -Angel Saul Rodriguez Guerra
 
@@ -86,13 +114,23 @@ A continuación el diseño 3D de las diversas bases de lego que se usan en la es
 
 El archivo original del diseño 3D se encuentra en el apartado models.
 
-Principales compentes de los sistemas de tracción: 
+### 📦 Descripción de motores del Sistema
 
 | Imagen | Nombre de Componente | Descripción |
 | :----: | :-------------------: | :----------: |
 | ![servo pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/57aaa91d-b5e5-4360-aef2-06025d15f8b0) | **Servo motor de Rev Robotics** | Es un motor eléctrico con sensor de retroalimentación de posición integrado, que permite realizar movimientos angulares perfectos, utilizando una señal que va de 0V a 5V, donde cada valor que pueda tener el voltaje representa un ángulo exacto, cumpliendo con excelencia la función de realizar los giros. |
 | ![Image](https://github.com/user-attachments/assets/05c10969-e9a6-404b-a141-5e44218d54df) | **Motor lego ev3** | Dispositivo que convierte la energía eléctrica en movimiento mecánico, permitiendo en este caso mover una caja de cambios y movilizar las ruedas. La velocidad y el par que tiene vienen determinados por la tensión enviada a través del puente en H, siendo moderados por el Arduino. |
 
+En la siguiente imagen se puede observar el diagrama de conecciones y alimentación de los mencionados componentes: 
+
+![Image](https://github.com/user-attachments/assets/444b414a-24fc-4942-8d5c-f002e175a080)
+
+### Explicación del diagrama 
+
+- El motor de tracción (motor grande ev3) se encuentra conectado a los puertos de motor 1 del puente H. Para esto, se utiliza un cable de ev3 modificado, el cual fue cortado en un extremo de manera muy cuidadosa buscando no dañar los 4 cables internos. De estos 4 cables se toman el positivo y el negativo, los cuales se acoplan al puente H.
+- El servomotor es alimentado directamente por el arduino, a través de los puertos 5V y GND, y se conecta al pin 9 para recibir señales de posicionamiento.
+- El arduino mega es alimentado por dos baterías de 9V conectadas en paralelo, es decir, dos baterías en las que se unen los puerto negativos por un lado y los positivos por otro, para que se sume el amperaje y se mantenga el voltaje.
+- El puente H se conecta al arduino por un puerto GND para formar el puente, además de los pines 5, 6 y 7 para controlar el sentido de dirección del robot y la velocidad en la que este opera. 
 
 ## Componentes electrónicos 
 A pesar de que la construcción del robot fue hecha con piezas de lego, para todo el apartado electrónico el equipo se decidió por utilizar piezas externas con las que ya se han familiarizado. Entre estas se encuentran los siguientes sensores y actuadores:
@@ -106,6 +144,31 @@ A pesar de que la construcción del robot fue hecha con piezas de lego, para tod
 | ![pixy2 1 2](https://github.com/user-attachments/assets/6397d5c9-d6fe-4c80-a7b9-d097bee0ba3e) | **Cámara Pixy 2.1** | Detecta colores específicos preconfigurados que representan señales o zonas de tráfico. Reconoce patrones de color en la imagen y transmite datos al Arduino para ejecutar maniobras de evasión o reacción automática. |
 | ![mega 2560](https://github.com/user-attachments/assets/edc71e77-3581-48eb-af96-6dfae65660ac) | **Arduino Mega 2560** | Microcontrolador ATmega2560 que actúa como cerebro central del sistema. Procesa información proveniente de sensores, ejecuta el control de motores y gestiona las decisiones lógicas del robot. Dispone de múltiples pines digitales y analógicos, ideales para proyectos complejos. |
 | ![puente H pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/264757f2-118f-42c9-9dd8-2a3c91455834) | **Módulo Puente-H (L298N)** | Permite controlar la dirección y velocidad de motores de corriente continua. Recibe señales del Arduino y regula la tensión de salida, habilitando el cambio de giro y la aceleración del motor según lo requiera el algoritmo de control. |
+
+En la siguiente imagen se observa el diagrama de conecciones de esos componentes: 
+
+![Image](https://github.com/user-attachments/assets/c35217f0-d546-4963-a06b-0cf20b41dffe)
+
+### Explicación del diagrama 
+
+- Los 3 ultrasonidos se encuentran unidos al arduino por pines digitales, de la siguiente forma: (Ultrasonido izquierdo: Pin 30 echo, 31 trig; Ultrasonido central: Pin 20 echo, 19 trig; Ultrasonido derecho: Pin 12 echo, 11 trig). Se alimentan a través del puerto 5V del puente H, y su conección a tierra es la del puente H.
+- El giroscopio se une a los puertos SCL y SDA (20 y 21) del arduino, y se alimenta de igual forma que los ultrasonidos, por los puertos del puente H.
+- La pixycam se une al arduino por el cable que esta incluye, conectándose al puerto ICSP del arduino. Se alimenta por esta conección. 
+- El arduino mega es alimentado por dos baterías de 9V conectadas en paralelo, es decir, dos baterías en las que se unen los puerto negativos por un lado y los positivos por otro, para que se sume el amperaje y se mantenga el voltaje.
+- El puente H se conecta al arduino por un puerto GND para formar el puente. Se alimenta por una batería 9V, y le da energía a todos los sensores.
+- El pulsador se une a los pines 22 y 23 del arduino, y al presionarse se inicia el código del robot, comenzando el reto.
+
+> ⚠️ *Nota:* En el diagrama se observan dos interruptores, sin embargo estos representan un único interruptor doble, el cual al accionarse, enciende ambos circuitos. Se coloca de esta forma por la facilidad de explicar el diagrama.
+---
+
+# Alimentación del robot
+
+La alimentación de nuestro robot se separa en 3 partes: 
+- Alimentación del arduino: Dos baterías de 9V recargables conectadas en paralelo (se unen los cables negativos por un lado y los positivos por otro lado).
+- Alimentación de sensores: A través de un puente H, se conecta una batería de 9V recargable que alimenta a todos los sensores del sistema.
+- Alimentación de motores: Se conectan dos baterías de 3.7V en paralelo (se conecta un cable negativo con uno positivo, dejando los otros dos libres) a un segundo puente H, al cual se conecta el motor de tracción (motor grande EV3).
+
+Estos sistemas se unen a través de un interruptor. 
 
 ### 🔋 Cálculo del Consumo Energético Total
 
