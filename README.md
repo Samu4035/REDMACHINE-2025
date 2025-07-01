@@ -285,7 +285,139 @@ El sistema se alimenta de forma distribuida para mejorar la eficiencia y facilit
 | 2x 18650 (7.4V, 4000 mAh)    | Motor grande EV3                   | ~250 mA               | 4000 mAh         | ~16 horas           |
 
 > 💡 *Nota: Los valores de autonomía son teóricos y pueden variar según condiciones reales como carga del motor, procesamiento visual o intensidad de uso de sensores.*
+# Sistema de Control de Robot
 
+> Flujo de Operación y Lógica de Navegación para Competencia WRO
+
+---
+
+# Explicacion Codigo Reto 2
+
+
+---
+
+## 1. Inicialización y Configuración
+
+- Calibración del IMU (MPU6050)  
+- Configuración de pines y comunicación (Serial, I²C, servo, motores, botón)  
+- Centrado del servomotor de dirección (`rec`)  
+- Espera de señal de inicio (botón en pin 23 o comando serial `'1'`)
+
+---
+
+## 2. Secuencia Principal de Operación (loop)
+
+El robot repite continuamente el siguiente ciclo:
+
+### a) Lectura de Sensores
+
+![Lectura de Sensores](https://github.com/user-attachments/assets/d3549fd1-adc8-48e8-ba60-03aa1c59fb70)
+
+- Ultrasonidos izquierdo (`di`), central (`d`) y derecho (`dd`)  
+- Actualización de ángulo con IMU (`gyro`)
+
+### b) Detección de Obstáculos Cercanos
+
+**Función**: `detectarladocorto()`
+
+- Si `d < 10 cm`:  
+  - Relee distancias  
+  - Compara `di` vs. `dd`  
+  - Asigna lateralidad:  
+    - `a = 1` → giro por la izquierda  
+    - `a = 2` → giro por la derecha  
+
+### c) Gestión del Segundo Reto (girosegundoreto())
+
+Cuando `d < 10 cm` detecta pared frontal:
+
+| Carril | Secuencia de Maniobra                                                                                         |
+| ------ | -------------------------------------------------------------------------------------------------------------- |
+| Impar  | 1. Retroceder<br/>2. Girar 90° opuesto a la pared<br/>3. Retroceder 2.5 s<br/>4. Avanzar                       |
+| Par    | 1. Retroceder 1.8 s<br/>2. Girar 90° hacia la pared<br/>3. Retroceder 2.5 s<br/>4. Avanzar                     |
+
+Al final de cada reto, `vuelta++`.
+
+### d) Detección de Conos (detectarpixyY())
+
+- La cámara Pixy2 captura bloques de color.  
+- Identifica firma de color:  
+  - Rojo si `signature % 2 == 1`  
+  - Verde si `signature % 2 == 0`  
+- Selecciona el bloque más cercano (mayor `m_y`).  
+- Conserva `lastblock` si la detección momentánea falla.
+
+### e) Evasión de Conos
+
+![Evasión de Conos](https://github.com/user-attachments/assets/c6af0941-932f-4e8a-8245-58376482faaa)
+
+**Función**: `esquivarconos()`
+
+- Según `a` (lado) y `carril` actual, realiza maniobras:  
+  - Cono rojo en carril 0 →  
+    1. `giroderf(45)`  
+    2. Servo a posición neutra + delay  
+    3. `giroizqf(45)`  
+    4. Actualiza `carril` y `listo`  
+  - Lógicas análogas para conos verdes y otros carriles
+
+### f) Control de Dirección
+
+- **Navegación recta** (`rectificadosolo(target)`):  
+  - Ajusta servo con control proporcional (PID)  
+  - Mantiene ángulo objetivo `angulof`  
+- **Giros precisos** (`giroizqf()`, `giroizq90()`):  
+  - Calculan `angulof = gyro + Δ°`  
+  - Corrigen en bucle hasta error < 2°  
+  - Detienen servo en posición neutra
+
+---
+
+## 3. Mecanismos Clave de Control
+
+### 3.1 Sistema de Carriles
+
+| Carril | Comportamiento                              |
+| ------ | ------------------------------------------- |
+| 0      | Búsqueda del primer cono                   |
+| 1      | Tras esquivar cono rojo desde la derecha    |
+| 2      | Tras esquivar cono verde desde la derecha   |
+| 3      | Tras esquivar segundo cono rojo             |
+| 4      | Tras esquivar segundo cono verde            |
+
+### 3.2 Lógica de Evasión
+
+- **Conos rojos**  
+  - 1ª detección: esquivado suave (45°)  
+  - 2ª detección: maniobra pronunciada (80°)  
+- **Conos verdes**  
+  - Maniobra en sentido opuesto a los rojos  
+  - Actualiza carril según color
+
+---
+
+## 4. Gestión de Movimiento
+
+![Gestión de Movimiento](https://github.com/user-attachments/assets/c1dad286-1b72-4b76-b381-61271ac7dd70)
+
+- **Avanzar**: motor frontal activado  
+- **Retroceder**: motor trasero activado  
+- **Girar**: comando mixto servomotor + marcha  
+- **Detenido**: ambos motores desactivados  
+
+---
+
+## 5. Estrategia de Navegación
+
+![Estrategia de Navegación](https://github.com/user-attachments/assets/fd7c3e0d-5b96-4052-a3e4-bf6aa35f9961)
+
+Este sistema permite al robot:
+
+- Navegar en entornos desconocidos  
+- Identificar y esquivar obstáculos dinámicos  
+- Mantener orientación precisa con IMU  
+- Adaptar comportamiento según patrones de color  
+- Completar circuitos con múltiples vueltas  
 
 ### 🧪 Registro de Pruebas – Primer Reto
 
