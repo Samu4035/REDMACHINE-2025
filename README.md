@@ -103,16 +103,93 @@ Comer, Dormir, Conocer Gente, Disfrutar los viajes y Dormir
 # Diseño mecánico
 "Pompo" es un robot autónomo diseñado con piezas de lego, con la finalidad de conseguir la mayor presición y estabilidad posible durante las rondas de competencia. Dichas piezas fueron extraídas de un kit lego spike prime código 45678 y spike prime expansion set código 45681. 
 El fundamento que llevó a utilizar piezas de lego para el cuerpo de pompo se basa en la conocida eficiencia de los robots construidos de dicha manera, tomando en cuenta los resultados positivos y la facilidad que permiten a la hora de la construcción. 
-Además, en el apartado "v-photos" se muestran fotos del diseño de Pompo, donde se pueden ver y analizar eficientemente todos los componentes, piezas y estructuras.
-A continuación el diseño 3D de las diversas bases de lego que se usan en la estructura (en el apartado "models" se ve el archivo original del diseño): 
+Además, en el apartado "v-photos" se muestran fotos del diseño de Pompo, donde se pueden ver y analizar eficientemente todos los componentes, piezas y estructuras, y en la carpeta models se encuentran los archivos orginales de los diagramas 3D.
+A continuación se muestras fotos del diseño 3D de las diversas bases de lego que se usan en la estructura (en el apartado "models" se ve el archivo original del diseño): 
 
-![Image](https://github.com/user-attachments/assets/5b7af0b6-441f-4880-8d1f-e71637f6b006)
+| Imagen | Nombre de Componente | Descripción |
+| :----: | :-------------------: | :----------: |
+| ![Image](https://github.com/user-attachments/assets/9edf40e1-e40c-426f-80a7-2e0b6575c054) ![Image](https://github.com/user-attachments/assets/21be84bc-a709-4ad1-bb2b-89dc01e3ead3)| Bases de los ultrasonidos | En este conjunto de piezas de lego se colocan y ensamblan los ultrasonidos del robot |
+| ![Imagen de WhatsApp 2025-07-01 a las 09 56 56_6b47b5fe](https://github.com/user-attachments/assets/a065d8c0-9618-443d-9abd-6600abf803b7) ![Imagen de WhatsApp 2025-07-01 a las 09 57 11_659e0d1d](https://github.com/user-attachments/assets/b8f318d9-672b-4ece-b380-643e030f95e2) | Sistema de tracción y dirección | Se incluye el motor y las bases en las que este se coloca, de forma que quede anclado de forma perfecta como se necesita. Asi mismo en la parte mas alejada del motor se ven las dos bases en las que se sostiene el servomotor, dando base a el sistema de dirección. |
+| ![Image](https://github.com/user-attachments/assets/e0b8f283-be3c-4771-b908-f5570294d61c) ![Image](https://github.com/user-attachments/assets/3dc6bbb7-eb1d-4a14-8fa6-4e355b85d1d1) | Chasis | Se observa toda la estructura del chasis, incluyendo las bases de las placas, botón de activación, switch, pixycam y más. |
 
-![Image](https://github.com/user-attachments/assets/a4c70eec-a4b5-4d26-86e3-5d2190d3b326)
+## 🛠 Guía de Ensamblaje Mecánico – Red Machine 
+Para comenzar, se construye la estructura del chasis principal. Esta base debe ser resistente y simétrica, ya que soportará el único motor trasero y el servo motor frontal. Es fundamental asegurar ambos componentes con firmeza, cuidando que el motor quede perfectamente alineado para impulsar al robot, mientras que el servo tenga libertad de movimiento para controlar la dirección.
+Una vez fijados estos elementos clave, se procede a montar el soporte estructural central que atraviesa el chasis y estabiliza toda la base. Esta parte también sirve como columna vertebral que conecta los laterales y permite mayor rigidez al momento de continuar con la instalación de los niveles superiores.
+Con el chasis firme y balanceado, se construye el primer piso del robot. Esta plataforma debe colocarse a una altura adecuada para dar espacio al cableado inferior y servir de base para la instalación de componentes eléctricos. Luego se eleva el segundo piso utilizando separadores estructurales que garanticen una plataforma paralela y estable. Esta segunda planta será la encargada de alojar el Arduino, los botones y demás dispositivos de control.
+Finalmente, se revisa toda la estructura para asegurarse de que cada parte esté alineada, nivelada y correctamente sujeta. En este punto se pueden hacer pequeños ajustes para corregir inclinaciones, reforzar uniones y preparar la base para el cableado y montaje de los módulos electrónicos.
 
-![Image](https://github.com/user-attachments/assets/dd3a7d52-695a-4912-9071-1e9b083b1505)
+### 🧱 Estructura General de Doble Piso
+El robot cuenta con una estructura de dos niveles, cada uno con funciones definidas para optimizar la organización, accesibilidad y rendimiento de los componentes:
+- Piso Inferior: Aloja los elementos encargados del control de motores y la distribución de energía. Su diseño ofrece estabilidad mecánica y separación eléctrica con los componentes de control.
+- Piso Superior: Espacio reservado para la electrónica de comando y los controles principales. Esta configuración permite una mejor ventilación y mayor facilidad para operar el robot de manera segura y eficiente.
 
-El archivo original del diseño 3D se encuentra en el apartado models.
+🔋 Piso Inferior – Potencia y Control de Movimiento
+En la parte inferior del robot se encuentran distribuidos estratégicamente varios elementos esenciales:
+- Dos puentes H:
+- Uno controla el funcionamiento de los motores, permitiendo gestionar dirección y velocidad.
+- El otro está dedicado a la alimentación de los sensores, evitando que las variaciones de voltaje generadas por los motores afecten la precisión en la lectura sensorial.
+- Tres portabaterías de 9V:
+- Dos baterías alimentan al Arduino, proporcionando energía estable y continua para el procesamiento de datos.
+- Una batería alimenta exclusivamente al puente H de sensores, lo que garantiza lecturas más confiables al evitar interferencias o fluctuaciones.
+⚙ Esta separación de sistemas de potencia permite una mayor eficiencia, evita interferencias cruzadas y mejora la precisión operativa del robot.
+
+
+⚙ Piso Superior – Control y Comodidad Operativa
+Este nivel está dedicado a los elementos que requieren accesibilidad directa por parte del operador:
+- Arduino: Ubicado en una zona elevada y protegida para facilitar conexiones, programación y minimizar vibraciones.
+- Portabatería doble (3.7V): Alimenta módulos electrónicos auxiliares. Su posición superior permite fácil cambio y acceso durante mantenimientos.
+- Interruptor (switch) de encendido/apagado: Situado estratégicamente para iniciar o detener el robot de manera rápida y segura.
+- Botón de inicio: Permite arrancar las rutinas del robot al comenzar la competencia, evitando manipulaciones innecesarias en zonas sensibles.
+🛠 La disposición de estos elementos en la parte superior mejora la accesibilidad, favorece la organización de cables y protege los componentes de la acción mecánica del piso inferior.
+
+
+🎥 Cámara – Visión Elevada y Precisa
+En el punto más alto del robot se encuentra montada una cámara, sostenida por dos estructuras verticales que sujetan una pieza gris. Esta configuración se diseñó con los siguientes propósitos:
+- Amplitud de visión: Al estar en la parte más alta, la cámara evita interferencias visuales de otros componentes del robot.
+- Aislamiento del entorno: Su altura permite reducir la influencia de luces externas, reflejos o sombras del campo de competencia.
+- Estabilidad estructural: La fijación rígida de sus soportes garantiza que no haya vibraciones ni desplazamientos que comprometan la calidad visual durante la ejecución.
+
+### 🏎 Módulo de Tracción y Dirección – Red Machine
+
+⚙ Estructura de Soporte de Motores
+
+La estructura que se observa en la imagen está diseñada con el objetivo de fijar los motores de manera estable y eficiente:
+
+- Montaje rígido: Los motores se encuentran anclados sobre una base firme construida con piezas LEGO, garantizando que no haya desplazamientos ni vibraciones durante la operación.
+
+- Orientación óptima: La posición en que están colocados favorece una tracción precisa y directa, permitiendo transmitir la potencia mecánica sin pérdidas ni desviaciones.
+
+- Distribución de peso equilibrada: Al estar los motores cerca del eje trasero, el centro de gravedad se mantiene bajo, lo que mejora la estabilidad en curvas y maniobras rápidas.
+
+🚗 Sistema de Tracción Trasera
+
+El robot implementa una configuración de tracción trasera, donde los motores impulsan directamente las ruedas posteriores:
+
+- Ventajas mecánicas: Este tipo de tracción proporciona mayor empuje y control especialmente útil en desplazamientos rectos y al subir pendientes.
+
+- Simplicidad y eficacia: La conexión directa entre motores y ruedas traseras reduce el uso de engranajes adicionales, lo que disminuye la fricción y mejora la eficiencia energética.
+
+🔄 Dirección Frontal con Servo
+
+En la parte delantera del chasis se encuentra instalado un servo motor que actúa como mecanismo de dirección:
+
+- Control de orientación: El servo está conectado a las ruedas delanteras mediante un sistema de brazos articulados que permite modificar el ángulo de dirección.
+
+- Precisión milimétrica: Al tratarse de un servo, las variaciones de ángulo son controladas digitalmente, permitiendo maniobras suaves, curvas cerradas y correcciones durante el trayecto.
+
+- Separación funcional: La dirección independiente de la tracción mejora el comportamiento dinámico del robot y permite algoritmos de navegación más avanzados.
+
+🧭 Soporte Central de Sensores Ultrasónicos Laterales
+Este componente se encarga de sostener dos sensores ultrasónicos, ubicados a ambos lados del robot y perfectamente integrados en la estructura general.
+
+🧱 Diseño Integrado en el Chasis
+- Unión física con el cuerpo principal: Aunque su diseño sugiere modularidad, el soporte está firmemente unido a la estructura central del robot, colocándose justo en la zona media del chasis para lograr un equilibrio funcional y estructural.
+- Anclaje estratégico: La ubicación central permite que la pieza se mantenga firme durante el movimiento, evitando desplazamientos o vibraciones no deseadas que afecten la precisión de los sensores.
+🎯 Posicionamiento Lateral de los Sensores
+- Distribución simétrica: Los sensores ultrasónicos están colocados en ambos extremos del soporte, orientados hacia los lados, lo que mejora la cobertura horizontal del entorno del robot.
+- Lecturas precisas: Esta configuración permite detectar obstáculos laterales, alinearse con paredes o identificar zonas estrechas durante la navegación con mayor exactitud.
+- Protección y visibilidad: Al estar elevados y centrados, los sensores tienen un campo de visión despejado, libre de interferencias visuales por otras piezas.
+
 
 ### 📦 Descripción de motores del Sistema
 
