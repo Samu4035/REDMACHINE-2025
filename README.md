@@ -136,6 +136,29 @@ Comer, Dormir, Conocer Gente, Disfrutar los viajes y Dormir
 ### Rol en el equipo
 Encargado de la mecánica del robot. 
 
+### 🧠 Logros Académicos
+- 🥇 Clasificado al Mundial – Olimpiada Mundial de Matemáticas WYMO (2024)
+Representó a Venezuela en la World Youth Mathematics Olympiad, una competencia internacional que convoca a jóvenes talentos matemáticos de todo el mundo para enfrentar retos de alta exigencia.
+- 🔬 Participante Destacado – Olimpiadas de Química y Matemática en Venezuela
+Compitió en distintas ediciones de las Olimpiadas Venezolanas, demostrando excelencia
+y pasión por las ciencias exactas desde temprana edad.
+
+--- 
+
+### 🤖 Trayectoria en Robótica
+- 🇻🇪 Bicampeón Nacional – Categoría Futuros Ingenieros (WRO Venezuela)
+Ganador en dos ediciones consecutivas de la Olimpiada Nacional de Robótica, representando al estado Zulia y obteniendo el pase a competencias internacionales como parte de la delegación nacional.
+- 🌍 Finalista Internacional – WRO Panamá 2023
+Participó en la Olimpiada Mundial de Robótica celebrada en Panamá, logrando posicionarse en el puesto 25 entre 40 equipos internacionales en la categoría Futuros Ingenieros.
+- 🇹🇷 Participación Internacional – WRO Turquía 2024
+Integrante de la delegación venezolana que compitió en la edición mundial realizada en Turquía, acumulando experiencia técnica y cultural en entornos de alto nivel competitivo.
+
+--- 
+
+### 💡 Motivación y Enfoque
+Apasionado por el aprendizaje continuo, la resolución creativa de problemas y la colaboración en equipos multidisciplinarios. Su trayectoria en competencias académicas y tecnológicas refleja una motivación genuina por generar impacto a través del conocimiento, y por seguir explorando nuevas fronteras del pensamiento científico y la innovación.
+
+---
 
 ![red machine 2024](https://github.com/RoboticaLLR/redmachine2024/assets/146040533/d5bb5fc0-b1bd-47a8-9ac3-c190587ae5ae)
 
