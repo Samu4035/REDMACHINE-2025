@@ -438,6 +438,8 @@ Al final de cada reto, `vuelta++`.
 
 ![Estrategia de Navegación](https://github.com/user-attachments/assets/fd7c3e0d-5b96-4052-a3e4-bf6aa35f9961)
 
+> 💡 *Nota: Los indicadores de abajo representan el nivel de confiabilidad que tiene el robot para hacer estas partes*
+
 Este sistema permite al robot:
 
 - Navegar en la pista de Futuros Ingenieros 
