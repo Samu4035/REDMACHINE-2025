@@ -104,9 +104,9 @@ GND
 
 
 ## giroscopio
-Se utiliza un BNO055 para medir los grados de cada giro y saber cuándo debe dejar de girar el robot. El giroscopio se utiliza tanto para evitar las señales de tráfico como para tomar los giros. 
+Se utiliza un MPU6050 para medir los grados de cada giro y saber cuándo debe dejar de girar el robot. El giroscopio se utiliza tanto para evitar las señales de tráfico como para tomar los giros y ayudar al robot a mantenerse recto mediante un proceso de PID. 
 
-![BNO055](https://github.com/user-attachments/assets/33946a22-2ff8-4f12-b0c4-97331cfa95cb)
+![Image](https://github.com/user-attachments/assets/7824610c-7fcc-4221-9153-1aeb8aedeb60)
 
 - Pines de conexión:    
 Vin           
@@ -120,7 +120,7 @@ SCL
 ADR      
 RST 
 
-El equipo utiliza la entrada Vin para alimentar el sensor, el pin de masa, y el SDA y SCL para establecer una comunicación entre el arduino y el BNO055. 
+El equipo utiliza la entrada Vin para alimentar el sensor, el pin de GND, y el SDA y SCL para establecer una comunicación entre el arduino y el MPU6050. 
 
 Salida de datos:
 El BNO055 puede dar salida a los siguientes datos del sensor:
@@ -177,21 +177,31 @@ Luka utiliza una única placa controladora: un Arduino Mega 2560. El Arduino se 
 
 
 # Alimentación del robot
-Pompo utilza dos sistemas de alimentación individuales.
-
-A REVISAAAAR
+Pompo utilza tres sistemas de alimentación individuales.
 
 ## Circuito de alimentación del motor
-Este circuito utiliza 1 baterías, cada una contiene 4v aproximadamente. Las 3 baterías están conectadas en serie, por lo que el voltaje se suma. El puente H es el componente eléctrico que recibe esta energía, y la utiliza para alimentar los ultrasonidos y el motor de tracción. 
+Este circuito utiliza 2 baterías, cada una contiene 4v aproximadamente. Las 3 baterías están conectadas en serie, por lo que el voltaje se suma. El puente H es el componente eléctrico que recibe esta energía, y la utiliza para alimentar los ultrasonidos y el motor de tracción. 
 Para conectar las baterías el equipo utiliza dos packs de dos baterías cada uno, pero uno de ellos está modificado para que sólo utilice una batería. 
 
-![pack de baterias modeado 2](https://github.com/user-attachments/assets/c07fb25c-0ca6-4173-b0fa-797ddf2f16f2)
 ![2 packs de baterias 4V 4](https://github.com/user-attachments/assets/7a6248cc-fc05-4bf4-bfd4-aad78766bb06)
 
 
-## Circuito 9V
-Este circuito utiliza 3 baterías de 9V conectadas en paralelo, por lo que el amperaje se suma, manteniendo los mismos 9V. Se conecta directamente a la placa arduino, que alimenta la pixy, el giroscopio y el servomotor. Cada uno de estos componentes son alimentados por un pin de salida de 5V del arduino. 
+## Circuito arduino
+Este circuito utiliza 2 baterías de 9V conectadas en paralelo, por lo que el amperaje se suma, manteniendo los mismos 9V. Se conecta directamente a la placa arduino, que alimenta la pixy y el servomotor. Cada uno de estos componentes son alimentados por un pin de salida de 5V del arduino. 
 
 ![Primera foto 9 voltios 2](https://github.com/user-attachments/assets/79c1b298-762f-4a96-95a9-bb6aa8bb3e1f)
-![segunda foto 9 voltios 2](https://github.com/user-attachments/assets/a10426e9-767d-496e-b5a6-bf88363a8a4a)
+
+## Circuito sensores
+Este último circuito utiliza una tercera batería de 9V conectada a un puente-H, a través del cuales se alimentan los sensores (ultrasonidos y giroscopio).
+
+# Diagramas de conecciones
+Para entender mejor los circuitos eléctricos de pompo, se presentan a continuación los diagramas de conecciones de nuestro robot: 
+
+## Diagrama de sensores
+
+![Image](https://github.com/user-attachments/assets/c35217f0-d546-4963-a06b-0cf20b41dffe)
+
+## Diagrama de motores
+
+![Image](https://github.com/user-attachments/assets/444b414a-24fc-4942-8d5c-f002e175a080)
 
