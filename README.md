@@ -319,6 +319,18 @@ En el arduino, el equipo utiliza la librería pixy2, que permite obtener toda la
 
 
 
+# Cómo ejecutar o probar el proyecto  
+Para ejecutar un código en una placa Arduino Mega, lo primero es instalar el Arduino IDE en tu equipo si aún no lo tienes. Conecta la placa mediante un cable USB tipo B y, dentro del IDE, selecciona la opción "Arduino Mega or Mega 2560" en el menú “Herramientas > Placa”. Luego, elige el puerto correspondiente en “Herramientas > Puerto” para establecer comunicación. Posterior a eso, copiar y pegar los códigos en este repositorio de GitHub, puedes descargar los archivos desde allí y abrirlos directamente en el entorno.
+
+![Image](https://github.com/user-attachments/assets/150e73eb-8df3-4fb5-afbb-cd20dfd6a356)
+
+Después de abrir el código del proyecto (como el de REDMACHINE-2025), verifica que no haya errores usando el botón de compilación (✓) en el IDE. Una vez validado, presiona el botón de carga (→) para subir el programa a la placa Arduino Mega. Este proceso transfiere el código al microcontrolador, que empezará a ejecutarlo automáticamente. Dado que el Mega ofrece mayor capacidad de entrada/salida y memoria que otras placas, es ideal para proyectos exigentes como el alojado en dicho repositorio.
+![Image](https://github.com/user-attachments/assets/3d7ac906-664d-4639-bc9a-03a545714c58)
+
+Una vez cargado el programa, puedes utilizar el Monitor Serial del IDE para observar el comportamiento del sistema en tiempo real, interpretar los mensajes enviados desde el código y comprobar que las funciones se están ejecutando correctamente. 
+![Image](https://github.com/user-attachments/assets/3401013c-bd38-45c8-9d5e-38eb5d2928b2)
+
+![Image](https://github.com/user-attachments/assets/2b43b9bd-76da-47cf-b8b7-0c1b66438916)
 
 
 # Explicacion Codigo Reto 2
