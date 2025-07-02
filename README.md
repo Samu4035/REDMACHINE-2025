@@ -413,11 +413,11 @@ Al final de cada reto, `vuelta++`.
 
 Este sistema permite al robot:
 
-- Navegar en entornos desconocidos  
-- Identificar y esquivar obstáculos dinámicos  
+- Navegar en la pista de Futuros Ingenieros 
+- Identificar y esquivar los semaforos  
 - Mantener orientación precisa con IMU  
-- Adaptar comportamiento según patrones de color  
-- Completar circuitos con múltiples vueltas  
+- Adaptar comportamiento según cualquier incoveniente  
+- Completar circuitos de manera segura 
 
 ### 🧪 Registro de Pruebas – Primer Reto
 
@@ -462,12 +462,7 @@ Durante la etapa de pruebas del primer reto, se llevaron a cabo 25 intentos cons
 El error más común consistió en una detección incorrecta del lado de inicio, lo que ocasionó desvíos temporales o reinicios de la lógica de navegación.
 En menor medida, se registraron leves oscilaciones en línea recta provocadas por variaciones de lectura del giroscopio en las primeras etapas del recorrido.
 
-# Diseño del software
 
-1. Análisis de imágenes
--  [Procesamiento de imágenes](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Procesamiento-de-imágenes)
--  [Detección de color](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Detección-de-color)
--  [Programación](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Programación)
 
 
 
@@ -482,14 +477,7 @@ En menor medida, se registraron leves oscilaciones en línea recta provocadas po
 [![Image](https://github.com/user-attachments/assets/7d8d684a-25f8-4bad-a824-62b761711ac8)](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
 
 
-# Índice mecánico
-Para más información sobre la mecánica, se ha creado un documento en el que puedes consultar las especificaciones de las piezas y mecanismos del robot.
 
-- [Motores](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Análisis-del-funcionamiento-de-los-motores)
-- [Sensores](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Sensores)
-- [Camera](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Cámara)
-- [Placas controladora](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Placas-controladoras)
-- [Alimentación del robot](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Alimentación-del-robot)
 
 
 # TroubleShooting
