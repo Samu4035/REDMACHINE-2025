@@ -664,6 +664,18 @@ En menor medida, se registraron leves oscilaciones en línea recta provocadas po
  - [FUTUROS INGENIEROS-Reto 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
 
 [![Image](https://github.com/user-attachments/assets/3a998c08-fef1-4247-a1c7-fdddfd4fdfc8)](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
+
+- [FUTUROS INGENIEROS - Reto 1 Variante2](https://youtu.be/rjQujXqtAJU?feature=shared)
+
+[![Image](https://github.com/user-attachments/assets/3a998c08-fef1-4247-a1c7-fdddfd4fdfc8)](https://youtu.be/rjQujXqtAJU?feature=shared)
+
+- [FUTUROS INGENIEROS - Reto 1 Variante 3](https://youtu.be/9T3Q66ES2Qw?feature=shared)
+
+[![Image](https://github.com/user-attachments/assets/3a998c08-fef1-4247-a1c7-fdddfd4fdfc8)](https://youtu.be/9T3Q66ES2Qw?feature=shared)
+
+- [FUTUROS INGENIEROS - Reto 1 Variante 4](https://youtu.be/tL3BE26AJaA?feature=shared)
+
+[![Image](https://github.com/user-attachments/assets/3a998c08-fef1-4247-a1c7-fdddfd4fdfc8)](https://youtu.be/tL3BE26AJaA?feature=shared)
  
 
 - [FUTUROS INGENIEROS-Reto 2](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
