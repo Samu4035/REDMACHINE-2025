@@ -492,6 +492,139 @@ Para más información sobre la mecánica, se ha creado un documento en el que p
 - [Alimentación del robot](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Alimentación-del-robot)
 
 
+# TroubleShooting
+
+
+```cpp
+/*
+ * Programa Simplificado de Lectura de Sensores
+ * Este código lee y muestra los valores de tres sensores ultrasónicos
+ * y el ángulo del giroscopio MPU6050
+ */
+
+#include <NewPing.h>        // Para sensores ultrasónicos
+#include "Wire.h"           // Comunicación I2C
+#include <MPU6050_light.h>  // Para el IMU MPU6050
+
+// Definición de pines para los sensores ultrasónicos
+#define TRIGGER_sensor_1  30  // Sensor izquierdo - trigger
+#define ECO_sensor_1      31  // Sensor izquierdo - echo
+#define TRIGGER_sensor_2  18  // Sensor central - trigger
+#define ECO_sensor_2      19  // Sensor central - echo
+#define TRIGGER_sensor_3  12  // Sensor derecho - trigger
+#define ECO_sensor_3      11  // Sensor derecho - echo
+
+#define MAX_DISTANCE 400  // Distancia máxima en cm (4 metros)
+
+// Creación de objetos para los sensores
+NewPing sensor_1(TRIGGER_sensor_1, ECO_sensor_1, MAX_DISTANCE);  // Izquierdo
+NewPing sensor_2(TRIGGER_sensor_2, ECO_sensor_2, MAX_DISTANCE);  // Central
+NewPing sensor_3(TRIGGER_sensor_3, ECO_sensor_3, MAX_DISTANCE);  // Derecho
+
+MPU6050 mpu(Wire);  // Objeto para el IMU MPU6050
+
+void setup() {
+    Serial.begin(115200); // Iniciar comunicación serial
+    Wire.begin();         // Inicializar I2C
+    
+    // Inicialización del MPU6050
+    byte status = mpu.begin();
+    Serial.println(F("Calculando offsets, no mover el MPU6050"));
+    mpu.calcOffsets();    // Calibrar el IMU
+    delay(1000);
+    Serial.println("Listo!\n");
+}
+
+void loop() {
+    detectardistancias(1);  // Leer y mostrar distancias continuamente
+    delay(100);             // Pequeña pausa entre lecturas
+}
+
+// Función para detectar distancias con los sensores ultrasónicos
+void detectardistancias(int serial) {
+    // Leer distancias en centímetros
+    int d = sensor_2.ping_cm();  // Distancia central
+    int di = sensor_1.ping_cm(); // Distancia izquierda
+    int dd = sensor_3.ping_cm(); // Distancia derecha
+    
+    // Actualizar y leer el giroscopio
+    mpu.update();
+    float gyro = mpu.getAngleZ();  // Obtener ángulo actual en eje Z
+    
+    // Mostrar los valores por el monitor serial
+    Serial.print("Giroscopio (Z): ");
+    Serial.print(gyro);  
+    Serial.print("° | Distancias - Izq: ");
+    Serial.print(di);
+    Serial.print(" cm | Centro: ");
+    Serial.print(d);
+    Serial.print(" cm | Der: ");
+    Serial.print(dd);
+    Serial.println(" cm");
+}
+```
+
+### Visualización de datos:
+
+Muestra todos los valores por el puerto serial en un formato legible:
+
+- Ángulo del giroscopio
+
+- Distancias detectadas por cada sensor ultrasónico
+
+### Uso del Código
+  1.   Cargue el código en su placa Arduino compatible
+
+  2.   Abra el Monitor Serial (115200 baudios)
+
+     
+> 💡 *Nota: La informacion se mostrara de la siguiente manera.*
+```text
+Giroscopio (Z): 45.32° | Distancias - Izq: 25 cm | Centro: 30 cm | Der: 0 cm
+Los valores se actualizarán cada 100ms
+```
+
+
+## Posibles Errores en el Hardware
+### Sensores Ultrasónicos
+Falsos positivos/negativos: Lecturas incorrectas por interferencias o superficies absorbentes
+
+Conexiones flojas: Cableado mal conectado en pines TRIG/ECHO
+
+Rango limitado: Objetos fuera del alcance máximo (4m) no son detectados
+
+### MPU6050 (IMU)
+Deriva del giroscopio: Pérdida de precisión en mediciones angulares con el tiempo
+
+Calibración incorrecta: Offset no calculado adecuadamente en mpu.calcOffsets()
+
+Vibraciones: Movimientos bruscos afectan las lecturas
+
+### Motores y Servo
+Atascos mecánicos: Obstrucciones físicas en el sistema de dirección
+
+Desgaste: Pérdida de precisión en movimientos del servo
+
+Alimentación insuficiente: Caídas de voltaje afectan torque/velocidad
+
+### Errores de Software
+Lógica de Control
+PID mal ajustado: Valores de kp, ki, kd no optimizados
+
+Condiciones de carrera: Conflictos en ejecución de múltiples funciones
+
+Deadlocks: Bloqueos en bucles de control
+
+### Comunicación
+Buffer serial lleno: Pérdida de datos por no limpiar el buffer
+
+Latencia I2C: Retardos en comunicación con MPU6050
+
+Sincronización: Desfase entre lecturas de sensores y acciones
+
+
+
+
 
 # Historia y cronología del equipo
 
@@ -530,8 +663,6 @@ Para más información sobre la mecánica, se ha creado un documento en el que p
 - [POMPO 2.0](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#POMPO-2.0)
 
 - [POMPO 3.0](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#POMPO-3.0)
-
-
 
 
 
