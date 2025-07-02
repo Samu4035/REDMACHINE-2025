@@ -7,14 +7,47 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 ![Image](https://github.com/user-attachments/assets/86d8b3ba-9f00-4d94-9a0b-7fb3f87d222e)
 
 
-# Índice
+# ÍNDICE - REDMACHINE 2025
 
- -  [Miembros del equipo Red Machine](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Miembros-de-Red-Machine)
- -  [Introduccion](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Introducción)
- -  [Diseño mecánico](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Diseño-mecánico)
- -  [Diseño del software](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Diseño-del-software)
- -  [Videos del funcionamiento de pompo](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Videos-del-funcionamiento-de-pompo)
- -  [Historia y cronología](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md#Historia-y-cronología)
+## 📌 CONTENIDO PRINCIPAL
+1. [Documento de ingeniería / Red Machine](#documento-de-ingeniería--red-machine)
+2. [Miembros del equipo](#miembros-del-equipo-red-machine)
+   - [Samuel José Galban Franco](#-samuel-josé-galban-franco)
+   - [Juan Diego Cano Barros](#-juan-diego-cano-barros)
+   - [Angel Saul Rodriguez Guerra](#-angel-saul-rodriguez-guerra)
+3. [Fotos del robot](#fotos-del-robot-todos-los-ángulos)
+4. [Diseño mecánico](#diseño-mecánico)
+   - [Guía de Ensamblaje Mecánico](#-guía-de-ensamblaje-mecánico--red-machine)
+   - [Estructura General](#-estructura-general-de-doble-piso)
+   - [Sistema de Tracción](#-módulo-de-tracción-y-dirección--red-machine)
+5. [Componentes electrónicos](#componentes-electrónicos)
+   - [Descripción de Componentes](#-descripción-de-componentes-principales-del-sistema)
+   - [Diagramas de Conexión](#explicación-del-diagrama-)
+6. [Alimentación del robot](#alimentación-del-robot)
+   - [Cálculo de Consumo](#-cálculo-del-consumo-energético-total)
+7. [Procesamiento de imágenes](#procesamiento-de-imágenes)
+   - [Detección de color](#detección-de-color)
+8. [Cómo ejecutar o probar el proyecto](#cómo-ejecutar-o-probar-el-proyecto)
+9. [Explicación Código Reto 2](#explicacion-codigo-reto-2)
+10. [Explicación Reto 1](#explicacion-reto-1)
+11. [Videos del funcionamiento](#videos-del-funcionamiento-de-pompo)
+    - [Reto 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
+    - [Reto 2](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
+12. [Troubleshooting](#troubleshooting)
+13. [Historia y cronología](#historia-y-cronología-de-red-machine)
+    - [Temporada 2023](#temporada-2023)
+    - [Temporada 2024](#temporada-2024)
+    - [Temporada 2025](#temporada-2025)
+    - [Evolución de Robots](#julian-luka-y-pompo)
+
+## 📂 ESTRUCTURA DEL REPOSITORIO
+- [t-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/t-photos) - Fotos del equipo y competencias
+- [v-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/v-photos) - Fotos del vehículo
+- [video.md](https://github.com/Samu4035/REDMACHINE-2025/blob/main/video.md) - Enlaces a videos
+- [schemes/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/schemes) - Diagramas esquemáticos
+- [src/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/src) - Código fuente
+- [models/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/models) - Diseños 3D
+- [other/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/other) - Archivos adicionales
 
 # Contenido del repositorio
 
