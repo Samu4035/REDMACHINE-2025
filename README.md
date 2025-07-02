@@ -236,6 +236,80 @@ Este componente se encarga de sostener dos sensores ultrasónicos, ubicados a am
 - Protección y visibilidad: Al estar elevados y centrados, los sensores tienen un campo de visión despejado, libre de interferencias visuales por otras piezas.
 
 
+
+
+# Cálculo de Torque Necesario para Mover el Vehículo:
+El torque necesario (T) se calcula mediante la fórmula: T=m⋅g⋅r
+Donde:
+
+m = masa del vehículo (1.02 kg)
+
+g = gravedad (9.81 m/s2)
+
+r = radio de las ruedas (0.02 m)
+
+T=0.870⋅9.81⋅0.03=0.17 N⋅m
+
+Cálculo de Torque a la Salida (después de la reducción) según el motor DC 25GA370:
+
+Tsalida=Tmotor⋅Reducción Tsalida=0.2⋅1 = 0.2>0.17=T
+
+
+
+
+
+## Cálculo de velocidad angular (ω) y velocidad lineal (v)
+La velocidad de salida después de la reducción es 220.2 RPM. Convertimos esto a radianes por segundo:
+
+ω=220.2×2π60≈23.04 rad/s
+
+ω=220.2×
+
+60
+
+2π
+​
+≈23.04 rad/s
+
+La velocidad lineal del vehículo se calcula multiplicando la velocidad angular por el radio de la rueda 
+
+v=ω×r=23.04×0.03≈0.69 m/s
+
+v=ω×r=23.04×0.03≈0.69 m/s
+
+
+Especificaciones del motor LEGO y reducción
+
+Velocidad sin carga: 170 RPM
+
+Torque nominal: 0.20 kg·cm (≈ 0.0196 N·m)
+
+Relación de reducción: 21.3:1
+
+Efectos de la reducción:
+
+Velocidad reducida en el eje de salida:
+
+170 RPM×21.3≈7.98 RPM
+
+Fuerza necesaria para mover el robot (870 g ≈ 8.53 N)
+
+Suponiendo un coeficiente de fricción típico (μ ≈ 0.4) en una superficie normal:
+
+Fuerza mıˊnima=μ×m×g=0.4×0.87 kg×9.81≈3.41 N
+
+Fuerza m= nima=μ×m×g=0.4×0.87 kg×9.81≈3.41 N
+
+El torque disponible en las ruedas (0.4175 N·m) es muy superior al mínimo requerido (0.102 N·m), por lo que el robot se moverá sin problemas.
+
+Velocidad lineal: ≈ 0.69 m/s (con ruedas de 3 cm de radio).
+
+Torque en ruedas: ≈ 0.4175 N·m (suficiente para superar la resistencia al movimiento).
+
+El sistema cumple con los requisitos de tracción y movilidad.
+
+
+
 ### 📦 Descripción de motores del Sistema
 
 | Imagen | Nombre de Componente | Descripción |
