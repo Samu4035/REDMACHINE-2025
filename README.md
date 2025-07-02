@@ -1,3 +1,5 @@
+
+
 # Documento de ingeniería / Red Machine 
 
 Este repositorio contiene todos los materiales necesarios para crear a "pompo", el robot autonomo creado por el equipo "Red Machine", con el objetivo de participar en la categoría de Futuros Ingenieros en las diferentes etapas de la WRO Venezuela, en su edición 2025. 
@@ -318,6 +320,7 @@ En el arduino, el equipo utiliza la librería pixy2, que permite obtener toda la
 
 
 
+
 # Explicacion Codigo Reto 2
 
 
@@ -447,6 +450,26 @@ Este sistema permite al robot:
 - Mantener orientación precisa con IMU  
 - Adaptar comportamiento según cualquier incoveniente  
 - Completar circuitos de manera segura 
+
+# Explicacion Reto 1
+
+## 🌐 **Diagrama de Flujo Principal**  
+```mermaid
+graph TD
+    A[Inicio] --> B[Calibración Sensores]
+    B --> C{Espera Señal}
+    C -->|Inicio| D[Lectura Sensores]
+    D --> E[Análisis Entorno]
+    E --> F{Toma de Decisiones}
+    F -->|Obstáculo| G[Evalúa Lados]
+    F -->|Libre| H[Avance Recto]
+    G --> I[Giro Controlado]
+    H --> D
+    I --> D
+```
+
+> ⚠️ *Nota:* Las funciones utilizadas en el reto 2 son las mismas que en el reto 1, por lo tanto tanto la explicacion como el razonamiento mencionado previamente es igual de efectivo.
+
 
 ### 🧪 Registro de Pruebas – Primer Reto
 
