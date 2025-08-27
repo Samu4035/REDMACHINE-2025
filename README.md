@@ -171,8 +171,57 @@ Apasionado por el aprendizaje continuo, la resolución creativa de problemas y l
 
 # Etapas del desarrollo
 
-LUKA  
-Durante la temporada 2023, el diseño del robot siempre fue uno de los mayores problemas que enfrentó el equipo, esto durante todas las fases de la competencia. Las bases de acrílico que se usaron en las primeras competencias no funcionaron, ya que tenían muchas imperfecciones, causando que el sistema de tracción y dirección estuviera mal ubicado, así como una distribución realmente mala. A pesar de todo esto, ese chasis nos dio una idea de cómo diseñar uno nuevo, por lo que después de la competencia nacional 2023, se usaron nuevas bases de acrílico, esta vez cortadas con láser. Después de esto, el chasis se veía realmente bien en todos los aspectos.  
+
+# Sistema Mecánico
+
+# Version 1.0
+
+## Dirección
+
+El subsistema de dirección del robot se encuentra en la parte trasera de éste, para así proporcionar un mayor radio de giro, fue creado con piezas de lego de un kit de robótica denominado Kit Lego Spike Prime, uniendo estas piezas con las ruedas de un carro control remoto (RC) modelo Ford Mustang, al cual se le adaptó un servomotor de la marca Rev Robotics. Posteriormente fue programado a través de un arduino mega 2560, conectado el servomotor a los pines GND, 5 V y 4 del Arduino como puede visualizarse en la siguiente imagen.
+
+
+## Conducción
+
+El subsistema de conducción del robot fue tomado de un  carro a control remoto modelo Ford Mustang. Se utilizó este sistema debido a que portaba un motor y una caja de cambios, y proporcionaba el torque y la velocidad necesaria para el robot. Este funciona con un juego de engranajes, el cual le permite al robot girar a diferentes velocidades sin perder agarre, dicho mecanismo fue ubicado en la parte delantera del robot. El sistema es alimentado a través de un puente H doble modelo L298n por medio de un pack de tres baterías de 3,7 V. 
+
+## Diseño de chasis
+
+La base del chasis fue construida con acrílico, el cual fue cortado y perforado en base a las necesidades del cableado y el ensamblaje de las piezas utilizadas como puede visualizarse en la imagen a la derecha
+
+El robot cuenta con dos pisos ambos construidos con acrílico, tal como se muestra en la imagen anterior. En el “primer piso” del robot fueron ensamblados los sistemas de tracción y dirección, el sensor de ultrasonido, el sensor de color RGB TCS 34725, dos interruptores (uno para el encendido y el otro para iniciar) y el puente H doble modelo L298n; mientras que en el “segundo piso” se encuentra el pack de baterías, la batería de 9 V, la cámara ESP 32-cam, el Arduino mega 2560, y el conector para las baterías. 
+
+
+## Derecha
+
+<img width="389" height="222" alt="image" src="https://github.com/user-attachments/assets/a2016c58-0b47-4b87-a7a0-eab0ad5f67ca" />
+
+
+## Izquierda
+
+<img width="342" height="220" alt="image" src="https://github.com/user-attachments/assets/e5089f1b-c0ae-4e4d-b949-2b966f01b291" />
+
+
+## Front
+
+<img width="192" height="253" alt="image" src="https://github.com/user-attachments/assets/f7b6a4c6-3d50-41d5-bf6f-5293ebe6eb62" />
+
+
+## Back 
+
+<img width="205" height="253" alt="image" src="https://github.com/user-attachments/assets/2798139f-3862-4ba9-b5d3-f515122fc596" />
+
+
+## Above
+
+<img width="520" height="253" alt="image" src="https://github.com/user-attachments/assets/99c1e5f8-311d-430a-a128-02c59d3a1f29" />
+
+## Below
+
+<img width="910" height="772" alt="image" src="https://github.com/user-attachments/assets/b6de6f0f-6965-4865-9f4d-542b22033824" />
+
+# Version 2.0 
+Durante este periodo, el diseño del robot siempre fue uno de los mayores problemas que enfrentó el equipo, esto durante todas las fases de la competencia. Las bases de acrílico que se usaron en las primeras competencias no funcionaron, ya que tenían muchas imperfecciones, causando que el sistema de tracción y dirección estuviera mal ubicado, así como una distribución realmente mala. A pesar de todo esto, ese chasis nos dio una idea de cómo diseñar uno nuevo, por lo que después de la competencia nacional 2023, se usaron nuevas bases de acrílico, esta vez cortadas con láser. Después de esto, el chasis se veía realmente bien en todos los aspectos.  
 
 
 <img width="333" height="400" alt="image" src="https://github.com/user-attachments/assets/60bed39a-e8be-46bc-b77f-e2faa36ac313" />
@@ -219,18 +268,17 @@ De la misma forma, se hizo un diseño 3D, donde pudimos ver y analizar eficiente
 <img width="910" height="772" alt="image" src="https://github.com/user-attachments/assets/b6de6f0f-6965-4865-9f4d-542b22033824" />
 
 
+> [!note]
+> A continuacion se muestras los componentes electronicos agregados durante este periodo
 
-
-# Videos versión 2.0 del robot  
-[<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/dfae6ff3-cb71-4b5f-9016-ae2efeb6b23f" />
-](https://www.youtube.com/watch?v=HS7eLoFSOkU)
-
-[<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/5868e78c-5e65-40ab-8b85-4ca204db4f23" />
-](https://www.youtube.com/watch?v=cjjnRDXaDAU&t=56s)
-
-
-A continuación, se mostrarán aspectos sobre el funcionamiento de los 2 motores de nuestro robot.  
 ## Motor Core Hex  
+
+> [!tip]
+> Fue agregado con el proposito de mejorar la traccion del robot, volviendolo mucho mas consistente en funcion al torque que necesita el robot
+
+> [!warning]
+> No fue utilizado en el diseño final debido a la velocidad baja y su gran peso
+
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8922ec08-101c-4448-b789-c760ab75a786" />
 
  JST-VH de 2 pines para la alimentación del motor.  
@@ -249,52 +297,7 @@ especifica a continuación.
 - Torque: 3.2 N-m  
 - Voltaje de operación: 12V  
 - Velocidad libre: 125 RPM  
-## Servo Inteligente para Robots (Smart Robot Servo)  
 
-<img width="350" height="250" alt="image" src="https://github.com/user-attachments/assets/fdacdc4d-988b-490d-9b8e-88a17d3ac6d5" />
-
-
-- Instalación: Un brazo servo doble de aluminio recortado fue anclado al Smart Robot Servo. Luego, se colocó un tornillo en una de las entradas del brazo de aluminio, que lo une con dos piezas de Lego. Un segundo tornillo une las dos piezas de Lego mencionadas. Asimismo, dos tornillos del chasis fueron anclados en la tercera pieza de Lego, para que funcionara como soporte. Finalmente, se colocaron las ruedas, que encajan entre las tres piezas de Lego.  
-
-<img width="350" height="310" alt="image" src="https://github.com/user-attachments/assets/ec55ca4c-1385-46f0-9b55-edde22cb7ffa" />}
-
-<img width="400" height="316" alt="image" src="https://github.com/user-attachments/assets/6578176d-7987-4c78-bf2d-10b1493697b3" />
-
-
-
-- Voltaje de operación: De 4.8V a 7.4V. En el robot, el servo funciona a 5V.  
-- Radio de giro: Puede girar hasta 270°  
-- Torque: 13.5 kg-cm  
-- Velocidad: 0.13s/60º  
-- Peso: 2.05 onzas  
-- Material de engranajes: Latón  
-- Potencia: La potencia del servo se especifica a continuación.
-
-  <img width="350" height="338" alt="image" src="https://github.com/user-attachments/assets/c7b7355a-22d5-4998-a4bb-5fec6697649a" />
-
-- Pulso de entrada:  
-  Mínimo-500 μs  
-  Centro-1500 μs  
-  Máximo-2500 μs  
-
-# Sensores  
-A continuación, se muestran las especificaciones de los sensores que tiene Luka.  
-## Ultrasonido  
-Se usan tres ultrasónicos para definir la distancia entre el robot y las paredes de la pista, específicamente las paredes laterales y frontales según la dirección en la que Luka se esté moviendo.  
-
-<img width="376" height="288" alt="image" src="https://github.com/user-attachments/assets/fc54617d-b497-43b2-9390-997b51868401" />
-
-- Pines de conexión:  
-  VCC  
-  Trig (Disparo ultrasonido)  
-  Echo (Recepción ultrasonido)  
-  GND
-  
-
-- Rango máximo de detección: 450 cm  
-- Rango mínimo de detección: 2 cm  
-- Ángulo de detección: 15 grados  
-- Corriente de consumo: 15 mA  
 ## Giroscopio  
 Se usa un BNO055 para medir los grados de cada giro y saber cuándo el robot debe parar de girar. El giroscopio se usa tanto para evitar las señales de tránsito como para tomar las curvas.  
 
@@ -331,18 +334,22 @@ La pixy2 funciona a 60 fps, y es capaz de detectar objetos, líneas y colores. E
 
 <img width="400" height="211" alt="image" src="https://github.com/user-attachments/assets/6565b4bc-e50b-4236-9c1e-77db990b19c2" />
 
-Está conectada al Arduino con un cable IDC 2 ICSP Arduino que va a los pines ICSP del Arduino, lo cual proporciona todas las conexiones necesarias para alimentar y comunicarse con la pixy.  
-# Placas controladoras  
-Luka usa una sola placa controladora: un Arduino Mega 2560. El Arduino está a cargo de controlar los actuadores, los sensores y todo el movimiento del robot.  
-## Arduino Mega 2560  
+Está conectada al Arduino con un cable IDC 2 ICSP Arduino que va a los pines ICSP del Arduino, lo cual proporciona todas las conexiones necesarias para alimentar y comunicarse con la pixy. 
 
-- Potencia: 9V  
-- Pines usados: 21  
-- Corriente máxima por pin: 40 mA  
-- Memoria Flash: 256 KB  
-- SRAM: 8 KB  
-- Peso: 37 gramos  
-- Consumo: 93 mA  
+> [!tip]
+> Fue agregado con el proposito de mejorar el movimiento del robot a lo largo de la pista, sabiendo la orientacion exacta a donde ir
+
+> [!warning]
+> No fue utilizado en el diseño final debido a ser unicamente un acelerometro, por lo que sufre de problemas de calibracion, el modelo mpu6050 es mucho mas eficiente para esta labor.
+
+
+
+
+
+
+> [!note]
+> La alimentacion del robot se mantiene los mismos principios a lo largo de las tres versiones
+
 # Alimentación del robot  
 En Luka hay dos sistemas individuales de alimentación.  
 ## Circuito de 12V  
@@ -361,14 +368,22 @@ Este circuito usa 3 baterías de 9V conectadas en paralelo, por lo que la ampera
 
 
 
-
 # Diagrama de conexiones  
 Se muestra el diagrama de conexiones para que todo el circuito pueda verse claramente.  
 
 <img width="902" height="800" alt="image" src="https://github.com/user-attachments/assets/e57dac87-f6b7-4770-b92f-e6bfa5c1c409" />
 
+# Videos versión 2.0 del robot  
+[<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/dfae6ff3-cb71-4b5f-9016-ae2efeb6b23f" />
+](https://www.youtube.com/watch?v=HS7eLoFSOkU)
+
+[<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/5868e78c-5e65-40ab-8b85-4ca204db4f23" />
+](https://www.youtube.com/watch?v=cjjnRDXaDAU&t=56s)
 
 
+
+# Diseño final del robot 
+Lo mencionado a partir de este momento del repositorio son las piezas y materiales utilizados para construir las version mas actualizada del robot.
 
 # Diseño mecánico
 "Pompo" es un robot autónomo diseñado con piezas de lego, con la finalidad de conseguir la mayor presición y estabilidad posible durante las rondas de competencia. Dichas piezas fueron extraídas de un kit lego spike prime código 45678 y spike prime expansion set código 45681. 
