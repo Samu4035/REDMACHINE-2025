@@ -41,7 +41,21 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
    - [FUTUROS INGENIEROS - Reto 1 Variante 4](https://youtu.be/tL3BE26AJaA?feature=shared)
    - [FUTUROS INGENIEROS-Reto 2](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
 
-
+13. [Videos de pruebas pasadas](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-de-pruebas-pasadas)
+    - [Videos version 1.0 del robot](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-versi%C3%B3n-10-del-robot)
+          - [Reto 1](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#reto-1)
+          - [Prueba Reto 2](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#prueba-reto-2)
+    - [Videos version 2.0 del robot](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-versi%C3%B3n-20-del-robot)
+          - [Reto 1](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#video-reto-1-completo-todas-las-variantes)
+          - [Reto 2](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#video-reto-2-completo)
+    - [Videos sobre el robot](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-sobre-el-robot)
+          - [Muestra de la deteccion de robot](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-sobre-el-robot)
+          - [Muestra de la prueba de continuidad](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#prueba-de-continuidad)
+    - [Videos sobre Red Machine](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-sobre-red-machine)
+          - [Presentacion nacional 2023](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#presentacion-nacional-2023)
+          - [Red Machine Nacional 2023](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#red-machine-nacional-2023)
+          - [Presentacion del equipo Red Machine](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#presentacion-del-equipo-red-machine)
+          - [Presentacion de Robotica Educativa](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#robotica-educativa)
 14. [Troubleshooting](#troubleshooting)
 15. [Historia y cronología](#historia-y-cronología-de-red-machine)
     - [Temporada 2023](#temporada-2023)
@@ -944,11 +958,12 @@ En menor medida, se registraron leves oscilaciones en línea recta provocadas po
 
 ### Prueba de continuidad
 [<img width="270" height="480" alt="image" src="https://github.com/user-attachments/assets/dd85f7af-9fe4-475b-be93-eda2947dddbc" />](https://www.youtube.com/shorts/jUmZjaQ_be8)
+## Videos sobre Red Machine
 ### Presentacion nacional 2023
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/00664584-bacb-41d2-8210-cb014d690640" />](https://www.youtube.com/watch?v=fVg6WCavaBU)
 ### Red Machine Nacional 2023
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/525ffe10-d1de-4dda-a9da-bc815b110c35" />](https://www.youtube.com/watch?v=FSo2NadI6ec&pp=0gcJCbIJAYcqIYzv)
-### Presentacion del equipo Red Machin
+### Presentacion del equipo Red Machine
 [<img width="320" height="180" alt="image" src="https://github.com/user-attachments/assets/f27d65da-cd69-4e9f-b46f-22959dfdb275" />](https://www.youtube.com/watch?v=EYFYI9Z96V4&t=25s)
 ### Robotica Educativa
 [<img width="320" height="180" alt="image" src="https://github.com/user-attachments/assets/2ca73ef3-91ca-4155-91c7-0617813404df" />](https://www.youtube.com/watch?v=Is-765hQCRY)
