@@ -402,6 +402,27 @@ Se muestra el diagrama de conexiones para que todo el circuito pueda verse clara
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/5868e78c-5e65-40ab-8b85-4ca204db4f23" />
 ](https://www.youtube.com/watch?v=cjjnRDXaDAU&t=56s)
 
+# Videos sobre el robot
+## Muestra de la deteccion de color
+[<img width="270" height="480" alt="image" src="https://github.com/user-attachments/assets/b3d6a860-b0d2-4d91-bf3d-b9a8c1924240" />
+](https://www.youtube.com/shorts/HLt_O2JlURQ)
+
+## Prueba de continuidad
+[<img width="270" height="480" alt="image" src="https://github.com/user-attachments/assets/dd85f7af-9fe4-475b-be93-eda2947dddbc" />](https://www.youtube.com/shorts/jUmZjaQ_be8)
+## Presentacion nacional 2023
+[<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/00664584-bacb-41d2-8210-cb014d690640" />](https://www.youtube.com/watch?v=fVg6WCavaBU)
+## Red Machine Nacional 2023
+[<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/525ffe10-d1de-4dda-a9da-bc815b110c35" />](https://www.youtube.com/watch?v=FSo2NadI6ec&pp=0gcJCbIJAYcqIYzv)
+## Presentacion del equipo Red Machin
+[<img width="320" height="180" alt="image" src="https://github.com/user-attachments/assets/f27d65da-cd69-4e9f-b46f-22959dfdb275" />](https://www.youtube.com/watch?v=EYFYI9Z96V4&t=25s)
+## Robotica Educativa
+[<img width="320" height="180" alt="image" src="https://github.com/user-attachments/assets/2ca73ef3-91ca-4155-91c7-0617813404df" />](https://www.youtube.com/watch?v=Is-765hQCRY)
+
+
+
+
+
+
 
 
 # Diseño final del robot 
