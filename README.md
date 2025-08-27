@@ -15,11 +15,11 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
    - [Samuel José Galban Franco](#-samuel-josé-galban-franco)
    - [Juan Diego Cano Barros](#-juan-diego-cano-barros)
    - [Angel Saul Rodriguez Guerra](#-angel-saul-rodriguez-guerra)
-3. [Fotos del robot](#fotos-del-robot-todos-los-ángulos)
-4. [Etapas del desarrollo (Versiones anteriores del robot)](#Etapas-del-desarrollo (Versiones-anteriores-del-robot))
+3. [Etapas del desarrollo (Versiones anteriores del robot)](#Etapas-del-desarrollo (Versiones-anteriores-del-robot))
    - [Sistema Mecánico](#Sistema-Mecánico-⚙)
       - [Version 1.0 (Version desactualizada)](#Version-1.0-(Version-desactualizada))
       - [Version 2.0 (Version desactualizada)](#Version-2.0-(Version-desactualizada))
+4. [Fotos del robot](#fotos-del-robot-todos-los-ángulos)
 5. [Diseño mecánico](#diseño-mecánico)
    - [Guía de Ensamblaje Mecánico](#-guía-de-ensamblaje-mecánico--red-machine)
    - [Estructura General](#-estructura-general-de-doble-piso)
@@ -165,12 +165,6 @@ Apasionado por el aprendizaje continuo, la resolución creativa de problemas y l
 ---
 
 ![red machine 2024](https://github.com/RoboticaLLR/redmachine2024/assets/146040533/d5bb5fc0-b1bd-47a8-9ac3-c190587ae5ae)
-
-# Fotos del robot (todos los ángulos)
-
-| ![Image](https://github.com/user-attachments/assets/eec7817b-bb41-493e-9b78-a5a6004a4a2e)  |  ![Izquierda](https://github.com/user-attachments/assets/4f20ba4c-f271-4861-a9cf-31022f7be0d2)  |  ![Frontal](https://github.com/user-attachments/assets/4b648131-29e0-4cb0-a01b-d3b699d62968) |
-| :----: | :-------------------: | :----------: |
-| ![Debajo](https://github.com/user-attachments/assets/45f55e40-cd16-4492-b856-0ac1671db0f4)  |  ![Derecha](https://github.com/user-attachments/assets/15a16250-3cc5-4dcb-8e0c-482e2bc499f7)  |  ![Atras](https://github.com/user-attachments/assets/f761cfdf-7320-499f-b884-d6290f5e50bb) |
 
 
 # Etapas del desarrollo (Versiones anteriores del robot)
@@ -431,6 +425,14 @@ Se muestra el diagrama de conexiones para que todo el circuito pueda verse clara
 
 # Diseño final del robot | Version 3.0 (version actualizada)
 Lo mencionado a partir de este momento del repositorio son las piezas y materiales utilizados para construir las version mas actualizada del robot.
+
+# Fotos del robot (todos los ángulos)
+
+| ![Image](https://github.com/user-attachments/assets/eec7817b-bb41-493e-9b78-a5a6004a4a2e)  |  ![Izquierda](https://github.com/user-attachments/assets/4f20ba4c-f271-4861-a9cf-31022f7be0d2)  |  ![Frontal](https://github.com/user-attachments/assets/4b648131-29e0-4cb0-a01b-d3b699d62968) |
+| :----: | :-------------------: | :----------: |
+| ![Debajo](https://github.com/user-attachments/assets/45f55e40-cd16-4492-b856-0ac1671db0f4)  |  ![Derecha](https://github.com/user-attachments/assets/15a16250-3cc5-4dcb-8e0c-482e2bc499f7)  |  ![Atras](https://github.com/user-attachments/assets/f761cfdf-7320-499f-b884-d6290f5e50bb) |
+
+
 
 # Diseño mecánico
 "Pompo" es un robot autónomo diseñado con piezas de lego, con la finalidad de conseguir la mayor presición y estabilidad posible durante las rondas de competencia. Dichas piezas fueron extraídas de un kit lego spike prime código 45678 y spike prime expansion set código 45681. 
