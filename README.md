@@ -368,191 +368,6 @@ Se muestra el diagrama de conexiones para que todo el circuito pueda verse clara
 <img width="902" height="800" alt="image" src="https://github.com/user-attachments/assets/e57dac87-f6b7-4770-b92f-e6bfa5c1c409" />
 
 
-## Código de la versión 2.0 del robot  
-# Procesamiento de imágenes  
-Para procesar la imagen, Luka usa una cámara. Esta es la pixy2.  
-
-<img width="320" height="320" alt="image" src="https://github.com/user-attachments/assets/59e38b63-bf76-4c88-9246-c8ea19ccf024" />
-
-
-La pixy2 funciona a 60 fps, y es capaz de detectar objetos, líneas y colores. En Luka, el objetivo principal de la cámara es detectar colores (rojo y verde).  
-Está conectada al Arduino con un cable IDC 2 ICSP Arduino que va a los pines ICSP del Arduino, lo que proporciona todas las conexiones necesarias para alimentar y comunicarse con la pixy.  
-## Detección de color  
-Pixy2 usa un algoritmo de filtrado basado en colores para detectar objetos llamado Color Connected Components (CCC). Pixy2 calcula el color (matiz) y saturación de cada píxel RGB del sensor de imagen y los usa como los parámetros principales de filtrado. El matiz de un objeto permanece mayormente inalterado con cambios en la iluminación y exposición. El algoritmo CCC de Pixy2 recuerda hasta 7 firmas de color diferentes.  
-Después de que un color es guardado como una firma de color, la pixy lo añadirá a una tabla de objetos que está siguiendo actualmente y le asignará un índice de seguimiento. Luego intentará encontrar el objeto (y cada objeto en la tabla) en el siguiente cuadro buscando su mejor coincidencia. Cada objeto rastreado recibe un índice entre 0 y 255 que conservará hasta que deje el campo de visión de Pixy2.  
-
-<img width="285" height="239" alt="image" src="https://github.com/user-attachments/assets/265c97e8-cde8-49b4-86cc-d98e12c4f268" />
-
-
-## Programación  
-Para configurar los colores que la cámara debe detectar, el equipo usa PixyMon. PixyMon es una aplicación que corre en Windows, MacOs y Linux. Permite ver lo que Pixy2 ve, ya sea vídeo en crudo o procesado. También permite configurar Pixy2, establecer el puerto de salida y administrar firmas de color. PixyMon se comunica con Pixy2 mediante un cable USB mini estándar.  
-
-
-<img width="194" height="200" alt="image" src="https://github.com/user-attachments/assets/ede9a831-5d6a-4aa6-b7ad-5261ff63208f" />
-
-
-En PixyMon, el equipo configura 6 firmas, tres para verde y tres para rojo. Las firmas 1, 3 y 5 para rojo, y las firmas 2, 4 y 6 para verde.  
-Luego se realiza el procesamiento en Arduino.  
-En Arduino, el equipo usa la librería pixy2, que permite obtener toda la información necesaria de la detección por pixy. Posteriormente, usando el siguiente código, el equipo guarda cuándo pixy detecta un color y a qué firma corresponde en una variable llamada "hola". Si "hola" es divisible por dos, entonces el color es verde, y si no es divisible por dos, entonces el color es rojo.  
-
-
-# Función general del robot  
-## Determinación del servo  
-El servo motor está asignado al pin 2 del Arduino, donde se configura usando el comando `pro.attach(2)` y también puede moverse con el comando `pro.write()`, usado a lo largo del código.  
-## Orientación  
-Con los sensores ultrasónicos se detecta dónde están las paredes y, cuando se llega a una curva, se define si es necesario cruzar a la derecha o a la izquierda (guardado como 1=antihorario, 2=horario), evitándonos problemas con las líneas del suelo. Esto se puede hacer porque el carro choca con la pared, permitiendo saber cuándo está tomando un giro lateral. Esta parte del código ocurre al iniciar el programa.  
-```cpp  
-if((d<50)&&(d!=0)&&(a==0)){  
-  if((di<80)&&(d!=0)){ // Definición giro horario  
-    a=2;  
-    pro.write(derecha);  
-    Serial.println("a2");  
-    Serial.println(d);  
-    delay(1800);  
-    pro.write(rec);  
-    giro++;  
-    analogWrite(2,vel);  
-    Serial.println("a2");  
-    delay(500);  
-  }  
-  if((di>80)||(di==0)){ // Definición giro antihorario  
-    a=1;  
-    pro.write(izquierda);  
-    Serial.println("a1");  
-    Serial.println(d);  
-    delay(1400);  
-    giro++;  
-    pro.write(rec);  
-    analogWrite(2,vel);  
-    Serial.println("a1");  
-  }  
-  d=sensor_2.ping_cm();  
-  delay(500);  
-}  
-```
-## Giroscopio para giros laterales  
-El giroscopio es esencial en la parte de giros laterales, usamos un BNO055 y los ángulos Euler para obtener una combinación del magnetómetro y acelerómetro incluidos en el sensor, así obtenemos ángulos precisos, sin ningún drift que pueda tener un acelerómetro.  
-Cómo se implementó en el código es mediante 6 funciones. Están Girarizq90, Girarder90, iraizq, irader, iraizq2, irader2. Estas funciones están destinadas a hacer giros laterales de 90 grados y regresar a la orientación correcta que debería tener el robot. Funcionan estableciendo una variable "angulof" que sirve como el ángulo esperado. Luego un ciclo revisa si el robot está cerca de ese ángulo y lo declara como una orientación correcta.  
-Todas estas funciones pueden verse en  
-
-# Primer desafío  
-## Corrección  
-Aunque el Giroscopio nos da un ángulo preciso, a veces podemos enfrentar diferentes problemas debido a los robots o paredes implementadas en el Desafío. Por eso creamos un sistema de rectificación bastante simple que previene que Luka choque contra las paredes.  
-Esta corrección funciona mediante los 2 sensores ultrasónicos en ambos lados del robot. Cuando la distancia entre el robot y la pared es pequeña, hacemos un movimiento corto hacia la izquierda o derecha para evitar que el desafío termine.  
-El código que usamos es el siguiente:  
-```cpp  
-if (((dd<15)&&(dd>0)&&(giro!=0)&&(d>100))||((dd<15)&&(dd>0)&&(giro!=0)&&(d==0))){  
-  pro.write(izquierda);  
-  delay(300);  
-  pro.write(rec);  
-  delay(300);  
-}  
-if (((di<15)&&(di>0)&&(giro!=0)&&(d>80))||((di<15)&&(di>0)&&(giro!=0)&&(d==0))){  
-  pro.write(derecha);  
-  delay(300);  
-  pro.write(rec);  
-  delay(300);  
-}  
-```
-Esta parte del código también puede encontrarse en  
-
-## Estacionamiento del primer desafío  
-Cada vez que hacemos un giro lateral, incrementamos en 1 la variable giros; una vez que detectamos que esta variable es igual a 11 podemos estar seguros de que es la pista final, así que simplemente giramos 90 grados y avanzamos durante 3 segundos.  
-```cpp  
-if(giro>11){  
-  di=sensor_1.ping_cm();  
-  dd=sensor_3.ping_cm();  
-  d=sensor_2.ping_cm();  
-  delay(3000);  
-
-  digitalWrite(adelante,LOW);  
-  analogWrite(2,0);  
-}  
-```
-# Desafío de obstáculos  
-## Detección de pilares  
-Una vez recibe la información de la cámara pixy, puede moverse hacia la izquierda o derecha dependiendo del cono que haya detectado. Usamos un algoritmo simple para detectar cuál es la señal de tránsito más grande, de esta manera no se ve afectado por ninguna otra señal roja o verde en el entorno.  
-```cpp  
-int numBlocks = pixy.ccc.getBlocks();  
-if (numBlocks > 0) {  
-  int maxArea = 0; // Variable para almacenar el área máxima  
-  int maxSignature = 0; // Variable para almacenar la firma del bloque con mayor área  
-  // Buscar el bloque con el área más grande  
-  for (int i = 0; i < numBlocks; i++) {  
-    int area = pixy.ccc.blocks[i].m_height * pixy.ccc.blocks[i].m_width;  
-    if (area > maxArea) {  
-      maxArea = area;  
-      maxSignature = pixy.ccc.blocks[i].m_signature; // Guardar la firma del bloque más grande  
-    }  
-  }  
-  // Evaluar la firma del bloque con mayor área  
-  if (maxSignature % 2 == 0 && maxSignature != 0) {  
-    Serial.println("verde");  
-    hola = 2; // Asignar 2 a la variable hola  
-    Serial.println(hola);  
-  }   
-  else if (maxSignature % 2 == 1) {  
-    Serial.print("rojo");  
-    hola = 1; // Asignar 1 a la variable hola  
-    Serial.println(hola);  
-  }  
-}  
-```
-También puede verse en  
-
-> [!IMPORTANTE]  
-> Aún puede verse afectado por otros objetos si hay pilares o no ha detectado nada.  
-> [!IMPORTANTE]  
-> Este algoritmo está asignado a la función "detectarconos" y se repite en cada iteración.  
-## Movimiento mediante orientación  
-Una vez detectamos la dirección y sabemos en qué carril estamos, hacemos un movimiento preprogramado; así sólo programamos 6 posibles giros laterales para la primera vuelta. Estos pueden cambiar según el carril, la orientación y la ubicación en la pista.  
-Después de cada giro lateral, variables como cono1, cono2 y carril se restablecen a cero y se añade 1 a "giros" y "vuelta". Todos los giros posibles se encuentran en el enlace "Sideturns first lap".  
-
-## Evitación de pilares en la primera vuelta  
-La estrategia principal para evitar chocar contra los pilares es saber dónde está el robot. Por eso implementamos la forma más sencilla que pudimos imaginar: estableciendo 3 carriles (centro, izquierda y derecha). Así sólo hay que preocuparse por el movimiento entre estos carriles, y no calcular exactamente la distancia entre pilares.  
-Cómo el robot evita los pilares es evitando uno o dos como máximo. Por eso sólo preparamos 2 giros laterales para el primer pilar (rojo o verde) y luego 2 giros laterales para el segundo pilar (de izquierda a derecha y de derecha a izquierda). Este cambio de carril es muy sencillo con la implementación de un Giroscopio.  
-> [!CONSEJO]  
-> Movimiento está implementado en "esquivarconos" y el almacenamiento de los pilares está en "contarconos"  
- 
-## Después del primer giro lateral  
-El robot detecta y evade cada pilar usando la misma estrategia, esta vez ya ha almacenado la orientación y, debido a nuestra estrategia de giros laterales, siempre inicia en el centro de la pista, así también sabemos en qué carril está.  
-En la parte final del recorrido, el robot reduce todos sus movimientos debido a la posibilidad de chocar contra el estacionamiento.  
-> [!CONSEJO] Esta parte del código usa las funciones "cruzar" y "esquivarconos"  
-## Almacenamiento de pilares  
-Cada vez que detectamos un pilar lo almacenamos en un grupo de variables dependiendo de la parte de la pista en la que está y si es el primero o segundo pilar que detecta. Por eso, después de la primera vuelta no necesitamos usar la cámara ni hacer giros laterales muy largos.  
-> [!CONSEJO] La forma en que lo separamos es: El primer número indica la parte de la pista, el segundo número indica si es el primer o segundo pilar en la pista. Ejemplo: Cono12 (primer carril, segundo pilar)  
-# Estrategia para la segunda y tercera vuelta  
-## Próximo pilar  
-Una parte muy importante para la estrategia de la segunda y tercera vuelta es el primer pilar en la siguiente parte de la pista. Usamos la función "proxicono" para detectarlo.  
-Funciona definiendo en qué parte de la pista está el robot y buscando el siguiente código con las variables que almacenan los pilares. También puedes ver la función en:  
-
-## Giros laterales  
-Una vez completada la primera vuelta, los giros laterales sólo requieren el Giroscopio y un sensor ultrasónico. Calculamos la distancia con la pared perpendicular a nosotros, usamos la función "proxicono" para saber qué pilar debemos evitar. Así, dependiendo del lado al que tengamos que ir y la orientación, hace un camino más corto o largo para evitarlo.  
-> [!IMPORTANTE]  
-> Si este cambio no se hace, el robot no podrá completar el desafío de obstáculos en 3 minutos.  
-> [!CONSEJO]  
-> Esta parte del código está definida en la función "giroscompleta"  
-> [!NOTA]  
-> Este cambio sencillo nos ahorra alrededor de 30 segundos por vuelta, dándonos suficiente tiempo para hacer todo el desafío.  
-## Estacionamiento desafío de obstáculos  
-Como sabemos que el robot siempre estará en un carril exacto, podemos asumir que nunca detectará un pilar con el sensor ultrasónico, por eso la estrategia de estacionamiento sólo incluye el sensor ultrasónico y el Giroscopio.  
-```cpp  
-if(giro==12&&d<120){  
-  delay(800);  
-  pro.write(derecha);  
-  girarder90();  
-  pro.write(rec);  
-  delay(3000);  
-  digitalWrite(2,0);  
-  delay(10000000);  
-}  
-```
-
-
-
-> [!IMPORTANT]
-> El codigo del segundo reto se basa en los mismos principios que el codigo utilizado hasta este momento,
->
 
 
 # Diseño mecánico
@@ -808,11 +623,11 @@ El sistema se alimenta de forma distribuida para mejorar la eficiencia y facilit
 
 
 # Procesamiento de imágenes
-Para procesar la imagen, Luka utiliza una cámara. Esta es la pixy2. 
+Para procesar la imagen, pompo utiliza una cámara. Esta es la pixy2. 
 
 ![pixy2.1](https://github.com/user-attachments/assets/46298b4d-2184-4b40-9b81-577219ed9214)
 
-La pixy2 trabaja a 60 fps, y es capaz de detectar objetos, líneas y colores. En luka el objetivo principal de la camara es detectar colores (rojo y verde). 
+La pixy2 trabaja a 60 fps, y es capaz de detectar objetos, líneas y colores. En pompo el objetivo principal de la camara es detectar colores (rojo y verde). 
 Se conecta al arduino con un cable IDC 2 ICSP Arduino que va en los pines ICSP del arduino, que proporciona todas las conexiones necesarias para alimentar y comunicarse con el pixy. 
 
 ## Detección de color
@@ -850,8 +665,7 @@ Una vez cargado el programa, puedes utilizar el Monitor Serial del IDE para obse
 ![Image](https://github.com/user-attachments/assets/2b43b9bd-76da-47cf-b8b7-0c1b66438916)
 
 
-# Explicacion Codigo Reto 2
-
+# Codigo Reto 2
 
 ---
 
