@@ -11,7 +11,7 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 
 ## 📌 CONTENIDO PRINCIPAL
 1. [Documento de ingeniería / Red Machine](#documento-de-ingeniería--red-machine)
-2. [Miembros del equipo](#miembros-del-equipo-red-machine)
+2. [Miembros del equipo](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#miembros-de-red-machine)
    - [Juan Diego Cano Barros](#-juan-diego-cano-barros)
    - [Samuel José Galban Franco](#-samuel-josé-galban-franco)
    - [Angel Saúl Rodriguez Guerra](#-angel-saúl-rodriguez-guerra)
@@ -32,7 +32,7 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 8. [Procesamiento de imágenes](#procesamiento-de-imágenes)
    - [Detección de color](#detección-de-color)
 9. [Cómo ejecutar o probar el proyecto](#cómo-ejecutar-o-probar-el-proyecto)
-10. [Explicación Código Reto 2](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#explicaci%C3%B3n-del-diagrama-1)
+10. [Explicación Código Reto 2](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#codigo-reto-2)
 11. [Explicación Reto 1](#explicacion-reto-1)
 12. [Videos del funcionamiento](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-del-funcionamiento-de-pompo--version-30-videos-contemporaneos)
     - [Reto 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
