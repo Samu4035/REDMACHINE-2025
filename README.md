@@ -47,7 +47,6 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 ## 📂 ESTRUCTURA DEL REPOSITORIO
 - [t-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/t-photos) - Fotos del equipo y competencias
 - [v-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/v-photos) - Fotos del vehículo
-- [video.md](https://github.com/Samu4035/REDMACHINE-2025/blob/main/video.md) - Enlaces a videos
 - [schemes/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/schemes) - Diagramas esquemáticos
 - [src/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/src) - Código fuente
 - [models/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/models) - Diseños 3D
