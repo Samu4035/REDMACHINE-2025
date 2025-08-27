@@ -172,7 +172,7 @@ Apasionado por el aprendizaje continuo, la resolución creativa de problemas y l
 # Etapas del desarrollo
 
 
-# Sistema Mecánico
+# Sistema Mecánico ⚙
 
 # Version 1.0
 
@@ -202,23 +202,24 @@ El robot cuenta con dos pisos ambos construidos con acrílico, tal como se muest
 <img width="342" height="220" alt="image" src="https://github.com/user-attachments/assets/e5089f1b-c0ae-4e4d-b949-2b966f01b291" />
 
 
-## Front
+## Delante
 
 <img width="192" height="253" alt="image" src="https://github.com/user-attachments/assets/f7b6a4c6-3d50-41d5-bf6f-5293ebe6eb62" />
 
 
-## Back 
+## Atras 
 
 <img width="205" height="253" alt="image" src="https://github.com/user-attachments/assets/2798139f-3862-4ba9-b5d3-f515122fc596" />
 
 
-## Above
+## Arriba
 
 <img width="520" height="253" alt="image" src="https://github.com/user-attachments/assets/99c1e5f8-311d-430a-a128-02c59d3a1f29" />
 
-## Below
+## Abajo
 
-<img width="910" height="772" alt="image" src="https://github.com/user-attachments/assets/b6de6f0f-6965-4865-9f4d-542b22033824" />
+<img width="389" height="260" alt="image" src="https://github.com/user-attachments/assets/a6617536-7171-4381-b28b-26efdd3696a0" />
+
 
 # Version 2.0 
 Durante este periodo, el diseño del robot siempre fue uno de los mayores problemas que enfrentó el equipo, esto durante todas las fases de la competencia. Las bases de acrílico que se usaron en las primeras competencias no funcionaron, ya que tenían muchas imperfecciones, causando que el sistema de tracción y dirección estuviera mal ubicado, así como una distribución realmente mala. A pesar de todo esto, ese chasis nos dio una idea de cómo diseñar uno nuevo, por lo que después de la competencia nacional 2023, se usaron nuevas bases de acrílico, esta vez cortadas con láser. Después de esto, el chasis se veía realmente bien en todos los aspectos.  
@@ -298,7 +299,9 @@ especifica a continuación.
 - Voltaje de operación: 12V  
 - Velocidad libre: 125 RPM  
 
-## Giroscopio  
+
+## Giroscopio 
+
 Se usa un BNO055 para medir los grados de cada giro y saber cuándo el robot debe parar de girar. El giroscopio se usa tanto para evitar las señales de tránsito como para tomar las curvas.  
 
 <img width="280" height="210" alt="image" src="https://github.com/user-attachments/assets/2f86417e-056f-4e62-8ed4-886da628daaa" />
@@ -323,7 +326,14 @@ El BNO055 puede entregar los siguientes datos de sensores:
 - Vector de aceleración (100Hz): Tres ejes de aceleración (gravedad + movimiento lineal) en m/s²  
 - Vector de intensidad del campo magnético (20Hz): Tres ejes de detección del campo magnético en micro Tesla (uT)  
 - Vector de aceleración lineal (100Hz): Tres ejes de aceleración lineal (aceleración menos la gravedad) en m/s²  
-- Vector de gravedad (100Hz): Tres ejes de aceleración gravitacional (menos cualquier movimiento) en m/s²  
+- Vector de gravedad (100Hz): Tres ejes de aceleración gravitacional (menos cualquier movimiento) en m/s²
+
+> [!tip]
+> Fue agregado con el proposito de mejorar el movimiento del robot a lo largo de la pista, sabiendo la orientacion exacta a donde ir
+
+> [!warning]
+> No fue utilizado en el diseño final debido a ser unicamente un acelerometro, por lo que sufre de problemas de calibracion, el modelo mpu6050 es mucho mas eficiente para esta labor.
+
 # Cámara  
 Luka usa una cámara para detectar el color de las señales de tránsito. Esta es la pixy2.  
 
@@ -337,10 +347,10 @@ La pixy2 funciona a 60 fps, y es capaz de detectar objetos, líneas y colores. E
 Está conectada al Arduino con un cable IDC 2 ICSP Arduino que va a los pines ICSP del Arduino, lo cual proporciona todas las conexiones necesarias para alimentar y comunicarse con la pixy. 
 
 > [!tip]
-> Fue agregado con el proposito de mejorar el movimiento del robot a lo largo de la pista, sabiendo la orientacion exacta a donde ir
+> La pixycam fue utilizada para facilitar en gran medida los cambios que se hacen con los colores de los pilares, la aplicacion pixymon es muy accesible para todo el mundo
 
 > [!warning]
-> No fue utilizado en el diseño final debido a ser unicamente un acelerometro, por lo que sufre de problemas de calibracion, el modelo mpu6050 es mucho mas eficiente para esta labor.
+> El consumo energetico de la pixy es muy alto para el arduino, por lo tanto fue una de las razones de agregar tantas baterias
 
 
 
@@ -373,10 +383,22 @@ Se muestra el diagrama de conexiones para que todo el circuito pueda verse clara
 
 <img width="902" height="800" alt="image" src="https://github.com/user-attachments/assets/e57dac87-f6b7-4770-b92f-e6bfa5c1c409" />
 
+# Videos Version 1.0 del robot
+## Reto 1
+[<img width="926" height="515" alt="image" src="https://github.com/user-attachments/assets/bcca2144-03be-48d7-a760-bc5364874bd4" />](https://youtu.be/W26b5g69BQQ?si=Y7qg7TaV6iR0McLb)
+
+## Prueba Reto 2
+[<img width="453" height="583" alt="image" src="https://github.com/user-attachments/assets/5d6ff46e-4ade-4e43-bef0-940c5f0850ff" />](https://youtube.com/shorts/cc8yKOo6g8U?si=XeC0w1IYvneSmaU0)
+
+
+
 # Videos versión 2.0 del robot  
+
+## Video reto 1 completo, todas las variantes
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/dfae6ff3-cb71-4b5f-9016-ae2efeb6b23f" />
 ](https://www.youtube.com/watch?v=HS7eLoFSOkU)
 
+## Video reto 2 completo
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/5868e78c-5e65-40ab-8b85-4ca204db4f23" />
 ](https://www.youtube.com/watch?v=cjjnRDXaDAU&t=56s)
 
