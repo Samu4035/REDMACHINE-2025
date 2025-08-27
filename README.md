@@ -50,7 +50,7 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 - [schemes/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/schemes) - Diagramas esquemáticos
 - [src/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/src) - Código fuente
 - [models/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/models) - Diseños 3D
-- [other/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/other) - Archivos adicionales
+- [otros/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/otros) - Archivos adicionales
 
 # Contenido del repositorio
 
