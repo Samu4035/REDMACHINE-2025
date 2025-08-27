@@ -59,7 +59,6 @@ Este repositorio contiene los siguientes directorios para organizar nuestro proy
 
 * `t-photos`: Incluye fotos del equipo, además de fotos del trabajo realizado durante todos los años de competencia y fotos de los robots construidos por el equipo
 * `v-photos`: Contiene 6 fotos del vehículo (desde todos los ángulos).
-* `video`: Archivo `video.md` con el enlace a los videos de rendimiento del robot.
 * `schemes`: Diagramas esquemáticos (JPEG, PNG o PDF) de los componentes electromecánicos, ilustrando la conexión de elementos electrónicos y motores, además de la explicación del funcionamiento de cada uno de estos.
 * `src`: Código del software de control para todos los componentes programados para la competición.
 * `models`: Archivos para el diseño 3D del vehículo.
