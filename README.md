@@ -12,9 +12,9 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 ## 📌 CONTENIDO PRINCIPAL
 1. [Documento de ingeniería / Red Machine](#documento-de-ingeniería--red-machine)
 2. [Miembros del equipo](#miembros-del-equipo-red-machine)
-   - [Samuel José Galban Franco](#-samuel-josé-galban-franco)
    - [Juan Diego Cano Barros](#-juan-diego-cano-barros)
-   - [Angel Saul Rodriguez Guerra](#-angel-saul-rodriguez-guerra)
+   - [Samuel José Galban Franco](#-samuel-josé-galban-franco)
+   - [Angel Saúl Rodriguez Guerra](#-angel-saúl-rodriguez-guerra)
 3. [Etapas del desarrollo (Versiones anteriores del robot)](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#etapas-del-desarrollo-versiones-anteriores-del-robot)
    - [Sistema Mecánico](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#sistema-mec%C3%A1nico-)
       - [Versión 1.0 (Versión desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#versi%C3%B3n-10-versi%C3%B3n-desactualizada)
@@ -134,7 +134,7 @@ Conocer Gente, Disfrutar los viajes y buscar oportunidades de estudio
 
 
 
-## 👤 Angel Saul Rodriguez Guerra
+## 👤 Angel Saúl Rodriguez Guerra
 
 ### Rol en el equipo
 Encargado de la mecánica del robot. 
