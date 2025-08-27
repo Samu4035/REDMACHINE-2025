@@ -17,8 +17,8 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
    - [Angel Saul Rodriguez Guerra](#-angel-saul-rodriguez-guerra)
 3. [Etapas del desarrollo (Versiones anteriores del robot)](https://github.com/Samu4035/REDMACHINE-2025/edit/main/README.md#etapas-del-desarrollo-versiones-anteriores-del-robot)
    - [Sistema Mecánico](https://github.com/Samu4035/REDMACHINE-2025/edit/main/README.md#sistema-mec%C3%A1nico-)
-      - [Version 1.0 (Version desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md/#version-10-version-desactualizada)
-      - [Version 2.0 (Version desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md/#version-20-version-desactualizada)
+      - [Versión 1.0 (Versión desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/edit/main/README.md#versi%C3%B3n-20-versi%C3%B3n-desactualizada)
+      - [Versión 2.0 (Versión desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/edit/main/README.md#versi%C3%B3n-20-versi%C3%B3n-desactualizada)
 4. [Fotos del robot](#fotos-del-robot-todos-los-ángulos)
 5. [Diseño mecánico](#diseño-mecánico)
    - [Guía de Ensamblaje Mecánico](#-guía-de-ensamblaje-mecánico--red-machine)
@@ -171,7 +171,7 @@ Apasionado por el aprendizaje continuo, la resolución creativa de problemas y l
 
 # Sistema Mecánico ⚙
 
-# Version 1.0 (Version desactualizada)
+# Versión 1.0 (Versión desactualizada)
 
 ## Dirección
 
@@ -218,7 +218,7 @@ El robot cuenta con dos pisos ambos construidos con acrílico, tal como se muest
 <img width="389" height="260" alt="image" src="https://github.com/user-attachments/assets/a6617536-7171-4381-b28b-26efdd3696a0" />
 
 
-# Version 2.0 (Version desactualizada)
+# Versión 2.0 (Versión desactualizada)
 Durante este periodo, el diseño del robot siempre fue uno de los mayores problemas que enfrentó el equipo, esto durante todas las fases de la competencia. Las bases de acrílico que se usaron en las primeras competencias no funcionaron, ya que tenían muchas imperfecciones, causando que el sistema de tracción y dirección estuviera mal ubicado, así como una distribución realmente mala. A pesar de todo esto, ese chasis nos dio una idea de cómo diseñar uno nuevo, por lo que después de la competencia nacional 2023, se usaron nuevas bases de acrílico, esta vez cortadas con láser. Después de esto, el chasis se veía realmente bien en todos los aspectos.  
 
 
@@ -380,7 +380,7 @@ Se muestra el diagrama de conexiones para que todo el circuito pueda verse clara
 
 <img width="902" height="800" alt="image" src="https://github.com/user-attachments/assets/e57dac87-f6b7-4770-b92f-e6bfa5c1c409" />
 
-# Videos Version 1.0 del robot
+# Videos Versión 1.0 del robot
 ## Reto 1
 [<img width="926" height="515" alt="image" src="https://github.com/user-attachments/assets/bcca2144-03be-48d7-a760-bc5364874bd4" />](https://youtu.be/W26b5g69BQQ?si=Y7qg7TaV6iR0McLb)
 
