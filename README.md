@@ -15,10 +15,10 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
    - [Samuel José Galban Franco](#-samuel-josé-galban-franco)
    - [Juan Diego Cano Barros](#-juan-diego-cano-barros)
    - [Angel Saul Rodriguez Guerra](#-angel-saul-rodriguez-guerra)
-3. [Etapas del desarrollo (Versiones anteriores del robot)](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md/#Etapas-del-desarrollo (Versiones-anteriores-del-robot))
-   - [Sistema Mecánico](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md/#Sistema-Mecánico-⚙)
-      - [Version 1.0 (Version desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md/#Version-1.0-(Version-desactualizada))
-      - [Version 2.0 (Version desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md/#Version-2.0-(Version-desactualizada))
+3. [Etapas del desarrollo (Versiones anteriores del robot)](https://github.com/Samu4035/REDMACHINE-2025/edit/main/README.md#etapas-del-desarrollo-versiones-anteriores-del-robot)
+   - [Sistema Mecánico](https://github.com/Samu4035/REDMACHINE-2025/edit/main/README.md#sistema-mec%C3%A1nico-)
+      - [Version 1.0 (Version desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md/#version-10-version-desactualizada)
+      - [Version 2.0 (Version desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/blob/main/README.md/#version-20-version-desactualizada)
 4. [Fotos del robot](#fotos-del-robot-todos-los-ángulos)
 5. [Diseño mecánico](#diseño-mecánico)
    - [Guía de Ensamblaje Mecánico](#-guía-de-ensamblaje-mecánico--red-machine)
@@ -69,37 +69,6 @@ A lo largo de este documento y de todo el repositorio se explica con precisión 
 
 # Miembros de Red Machine
 
-## 👤 Samuel José Galban Franco
-
-### Rol en el equipo
-Encargado de la electrónica del robot. 
-
-### 🧠 Logros Académicos
-
-- 🥈 **Subcampeón – Olimpiada Nacional de Química (2024)**  
-  Representó a el Liceo Los Robles en la última edición de esta competencia organizada por AVOQUIM.
-
-- 🥈 **Subcampeón – VIRTUAL MISSIONS PANAMÁ 2023 CHALLENGE**  
-  Segundo puesto en esta competencia internacional, representando a Venezuela durante la final internacional de la WRO 2023, celebrada en Panamá.
-
----
-
-### 🤖 Trayectoria en Robótica
-
-- 🇻🇪 **Bicampeón Nacional – Categoría Futuros Ingenieros (WRO Venezuela)**  
-  Ganador de la Olimpiada Nacional de Robótica en dos ediciones consecutivas, representando al estado Zulia y clasificando a la final internacional.
-
-- 🌍 **Finalista Internacional – WRO Panamá 2023**  
-  Representó a Venezuela en la Olimpiada Mundial de Robótica, obteniendo el puesto 25 de 40 equipos en la categoría *Futuros Ingenieros*.
-
-- 🇹🇷 **Participación Internacional – WRO Turquía 2024**  
-  Formó parte de la delegación venezolana que compitió en la edición mundial celebrada en Turquía, consolidando su experiencia en escenarios globales de alto nivel.
-
----
-
-### 💡 Motivación y Enfoque
-Conocer Gente, Disfrutar los viajes y buscar oportunidades de estudio
-
 
 ## 👤 Juan Diego Cano Barros
 
@@ -131,6 +100,38 @@ Encargado de la programación del robot.
 
 ### 💡 Motivación y Enfoque
 Comer, Dormir, Conocer Gente, Disfrutar los viajes y Dormir 
+
+## 👤 Samuel José Galban Franco
+
+### Rol en el equipo
+Encargado de la electrónica del robot. 
+
+### 🧠 Logros Académicos
+
+- 🥈 **Subcampeón – Olimpiada Nacional de Química (2024)**  
+  Representó a el Liceo Los Robles en la última edición de esta competencia organizada por AVOQUIM.
+
+- 🥈 **Subcampeón – VIRTUAL MISSIONS PANAMÁ 2023 CHALLENGE**  
+  Segundo puesto en esta competencia internacional, representando a Venezuela durante la final internacional de la WRO 2023, celebrada en Panamá.
+
+---
+
+### 🤖 Trayectoria en Robótica
+
+- 🇻🇪 **Bicampeón Nacional – Categoría Futuros Ingenieros (WRO Venezuela)**  
+  Ganador de la Olimpiada Nacional de Robótica en dos ediciones consecutivas, representando al estado Zulia y clasificando a la final internacional.
+
+- 🌍 **Finalista Internacional – WRO Panamá 2023**  
+  Representó a Venezuela en la Olimpiada Mundial de Robótica, obteniendo el puesto 25 de 40 equipos en la categoría *Futuros Ingenieros*.
+
+- 🇹🇷 **Participación Internacional – WRO Turquía 2024**  
+  Formó parte de la delegación venezolana que compitió en la edición mundial celebrada en Turquía, consolidando su experiencia en escenarios globales de alto nivel.
+
+---
+
+### 💡 Motivación y Enfoque
+Conocer Gente, Disfrutar los viajes y buscar oportunidades de estudio
+
 
 
 ## 👤 Angel Saul Rodriguez Guerra
