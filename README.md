@@ -169,12 +169,12 @@ Apasionado por el aprendizaje continuo, la resolución creativa de problemas y l
 | ![Debajo](https://github.com/user-attachments/assets/45f55e40-cd16-4492-b856-0ac1671db0f4)  |  ![Derecha](https://github.com/user-attachments/assets/15a16250-3cc5-4dcb-8e0c-482e2bc499f7)  |  ![Atras](https://github.com/user-attachments/assets/f761cfdf-7320-499f-b884-d6290f5e50bb) |
 
 
-# Etapas del desarrollo
+# Etapas del desarrollo (Versiones anteriores del robot)
 
 
 # Sistema Mecánico ⚙
 
-# Version 1.0
+# Version 1.0 (Version desactualizada)
 
 ## Dirección
 
@@ -221,7 +221,7 @@ El robot cuenta con dos pisos ambos construidos con acrílico, tal como se muest
 <img width="389" height="260" alt="image" src="https://github.com/user-attachments/assets/a6617536-7171-4381-b28b-26efdd3696a0" />
 
 
-# Version 2.0 
+# Version 2.0 (Version desactualizada)
 Durante este periodo, el diseño del robot siempre fue uno de los mayores problemas que enfrentó el equipo, esto durante todas las fases de la competencia. Las bases de acrílico que se usaron en las primeras competencias no funcionaron, ya que tenían muchas imperfecciones, causando que el sistema de tracción y dirección estuviera mal ubicado, así como una distribución realmente mala. A pesar de todo esto, ese chasis nos dio una idea de cómo diseñar uno nuevo, por lo que después de la competencia nacional 2023, se usaron nuevas bases de acrílico, esta vez cortadas con láser. Después de esto, el chasis se veía realmente bien en todos los aspectos.  
 
 
@@ -425,7 +425,7 @@ Se muestra el diagrama de conexiones para que todo el circuito pueda verse clara
 
 
 
-# Diseño final del robot 
+# Diseño final del robot | Version 3.0 (version actualizada)
 Lo mencionado a partir de este momento del repositorio son las piezas y materiales utilizados para construir las version mas actualizada del robot.
 
 # Diseño mecánico
@@ -919,7 +919,7 @@ En menor medida, se registraron leves oscilaciones en línea recta provocadas po
 
 
 
-# Videos del funcionamiento de pompo
+# Videos del funcionamiento de pompo | Version 3.0 (Videos contemporaneos)
  - [FUTUROS INGENIEROS-Reto 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
 
 [![Image](https://github.com/user-attachments/assets/3a998c08-fef1-4247-a1c7-fdddfd4fdfc8)](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
