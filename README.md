@@ -194,7 +194,7 @@ Apasionado por el aprendizaje continuo, la resolución creativa de problemas y l
 
 ## Dirección
 
-El subsistema de dirección del robot se encuentra en la parte trasera de éste, para así proporcionar un mayor radio de giro, fue creado con piezas de lego de un kit de robótica denominado Kit Lego Spike Prime, uniendo estas piezas con las ruedas de un carro control remoto (RC) modelo Ford Mustang, al cual se le adaptó un servomotor de la marca Rev Robotics. Posteriormente fue programado a través de un arduino mega 2560, conectado el servomotor a los pines GND, 5 V y 4 del Arduino como puede visualizarse en la siguiente imagen.
+El subsistema de dirección del robot se encuentra en la parte trasera de este, para así proporcionar un mayor radio de giro, fue creado con piezas de lego de un kit de robótica denominado Kit Lego Spike Prime, uniendo estas piezas con las ruedas de un carro control remoto (RC) modelo Ford Mustang, al cual se le adaptó un servomotor de la marca Rev Robotics. Posteriormente fue programado a través de un arduino mega 2560, conectado el servomotor a los pines GND, 5 V y 4 del Arduino.
 
 
 ## Conducción
@@ -203,9 +203,9 @@ El subsistema de conducción del robot fue tomado de un  carro a control remoto 
 
 ## Diseño de chasis
 
-La base del chasis fue construida con acrílico, el cual fue cortado y perforado en base a las necesidades del cableado y el ensamblaje de las piezas utilizadas como puede visualizarse en la imagen a la derecha
+La base del chasis fue construida con acrílico, el cual fue cortado y perforado en base a las necesidades del cableado y el ensamblaje de las piezas utilizadas.
 
-El robot cuenta con dos pisos ambos construidos con acrílico, tal como se muestra en la imagen anterior. En el “primer piso” del robot fueron ensamblados los sistemas de tracción y dirección, el sensor de ultrasonido, el sensor de color RGB TCS 34725, dos interruptores (uno para el encendido y el otro para iniciar) y el puente H doble modelo L298n; mientras que en el “segundo piso” se encuentra el pack de baterías, la batería de 9 V, la cámara ESP 32-cam, el Arduino mega 2560, y el conector para las baterías. 
+El robot cuenta con dos pisos ambos construidos con acrílico. En el “primer piso” del robot fueron ensamblados los sistemas de tracción y dirección, el sensor de ultrasonido, el sensor de color RGB TCS 34725, dos interruptores (uno para el encendido y el otro para iniciar) y el puente H doble modelo L298n; mientras que en el “segundo piso” se encuentra el pack de baterías, la batería de 9 V, la cámara ESP 32-cam, el Arduino mega 2560, y el conector para las baterías. 
 
 
 ## Derecha
