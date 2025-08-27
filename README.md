@@ -26,15 +26,15 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
    - [Sistema de Tracción](#-módulo-de-tracción-y-dirección--red-machine)
 6. [Componentes electrónicos](#componentes-electrónicos)
    - [Descripción de Componentes](#-descripción-de-componentes-principales-del-sistema)
-   - [Diagramas de Conexión](#explicación-del-diagrama-)
+   - [Diagramas de Conexión](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#explicaci%C3%B3n-del-diagrama-1)
 7. [Alimentación del robot](#alimentación-del-robot)
    - [Cálculo de Consumo](#-cálculo-del-consumo-energético-total)
 8. [Procesamiento de imágenes](#procesamiento-de-imágenes)
    - [Detección de color](#detección-de-color)
 9. [Cómo ejecutar o probar el proyecto](#cómo-ejecutar-o-probar-el-proyecto)
-10. [Explicación Código Reto 2](#explicacion-codigo-reto-2)
+10. [Explicación Código Reto 2](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#explicaci%C3%B3n-del-diagrama-1)
 11. [Explicación Reto 1](#explicacion-reto-1)
-12. [Videos del funcionamiento](#videos-del-funcionamiento-de-pompo)
+12. [Videos del funcionamiento](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-del-funcionamiento-de-pompo--version-30-videos-contemporaneos)
     - [Reto 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
     - [Reto 2](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
 13. [Troubleshooting](#troubleshooting)
@@ -629,7 +629,8 @@ A pesar de que la construcción del robot fue hecha con piezas de lego, para tod
 | ![mega 2560](https://github.com/user-attachments/assets/edc71e77-3581-48eb-af96-6dfae65660ac) | **Arduino Mega 2560** | Microcontrolador ATmega2560 que actúa como cerebro central del sistema. Procesa información proveniente de sensores, ejecuta el control de motores y gestiona las decisiones lógicas del robot. Dispone de múltiples pines digitales y analógicos, ideales para proyectos complejos. |
 | ![puente H pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/264757f2-118f-42c9-9dd8-2a3c91455834) | **Módulo Puente-H (L298N)** | Permite controlar la dirección y velocidad de motores de corriente continua. Recibe señales del Arduino y regula la tensión de salida, habilitando el cambio de giro y la aceleración del motor según lo requiera el algoritmo de control. |
 
-En la siguiente imagen se observa el diagrama de conecciones de esos componentes: 
+En la siguiente imagen se observa el diagrama de conexiones de esos componentes: 
+
 
 ![Image](https://github.com/user-attachments/assets/c35217f0-d546-4963-a06b-0cf20b41dffe)
 
