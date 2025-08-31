@@ -414,7 +414,11 @@ Lo mencionado a partir de este momento del repositorio son las piezas y material
 | :----: | :-------------------: | :----------: |
 | ![Debajo](https://github.com/user-attachments/assets/45f55e40-cd16-4492-b856-0ac1671db0f4)  |  ![Derecha](https://github.com/user-attachments/assets/15a16250-3cc5-4dcb-8e0c-482e2bc499f7)  |  ![Atras](https://github.com/user-attachments/assets/f761cfdf-7320-499f-b884-d6290f5e50bb) |
 
+> ⚠️ *Nota:* En caso de que la superficie sea muy resbalante, se cambian las ruedas del robot para tener una mejor tracción, siguiendo el siguiente diseño:
 
+| ![Image](https://github.com/user-attachments/assets/f24e981b-177c-41b9-92a8-25ca70835459)  |  ![Image](https://github.com/user-attachments/assets/e1d08216-3b9a-49dc-babb-cf8f6a1de002)  | ![Image](https://github.com/user-attachments/assets/3b03098f-0d04-4464-a252-2a1c6c79689d) |
+| :----: | :-------------------: | :----------: |
+| ![Image](https://github.com/user-attachments/assets/333bdeca-43f3-497f-ba8d-0d1af5cb0a02) |  ![Image](https://github.com/user-attachments/assets/242ce0e4-7f47-4a13-a0e2-8f81c76ea675)  | ![Image](https://github.com/user-attachments/assets/9ecb0e34-2ab8-4cdf-8cb6-2ba38e074e78) |
 
 # Diseño mecánico
 "Pompo" es un robot autónomo diseñado con piezas de lego, con la finalidad de conseguir la mayor presición y estabilidad posible durante las rondas de competencia. Dichas piezas fueron extraídas de un kit lego spike prime código 45678 y spike prime expansion set código 45681. 
