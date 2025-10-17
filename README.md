@@ -1,15 +1,15 @@
 
 
-# Documento de ingeniería / Red Machine 
+# Engineering Document / Red Machine
 
-Este repositorio contiene todos los materiales necesarios para crear a "pompo", el robot autonomo creado por el equipo "Red Machine", con el objetivo de participar en la categoría de Futuros Ingenieros en las diferentes etapas de la WRO Venezuela, en su edición 2025. 
+This repository contains all the materials needed to create "pompo", the autonomous robot built by the team "Red Machine", with the goal of participating in the Futuros Ingenieros category in the different stages of WRO Venezuela, in its 2025 edition.
 
 ![Image](https://github.com/user-attachments/assets/86d8b3ba-9f00-4d94-9a0b-7fb3f87d222e)
 
 
-# ÍNDICE - REDMACHINE 2025
+# INDEX - REDMACHINE 2025
 
-## 📌 CONTENIDO PRINCIPAL
+## 📌 MAIN CONTENT
 1. [Documento de ingeniería / Red Machine](#documento-de-ingeniería--red-machine)
 2. [Miembros del equipo](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#miembros-de-red-machine)
    - [Juan Diego Cano Barros](#-juan-diego-cano-barros)
@@ -63,7 +63,7 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
     - [Temporada 2025](#temporada-2025)
     - [Evolución de Robots](#julian-luka-y-pompo)
 
-## 📂 ESTRUCTURA DEL REPOSITORIO
+## 📂 REPOSITORY STRUCTURE
 - [t-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/t-photos) - Fotos del equipo y competencias
 - [v-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/v-photos) - Fotos del vehículo
 - [schemes/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/schemes) - Diagramas esquemáticos
@@ -71,200 +71,195 @@ Este repositorio contiene todos los materiales necesarios para crear a "pompo", 
 - [models/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/models) - Diseños 3D
 - [otros/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/otros) - Archivos adicionales
 
-# Contenido del repositorio
+# Repository contents
 
-Este repositorio contiene los siguientes directorios para organizar nuestro proyecto:
+This repository contains the following directories to organize our project:
 
-* `t-photos`: Incluye fotos del equipo, además de fotos del trabajo realizado durante todos los años de competencia y fotos de los robots construidos por el equipo
-* `v-photos`: Contiene 6 fotos del vehículo (desde todos los ángulos).
-* `schemes`: Diagramas esquemáticos (JPEG, PNG o PDF) de los componentes electromecánicos, ilustrando la conexión de elementos electrónicos y motores, además de la explicación del funcionamiento de cada uno de estos.
-* `src`: Código del software de control para todos los componentes programados para la competición.
-* `models`: Archivos para el diseño 3D del vehículo.
-* `other`: Archivos adicionales para entender cómo preparar el vehículo para la competición.
+* `t-photos`: Includes team photos, as well as photos of the work done during all competition years and photos of the robots built by the team.
+* `v-photos`: Contains 6 photos of the vehicle (from all angles).
+* `schemes`: Schematic diagrams (JPEG, PNG or PDF) of the electromechanical components, illustrating the wiring of electronic elements and motors, plus an explanation of the function of each.
+* `src`: Control software code for all components programmed for the competition.
+* `models`: Files for the vehicle's 3D design.
+* `other`: Additional files to understand how to prepare the vehicle for the competition.
      
-# Introducción
-El equipo ha hecho su mayor esfuerzo para conseguir construir el mejor robot posible. Nuestra preparación para estas olimpiadas se ha basado en un largo aprendizaje en construcción, diseño y programación, y la experiencia de competencias anteriores ha sido fundamental. Largas horas de análisis y estudio de la pista ha llevado a la creación de una estrategia propia, basada en los componentes con los que el equipo deseó trabajar, y esperando conseguir la mejor participación posible en las diversas etapas de esta competencia. 
-A lo largo de este documento y de todo el repositorio se explica con precisión todo el trabajo de diseño, programación y construcción del robot. 
+# Introduction
+The team has put their greatest effort into building the best possible robot. Our preparation for these olympiads has been based on extensive learning in construction, design and programming, and the experience from previous competitions has been fundamental. Long hours of track analysis and study have led to the creation of our own strategy, based on the components the team chose to work with, aiming for the best possible performance in the various stages of this competition.
+Throughout this document and the entire repository, all the design, programming and construction work of the robot is explained precisely.
 
-# Miembros de Red Machine
+# Red Machine Members
 
 
 ## 👤 Juan Diego Cano Barros
 
-### Rol en el equipo
-Encargado de la programación del robot. 
+### Role in the team
+Responsible for the robot programming.
 
-### 🧠 Logros Académicos
+### 🧠 Academic Achievements
 
-- 🥉 **Medalla de Bronce – Olimpiada Iberoamericana de Matemáticas (2023)**  
-  Representó a Venezuela en la XXIX edición de esta competencia internacional organizada por la OMA en Argentina, tras ser seleccionado como uno de los 10 mejores del segundo nivel nacional por la @acmvenojm.
+- 🥉 **Bronze Medal – Ibero-American Mathematics Olympiad (2023)**
+He represented Venezuela in the 29th edition of this international competition organized by the OMA in Argentina, after being selected as one of the top 10 of the second national level by @acmvenojm.
 
-- 🥈 **Subcampeón – Olimpiada Matemática Argentina Ñandú (2019)**  
-  Participó en la prueba oral en Buenos Aires, destacándose como subcampeón en el nivel 1.
-
----
-
-### 🤖 Trayectoria en Robótica
-
-- 🇻🇪 **Bicampeón Nacional – Categoría Futuros Ingenieros (WRO Venezuela)**  
-  Ganador de la Olimpiada Nacional de Robótica en dos ediciones consecutivas, representando al estado Zulia y clasificando a la final internacional.
-
-- 🌍 **Finalista Internacional – WRO Panamá 2023**  
-  Representó a Venezuela en la Olimpiada Mundial de Robótica, obteniendo el puesto 25 de 40 equipos en la categoría *Futuros Ingenieros*.
-
-- 🇹🇷 **Participación Internacional – WRO Turquía 2024**  
-  Formó parte de la delegación venezolana que compitió en la edición mundial celebrada en Turquía, consolidando su experiencia en escenarios globales de alto nivel.
+- 🥈 **Runner-up – Argentine Mathematics Olympiad Ñandú (2019)**
+Participated in the oral exam in Buenos Aires, standing out as the runner-up in Level 1.
 
 ---
 
-### 💡 Motivación y Enfoque
-Comer, Dormir, Conocer Gente, Disfrutar los viajes y Dormir 
+### Robotics Background
+
+- 🇻🇪 **Two-time National Champion – Futuros Ingenieros Category (WRO Venezuela)**
+Winner of the National Robotics Olympiad in two consecutive editions, representing Zulia state and qualifying for the international finals.
+
+- 🌍 **International Finalist – WRO Panama 2023**
+Represented Venezuela at the World Robotics Olympiad, placing 25th out of 40 teams in the Futuros Ingenieros category.
+
+- 🇹🇷 **International Participation – WRO Turkey 2024**
+Was part of the Venezuelan delegation that competed at the world edition held in Turkey, consolidating experience in high-level global events.
+
+---
+
+### 💡 Motivation and Focus
+Eat, Sleep, Meet People, Enjoy Trips, and Sleep
 
 ## 👤 Samuel José Galban Franco
 
-### Rol en el equipo
-Encargado de la electrónica del robot. 
+### Role in the team
+Responsible for the robot's electronics.
 
-### 🧠 Logros Académicos
+### 🧠 Academic Achievements
 
-- 🥈 **Subcampeón – Olimpiada Nacional de Química (2024)**  
-  Representó a el Liceo Los Robles en la última edición de esta competencia organizada por AVOQUIM.
+- 🥈 **Runner-up – National Chemistry Olympiad (2024)**
+Represented Liceo Los Robles in the most recent edition of this competition organized by AVOQUIM.
 
-- 🥈 **Subcampeón – VIRTUAL MISSIONS PANAMÁ 2023 CHALLENGE**  
-  Segundo puesto en esta competencia internacional, representando a Venezuela durante la final internacional de la WRO 2023, celebrada en Panamá.
-
----
-
-### 🤖 Trayectoria en Robótica
-
-- 🇻🇪 **Bicampeón Nacional – Categoría Futuros Ingenieros (WRO Venezuela)**  
-  Ganador de la Olimpiada Nacional de Robótica en dos ediciones consecutivas, representando al estado Zulia y clasificando a la final internacional.
-
-- 🌍 **Finalista Internacional – WRO Panamá 2023**  
-  Representó a Venezuela en la Olimpiada Mundial de Robótica, obteniendo el puesto 25 de 40 equipos en la categoría *Futuros Ingenieros*.
-
-- 🇹🇷 **Participación Internacional – WRO Turquía 2024**  
-  Formó parte de la delegación venezolana que compitió en la edición mundial celebrada en Turquía, consolidando su experiencia en escenarios globales de alto nivel.
+- 🥈 **Runner-up – VIRTUAL MISSIONS PANAMA 2023 CHALLENGE**
+Second place in this international competition, representing Venezuela during the WRO 2023 international final held in Panama.
 
 ---
 
-### 💡 Motivación y Enfoque
-Conocer Gente, Disfrutar los viajes y buscar oportunidades de estudio
+### 🤖 Robotics Background
+
+- 🇻🇪 **Two-time National Champion – Futuros Ingenieros Category (WRO Venezuela)**
+Winner of the National Robotics Olympiad in two consecutive editions, representing Zulia state and qualifying for the international finals.
+
+- 🌍 **International Finalist – WRO Panama 2023**
+Represented Venezuela at the World Robotics Olympiad, placing 25th out of 40 teams in the Futuros Ingenieros category.
+
+- 🇹🇷 **International Participation – WRO Turkey 2024**
+Was part of the Venezuelan delegation that competed at the world edition held in Turkey, gaining technical and cultural experience in high-level competitive environments.
+
+---
+
+### 💡 Motivation and Focus
+Meet people, enjoy trips, and look for study opportunities
 
 
 
 ## 👤 Angel Saúl Rodriguez Guerra
 
-### Rol en el equipo
-Encargado de la mecánica del robot. 
+### Role in the team
+Responsible for the robot's mechanics.
 
-### 🧠 Logros Académicos
-- 🥇 Clasificado al Mundial – Olimpiada Mundial de Matemáticas WYMO (2024)
-Representó a Venezuela en la World Youth Mathematics Olympiad, una competencia internacional que convoca a jóvenes talentos matemáticos de todo el mundo para enfrentar retos de alta exigencia.
-- 🔬 Participante Destacado – Olimpiadas de Química y Matemática en Venezuela
-Compitió en distintas ediciones de las Olimpiadas Venezolanas, demostrando excelencia
-y pasión por las ciencias exactas desde temprana edad.
+### 🧠 Academic Achievements
+- 🥇 **Qualified for the World – World Youth Mathematics Olympiad (WYMO) (2024)**
+He represented Venezuela at the World Youth Mathematics Olympiad, an international competition that brings together young mathematical talents from around the world to tackle highly challenging problems.
 
---- 
-
-### 🤖 Trayectoria en Robótica
-- 🇻🇪 Bicampeón Nacional – Categoría Futuros Ingenieros (WRO Venezuela)
-Ganador en dos ediciones consecutivas de la Olimpiada Nacional de Robótica, representando al estado Zulia y obteniendo el pase a competencias internacionales como parte de la delegación nacional.
-- 🌍 Finalista Internacional – WRO Panamá 2023
-Participó en la Olimpiada Mundial de Robótica celebrada en Panamá, logrando posicionarse en el puesto 25 entre 40 equipos internacionales en la categoría Futuros Ingenieros.
-- 🇹🇷 Participación Internacional – WRO Turquía 2024
-Integrante de la delegación venezolana que compitió en la edición mundial realizada en Turquía, acumulando experiencia técnica y cultural en entornos de alto nivel competitivo.
+- 🔬 **Notable Participant – Chemistry and Mathematics Olympiads in Venezuela**
+Competed in various editions of the Venezuelan Olympiads, demonstrating excellence and passion for the exact sciences from an early age.
 
 --- 
 
-### 💡 Motivación y Enfoque
-Apasionado por el aprendizaje continuo, la resolución creativa de problemas y la colaboración en equipos multidisciplinarios. Su trayectoria en competencias académicas y tecnológicas refleja una motivación genuina por generar impacto a través del conocimiento, y por seguir explorando nuevas fronteras del pensamiento científico y la innovación.
+### 🤖 Robotics Background
+- 🇻🇪 **Two-time National Champion – Futuros Ingenieros Category (WRO Venezuela)**
+Winner in two consecutive editions of the National Robotics Olympiad, representing Zulia state and earning selection for international competitions as part of the national delegation.
+
+- 🌍 **International Finalist – WRO Panama 2023**
+Participated in the World Robotics Olympiad held in Panama, placing 25th among 40 international teams in the Futuros Ingenieros category.
+
+- 🇹🇷 **International Participation – WRO Turkey 2024**
+Member of the Venezuelan delegation that competed in the world edition held in Turkey, accumulating technical and cultural experience in high-level competitive settings.
+
+--- 
+
+### 💡 Motivation and Focus
+Passionate about continuous learning, creative problem solving, and collaborating in multidisciplinary teams. His track record in academic and technological competitions reflects a genuine motivation to create impact through knowledge and to keep exploring new frontiers of scientific thought and innovation.
 
 ---
 
 ![red machine 2024](https://github.com/RoboticaLLR/redmachine2024/assets/146040533/d5bb5fc0-b1bd-47a8-9ac3-c190587ae5ae)
 
 
-# Etapas del desarrollo (Versiones anteriores del robot)
+# Development stages (Previous robot versions)
 
+# Mechanical System ⚙
+# Version 1.0 (Outdated version)
 
-# Sistema Mecánico ⚙
+## Steering
+The robot's steering subsystem is located at the rear to provide a larger turning radius. It was built with LEGO pieces from a robotics kit called the LEGO Spike Prime Kit, combining these parts with the wheels from a Ford Mustang remote-controlled (RC) car, to which a Rev Robotics servo motor was adapted. It was later programmed via an Arduino Mega 2560, with the servo connected to the Arduino's GND, 5V and pin 4.
 
-# Versión 1.0 (Versión desactualizada)
+## Drive
+The robot's drive subsystem was taken from a Ford Mustang remote-controlled car. This system was used because it included a motor and a gearbox, providing the torque and speed needed for the robot. It operates with a set of gears that allow the robot to turn at different speeds without losing traction; this mechanism was placed at the front of the robot. The system is powered through a dual H-bridge L298n using a pack of three 3.7 V batteries.
 
-## Dirección
+## Chassis design
+The chassis base was built from acrylic, which was cut and drilled according to the wiring and assembly needs of the used parts.
 
-El subsistema de dirección del robot se encuentra en la parte trasera de este, para así proporcionar un mayor radio de giro, fue creado con piezas de lego de un kit de robótica denominado Kit Lego Spike Prime, uniendo estas piezas con las ruedas de un carro control remoto (RC) modelo Ford Mustang, al cual se le adaptó un servomotor de la marca Rev Robotics. Posteriormente fue programado a través de un arduino mega 2560, conectado el servomotor a los pines GND, 5 V y 4 del Arduino.
+The robot has two tiers, both built from acrylic. On the robot's first deck the traction and steering systems, the ultrasonic sensor, the RGB color sensor TCS34725, two switches (one for power and the other to start), and the dual H-bridge L298n were assembled; while on the second deck are the battery pack, the 9 V battery, the ESP32-CAM camera, the Arduino Mega 2560, and the battery connector.
 
-
-## Conducción
-
-El subsistema de conducción del robot fue tomado de un  carro a control remoto modelo Ford Mustang. Se utilizó este sistema debido a que portaba un motor y una caja de cambios, y proporcionaba el torque y la velocidad necesaria para el robot. Este funciona con un juego de engranajes, el cual le permite al robot girar a diferentes velocidades sin perder agarre, dicho mecanismo fue ubicado en la parte delantera del robot. El sistema es alimentado a través de un puente H doble modelo L298n por medio de un pack de tres baterías de 3,7 V. 
-
-## Diseño de chasis
-
-La base del chasis fue construida con acrílico, el cual fue cortado y perforado en base a las necesidades del cableado y el ensamblaje de las piezas utilizadas.
-
-El robot cuenta con dos pisos ambos construidos con acrílico. En el “primer piso” del robot fueron ensamblados los sistemas de tracción y dirección, el sensor de ultrasonido, el sensor de color RGB TCS 34725, dos interruptores (uno para el encendido y el otro para iniciar) y el puente H doble modelo L298n; mientras que en el “segundo piso” se encuentra el pack de baterías, la batería de 9 V, la cámara ESP 32-cam, el Arduino mega 2560, y el conector para las baterías. 
-
-
-## Derecha
+## Right
 
 <img width="389" height="222" alt="image" src="https://github.com/user-attachments/assets/a2016c58-0b47-4b87-a7a0-eab0ad5f67ca" />
 
 
-## Izquierda
+## Left
 
 <img width="342" height="220" alt="image" src="https://github.com/user-attachments/assets/e5089f1b-c0ae-4e4d-b949-2b966f01b291" />
 
 
-## Delante
+## Front
 
 <img width="192" height="253" alt="image" src="https://github.com/user-attachments/assets/f7b6a4c6-3d50-41d5-bf6f-5293ebe6eb62" />
 
 
-## Atras 
+## Back 
 
 <img width="205" height="253" alt="image" src="https://github.com/user-attachments/assets/2798139f-3862-4ba9-b5d3-f515122fc596" />
 
 
-## Arriba
+## Above
 
 <img width="520" height="253" alt="image" src="https://github.com/user-attachments/assets/99c1e5f8-311d-430a-a128-02c59d3a1f29" />
 
-## Abajo
+## Below
 
 <img width="389" height="260" alt="image" src="https://github.com/user-attachments/assets/a6617536-7171-4381-b28b-26efdd3696a0" />
 
 
-# Versión 2.0 (Versión desactualizada)
-Durante este periodo, el diseño del robot siempre fue uno de los mayores problemas que enfrentó el equipo, esto durante todas las fases de la competencia. Las bases de acrílico que se usaron en las primeras competencias no funcionaron, ya que tenían muchas imperfecciones, causando que el sistema de tracción y dirección estuviera mal ubicado, así como una distribución realmente mala. A pesar de todo esto, ese chasis nos dio una idea de cómo diseñar uno nuevo, por lo que después de la competencia nacional 2023, se usaron nuevas bases de acrílico, esta vez cortadas con láser. Después de esto, el chasis se veía realmente bien en todos los aspectos.  
+# Version 2.0 (Outdated version)
+During this period, the robot's design was consistently one of the team's biggest challenges throughout all phases of the competition. The acrylic bases used in the early competitions did not work because they had many imperfections, which caused the traction and steering systems to be poorly positioned and resulted in a very poor overall layout. Despite all this, that chassis gave us an idea of how to design a new one, so after the 2023 national competition new acrylic bases were used—this time laser-cut. After that, the chassis looked really good in every respect.
 
 
 <img width="333" height="400" alt="image" src="https://github.com/user-attachments/assets/60bed39a-e8be-46bc-b77f-e2faa36ac313" />
 
 
 
-Cambiadas por otras nuevas que se sujetaban mejor al sistema de dirección, lo que también proporcionó mejor estética al robot.  
-Después de participar en la Copa Mundial en Panamá, el equipo decidió hacer cambios importantes al crear el nuevo prototipo.  
-Entre estos cambios destaca el acercamiento entre las ruedas del sistema de tracción y dirección, con el objetivo de aumentar el radio de giro, permitiendo giros más cerrados. Esto principalmente ayuda al desarrollo del desafío de obstáculos, debido a la dificultad del reto y a la estrategia que el equipo desea usar.  
+Replaced with new ones that attached better to the steering system, which also improved the robot's aesthetics.
+After participating in the World Cup in Panama, the team decided to make significant changes when creating the new prototype.
+One notable change was bringing the wheels of the drive and steering system closer together, with the goal of increasing the turning radius and allowing tighter turns. This mainly helps with the development of the obstacle challenge, given the difficulty of the task and the strategy the team intends to use.
 
 <img width="1280" height="960" alt="image" src="https://github.com/user-attachments/assets/0f46422c-9b6b-421f-b164-2280595aa528" />
 
 
-aproximadamente 5 centímetros, ayudando a que el robot tuviera mayor libertad en el campo de juego, y facilitando el cumplimiento de los retos. Para lograr esto, se rediseñaron los acrílicos, con los nuevos teniendo una estructura completamente diferente a la anterior.  
+Approximately 5 centimeters, helping the robot gain greater freedom on the playing field and making it easier to complete the challenges. To achieve this, the acrylic parts were redesigned, with the new ones featuring a completely different structure from the previous version.
 
 <img width="400" height="243" alt="image" src="https://github.com/user-attachments/assets/68401f32-eea6-4bda-b791-c453bd72126e" />
 
-el sistema de dirección, el cual nuevamente se construyó con piezas Lego, provenientes del kit de robótica Spike Prime número 45678. 3 de estas piezas fueron unidas con un par de ruedas para terminar su construcción.  
+The steering system, which was once again built using LEGO pieces from the Spike Prime robotics kit number 45678. Three of these pieces were joined with a pair of wheels to complete its construction.
 
-De la misma forma, se hizo un diseño 3D, donde pudimos ver y analizar eficientemente todo lo relacionado con el robot.  
+In the same way, a 3D design was created, allowing us to efficiently visualize and analyze every aspect related to the robot.
 
-## Derecha
+## Right
 
 <img width="774" height="637" alt="image" src="https://github.com/user-attachments/assets/5c689f23-bcc2-46df-ae9c-181edc6931de" />
 
-## Izquierda
+## Left
 
 <img width="799" height="689" alt="image" src="https://github.com/user-attachments/assets/9ede396d-ade8-430e-aee8-0047e1840ccb" />
 
@@ -286,116 +281,115 @@ De la misma forma, se hizo un diseño 3D, donde pudimos ver y analizar eficiente
 
 
 > [!note]
-> A continuacion se muestras los componentes electronicos agregados durante este periodo
+> Below are the electronic components added during this period.
 
-## Motor Core Hex  
+## Core Hex Motor  
 
 > [!tip]
-> Fue agregado con el proposito de mejorar la traccion del robot, volviendolo mucho mas consistente en funcion al torque que necesita el robot
+> It was added with the purpose of improving the robot’s traction, making it much more consistent in terms of the torque required by the robot.
 
 > [!warning]
-> No fue utilizado en el diseño final debido a la velocidad baja y su gran peso
+> It was not used in the final design due to its low speed and heavy weight.
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8922ec08-101c-4448-b789-c760ab75a786" />
 
- JST-VH de 2 pines para la alimentación del motor.  
+A 2-pin JST-VH connector was used for the motor’s power supply
 
  <img width="350" height="162" alt="image" src="https://github.com/user-attachments/assets/ec27b42b-3b34-449f-83bb-d370657d37c3" />
 
 
-- Peso: 7 onzas  
-- Instalación: Para usar este motor de la manera que el equipo lo necesita, se usa un eje hexagonal de 5 mm, del cual un extremo sobresale de cada lado del motor. Dicho eje tiene una longitud de 11.8 cm, y su estructura está hecha de acero inoxidable. En cada extremo de este eje, se colocó una rueda de tracción, cuyo diámetro es de 90 mm. Finalmente, estas ruedas fueron aseguradas al eje con collares, que cuentan con un tornillo de fijación que aprieta hacia el eje.  
+- Weight: 7 ounces
+- Installation: To use this motor in the way the team requires, a 5 mm hexagonal shaft is used, with one end protruding from each side of the motor. The shaft has a length of 11.8 cm and is made of stainless steel. On each end of this shaft, a traction wheel with a diameter of 90 mm was mounted. Finally, these wheels were secured to the shaft using collars equipped with a set screw that tightens against the shaft.
 
 
 <img width="350" height="213" alt="image" src="https://github.com/user-attachments/assets/8712e999-2f0c-4b86-b412-c33114f4bd1b" />
 
 
-especifica a continuación.  
-- Torque: 3.2 N-m  
-- Voltaje de operación: 12V  
-- Velocidad libre: 125 RPM  
+as specified below:
+- Torque: 3.2 N·m
+- Operating Voltage: 12 V
+- No-load Speed: 125 RPM
 
 
-## Giroscopio 
+## Gyroscope
 
-Se usa un BNO055 para medir los grados de cada giro y saber cuándo el robot debe parar de girar. El giroscopio se usa tanto para evitar las señales de tránsito como para tomar las curvas.  
+A BNO055 sensor is used to measure the degrees of each turn and determine when the robot should stop rotating. The gyroscope is utilized both to avoid traffic signals and to navigate curves.
 
 <img width="280" height="210" alt="image" src="https://github.com/user-attachments/assets/2f86417e-056f-4e62-8ed4-886da628daaa" />
 
-- Pines de conexión:  
-  Vin  
-  3V  
-  P50  
-  GND  
-  PS1  
-  SDA  
-  INT  
-  SCL  
-  ADR  
-  RST  
-El equipo utiliza la entrada Vin para alimentar el sensor, el pin de tierra, y los pines SDA y SCL para establecer comunicación entre el Arduino y el BNO055.  
-Salida de datos:  
-El BNO055 puede entregar los siguientes datos de sensores:  
-- Orientación absoluta (Vector Euler, 100Hz): Datos de orientación en tres ejes basados en una esfera de 360°  
-- Orientación absoluta (Cuaternión, 100Hz): Salida cuaternión de cuatro puntos para manipulación más precisa  
-- Vector de velocidad angular (100Hz): Tres ejes de ‘velocidad de rotación‘ en rad/s  
-- Vector de aceleración (100Hz): Tres ejes de aceleración (gravedad + movimiento lineal) en m/s²  
-- Vector de intensidad del campo magnético (20Hz): Tres ejes de detección del campo magnético en micro Tesla (uT)  
-- Vector de aceleración lineal (100Hz): Tres ejes de aceleración lineal (aceleración menos la gravedad) en m/s²  
-- Vector de gravedad (100Hz): Tres ejes de aceleración gravitacional (menos cualquier movimiento) en m/s²
-
+- Connection Pins:
+Vin
+3V
+P50
+GND
+PS1
+SDA
+INT
+SCL
+ADR
+RST
+The team uses the Vin pin to power the sensor, the GND pin for grounding, and the SDA and SCL pins to establish communication between the Arduino and the BNO055.
+Data Output:
+The BNO055 can provide the following sensor data:
+- Absolute Orientation (Euler Vector, 100Hz): Three-axis orientation data based on a 360° sphere.
+- Absolute Orientation (Quaternion, 100Hz): Four-point quaternion output for more precise manipulation.
+- Angular Velocity Vector (100Hz): Three axes of rotational speed in radians per second (rad/s).
+- Acceleration Vector (100Hz): Three axes of acceleration (gravity + linear motion) in meters per second squared (m/s²).
+- Magnetic Field Strength Vector (20Hz): Three axes detecting magnetic field intensity in microteslas (µT).
+- Linear Acceleration Vector (100Hz): Three axes of linear acceleration (acceleration minus gravity) in meters per second squared (m/s²).
+- Gravity Vector (100Hz): Three axes of gravitational acceleration (excluding any movement) in meters per second squared (m/s²).
+  
 > [!tip]
-> Fue agregado con el proposito de mejorar el movimiento del robot a lo largo de la pista, sabiendo la orientacion exacta a donde ir
+> It was added with the purpose of improving the robot’s movement along the track by providing the exact orientation of the direction it needs to go.
 
 > [!warning]
-> No fue utilizado en el diseño final debido a ser unicamente un acelerometro, por lo que sufre de problemas de calibracion, el modelo mpu6050 es mucho mas eficiente para esta labor.
+> It was not used in the final design because it is only an accelerometer, which causes calibration issues. The MPU6050 model is much more efficient for this task.
 
-# Cámara  
-Luka usa una cámara para detectar el color de las señales de tránsito. Esta es la pixy2.  
+# Camera  
+Luka uses a camera to detect the color of traffic signals. This camera is the Pixy2.
 
 <img width="320" height="320" alt="image" src="https://github.com/user-attachments/assets/106dbe3c-7de9-40a7-9a7c-2b4d49ea32b5" />
 
 
-La pixy2 funciona a 60 fps, y es capaz de detectar objetos, líneas y colores. En Luka, el objetivo principal de la cámara es detectar colores (rojo y verde).  
+The Pixy2 operates at 60 fps and is capable of detecting objects, lines, and colors. In Luka, the camera’s main purpose is to detect colors — specifically red and green.
 
 <img width="400" height="211" alt="image" src="https://github.com/user-attachments/assets/6565b4bc-e50b-4236-9c1e-77db990b19c2" />
 
-Está conectada al Arduino con un cable IDC 2 ICSP Arduino que va a los pines ICSP del Arduino, lo cual proporciona todas las conexiones necesarias para alimentar y comunicarse con la pixy. 
+It is connected to the Arduino using an IDC-2 ICSP Arduino cable, which plugs into the Arduino’s ICSP pins. This setup provides all the necessary connections to power and communicate with the Pixy.
 
 > [!tip]
-> La pixycam fue utilizada para facilitar en gran medida los cambios que se hacen con los colores de los pilares, la aplicacion pixymon es muy accesible para todo el mundo
+> The PixyCam was used to greatly simplify the adjustments related to the color changes of the pillars. The PixyMon application is highly accessible and easy for anyone to use.
 
 > [!warning]
-> El consumo energetico de la pixy es muy alto para el arduino, por lo tanto fue una de las razones de agregar tantas baterias
-
+> The Pixy’s power consumption is quite high for the Arduino, which was one of the main reasons for adding multiple batteries to the system.
 
 
 
 
 
 > [!note]
-> La alimentacion del robot se mantiene los mismos principios a lo largo de las tres versiones
+> The robot’s power supply has maintained the same principles throughout all three versions.
 
-# Alimentación del robot  
-En Luka hay dos sistemas individuales de alimentación.  
-## Circuito de 12V  
-Este circuito usa 3 baterías, cada una con aproximadamente 4V. Las 3 baterías están conectadas en serie, por lo que el voltaje se suma. El puente H es el componente eléctrico que recibe esta energía y la usa para alimentar dos sensores ultrasónicos y el motor de tracción.  
-Para conectar las baterías el equipo utiliza dos paquetes de dos baterías cada uno, pero uno de ellos está modificado para usar sólo una batería.  
+# Robot Power Supply
+In Luka, there are two independent power systems.
+## 12V Circuit
+This circuit uses three batteries, each providing approximately 4V. The three batteries are connected in series, so their voltages add up. The H-bridge is the electrical component that receives this power and uses it to supply two ultrasonic sensors and the traction motor.
+To connect the batteries, the team uses two battery packs — each designed to hold two batteries — but one of them has been modified to use only one battery.
 
 <img width="272" height="267" alt="image" src="https://github.com/user-attachments/assets/5a1d6721-a63e-419f-99bd-673e29de1579" />
 
 
+## 9V Circuit
+This circuit uses three 9V batteries connected in parallel, so the current capacity adds up while maintaining 9V. It is connected directly to the Arduino board, which powers an ultrasonic sensor, the Pixy camera, and the servo motor. Each of these components is powered through a 5V output pin on the Arduino. 
 
-## Circuito de 9V  
-Este circuito usa 3 baterías de 9V conectadas en paralelo, por lo que la amperaje se suma manteniendo los 9V. Está conectado directamente a la placa Arduino, que alimenta un ultrasonido, la cámara pixy y el servo motor. Cada uno de estos componentes es energizado por un pin de salida de 5V del Arduino.  
 <img width="329" height="250" alt="image" src="https://github.com/user-attachments/assets/9c3e555d-2e24-4472-93a2-50a3390affca" />
 
 <img width="337" height="250" alt="image" src="https://github.com/user-attachments/assets/becf0084-0c50-40f8-b9f8-3a10e17c6910" />
 
 
 
-# Diagrama de conexiones  
-Se muestra el diagrama de conexiones para que todo el circuito pueda verse claramente.  
+## Wiring Diagram
+The wiring diagram is shown to clearly illustrate the entire circuit.
 
 <img width="902" height="800" alt="image" src="https://github.com/user-attachments/assets/e57dac87-f6b7-4770-b92f-e6bfa5c1c409" />
 
@@ -405,514 +399,496 @@ Se muestra el diagrama de conexiones para que todo el circuito pueda verse clara
 
 
 
-# Diseño final del robot | Version 3.0 (version actualizada)
-Lo mencionado a partir de este momento del repositorio son las piezas y materiales utilizados para construir las version mas actualizada del robot.
+# Final Robot Design | Version 3.0 (Updated Version)
+From this point onward, the repository describes the parts and materials used to build the most updated version of the robot.
 
-# Fotos del robot (todos los ángulos)
+# Robot Photos (All Angles)
 
 | ![Image](https://github.com/user-attachments/assets/eec7817b-bb41-493e-9b78-a5a6004a4a2e)  |  ![Izquierda](https://github.com/user-attachments/assets/4f20ba4c-f271-4861-a9cf-31022f7be0d2)  |  ![Frontal](https://github.com/user-attachments/assets/4b648131-29e0-4cb0-a01b-d3b699d62968) |
 | :----: | :-------------------: | :----------: |
 | ![Debajo](https://github.com/user-attachments/assets/45f55e40-cd16-4492-b856-0ac1671db0f4)  |  ![Derecha](https://github.com/user-attachments/assets/15a16250-3cc5-4dcb-8e0c-482e2bc499f7)  |  ![Atras](https://github.com/user-attachments/assets/f761cfdf-7320-499f-b884-d6290f5e50bb) |
 
-> ⚠️ *Nota:* En caso de que la superficie sea muy resbalante, se cambian las ruedas del robot para tener una mejor tracción, siguiendo el siguiente diseño:
+> ⚠️ *Note:* If the surface is very slippery, the robot’s wheels are replaced to improve traction, following the design shown below:
 
 | ![Image](https://github.com/user-attachments/assets/f24e981b-177c-41b9-92a8-25ca70835459)  |  ![Image](https://github.com/user-attachments/assets/e1d08216-3b9a-49dc-babb-cf8f6a1de002)  | ![Image](https://github.com/user-attachments/assets/3b03098f-0d04-4464-a252-2a1c6c79689d) |
 | :----: | :-------------------: | :----------: |
 | ![Image](https://github.com/user-attachments/assets/333bdeca-43f3-497f-ba8d-0d1af5cb0a02) |  ![Image](https://github.com/user-attachments/assets/242ce0e4-7f47-4a13-a0e2-8f81c76ea675)  | ![Image](https://github.com/user-attachments/assets/9ecb0e34-2ab8-4cdf-8cb6-2ba38e074e78) |
 
-# Diseño mecánico
-"Pompo" es un robot autónomo diseñado con piezas de lego, con la finalidad de conseguir la mayor presición y estabilidad posible durante las rondas de competencia. Dichas piezas fueron extraídas de un kit lego spike prime código 45678 y spike prime expansion set código 45681. 
-El fundamento que llevó a utilizar piezas de lego para el cuerpo de pompo se basa en la conocida eficiencia de los robots construidos de dicha manera, tomando en cuenta los resultados positivos y la facilidad que permiten a la hora de la construcción. 
-Además, en el apartado "v-photos" se muestran fotos del diseño de Pompo, donde se pueden ver y analizar eficientemente todos los componentes, piezas y estructuras, y en la carpeta models se encuentran los archivos orginales de los diagramas 3D.
-A continuación se muestras fotos del diseño 3D de las diversas bases de lego que se usan en la estructura (en el apartado "models" se ve el archivo original del diseño): 
+# Mechanical Design
+"Pompo" is an autonomous robot designed using LEGO pieces to achieve the highest possible precision and stability during competition rounds. These pieces were taken from a LEGO Spike Prime Kit, code 45678, and a Spike Prime Expansion Set, code 45681.
+The rationale for using LEGO pieces for Pompo’s body is based on the well-known efficiency of robots built this way, considering the positive results and the ease of assembly they provide.
+Additionally, in the "v-photos" section, photos of Pompo’s design are displayed, allowing efficient visualization and analysis of all components, pieces, and structures. The "models" folder contains the original 3D diagram files.
+Below are photos of the 3D design of the various LEGO bases used in the structure (the original design file can be found in the "models" section):
 
-| Imagen | Nombre de Componente | Descripción |
+| Image | Component | Description |
 | :----: | :-------------------: | :----------: |
-| ![Image](https://github.com/user-attachments/assets/9edf40e1-e40c-426f-80a7-2e0b6575c054) ![Image](https://github.com/user-attachments/assets/21be84bc-a709-4ad1-bb2b-89dc01e3ead3)| Bases de los ultrasonidos | En este conjunto de piezas de lego se colocan y ensamblan los ultrasonidos del robot |
-| ![Imagen de WhatsApp 2025-07-01 a las 09 56 56_6b47b5fe](https://github.com/user-attachments/assets/a065d8c0-9618-443d-9abd-6600abf803b7) ![Imagen de WhatsApp 2025-07-01 a las 09 57 11_659e0d1d](https://github.com/user-attachments/assets/b8f318d9-672b-4ece-b380-643e030f95e2) | Sistema de tracción y dirección | Se incluye el motor y las bases en las que este se coloca, de forma que quede anclado de forma perfecta como se necesita. Asi mismo en la parte mas alejada del motor se ven las dos bases en las que se sostiene el servomotor, dando base a el sistema de dirección. |
-| ![Image](https://github.com/user-attachments/assets/e0b8f283-be3c-4771-b908-f5570294d61c) ![Image](https://github.com/user-attachments/assets/3dc6bbb7-eb1d-4a14-8fa6-4e355b85d1d1) | Chasis | Se observa toda la estructura del chasis, incluyendo las bases de las placas, botón de activación, switch, pixycam y más. |
+| ![Image](https://github.com/user-attachments/assets/9edf40e1-e40c-426f-80a7-2e0b6575c054) ![Image](https://github.com/user-attachments/assets/21be84bc-a709-4ad1-bb2b-89dc01e3ead3)| Bases de los ultrasonidos | The ultrasonic sensors of the robot are mounted and assembled within this set of LEGO pieces. |
+| ![Imagen de WhatsApp 2025-07-01 a las 09 56 56_6b47b5fe](https://github.com/user-attachments/assets/a065d8c0-9618-443d-9abd-6600abf803b7) ![Imagen de WhatsApp 2025-07-01 a las 09 57 11_659e0d1d](https://github.com/user-attachments/assets/b8f318d9-672b-4ece-b380-643e030f95e2) | Drive and Steering System | The motor and the bases on which it is mounted are included, ensuring it is perfectly anchored as required. Likewise, at the far end of the motor, the two bases supporting the servo motor can be seen, forming the foundation for the steering system.. |
+| ![Image](https://github.com/user-attachments/assets/e0b8f283-be3c-4771-b908-f5570294d61c) ![Image](https://github.com/user-attachments/assets/3dc6bbb7-eb1d-4a14-8fa6-4e355b85d1d1) | Chasis | The entire chassis structure can be seen, including the board mounts, activation button, switch, Pixy camera, and more. |
 
-## 🛠 Guía de Ensamblaje Mecánico – Red Machine 
-Para comenzar, se construye la estructura del chasis principal. Esta base debe ser resistente y simétrica, ya que soportará el único motor trasero y el servo motor frontal. Es fundamental asegurar ambos componentes con firmeza, cuidando que el motor quede perfectamente alineado para impulsar al robot, mientras que el servo tenga libertad de movimiento para controlar la dirección.
-Una vez fijados estos elementos clave, se procede a montar el soporte estructural central que atraviesa el chasis y estabiliza toda la base. Esta parte también sirve como columna vertebral que conecta los laterales y permite mayor rigidez al momento de continuar con la instalación de los niveles superiores.
-Con el chasis firme y balanceado, se construye el primer piso del robot. Esta plataforma debe colocarse a una altura adecuada para dar espacio al cableado inferior y servir de base para la instalación de componentes eléctricos. Luego se eleva el segundo piso utilizando separadores estructurales que garanticen una plataforma paralela y estable. Esta segunda planta será la encargada de alojar el Arduino, los botones y demás dispositivos de control.
-Finalmente, se revisa toda la estructura para asegurarse de que cada parte esté alineada, nivelada y correctamente sujeta. En este punto se pueden hacer pequeños ajustes para corregir inclinaciones, reforzar uniones y preparar la base para el cableado y montaje de los módulos electrónicos.
+## 🛠 Mechanical Assembly Guide – Red Machine
+To start, the main chassis structure is built. This base must be sturdy and symmetrical, as it will support the single rear motor and the front servo motor. It is essential to secure both components firmly, ensuring the motor is perfectly aligned to drive the robot, while the servo has freedom of movement to control steering.
+Once these key elements are fixed, the central structural support is mounted. This piece runs through the chassis and stabilizes the entire base. It also serves as the backbone connecting the sides and provides greater rigidity for the installation of the upper levels.
+With a firm and balanced chassis, the first deck of the robot is constructed. This platform must be placed at an appropriate height to allow space for wiring below and serve as a base for installing electrical components. Then, the second deck is elevated using structural spacers that ensure a parallel and stable platform. This second level will house the Arduino, buttons, and other control devices.
+Finally, the entire structure is checked to ensure that every part is aligned, level, and securely fastened. At this stage, small adjustments can be made to correct tilts, reinforce joints, and prepare the base for wiring and mounting the electronic modules.
 
-### 🧱 Estructura General de Doble Piso
-El robot cuenta con una estructura de dos niveles, cada uno con funciones definidas para optimizar la organización, accesibilidad y rendimiento de los componentes:
-- Piso Inferior: Aloja los elementos encargados del control de motores y la distribución de energía. Su diseño ofrece estabilidad mecánica y separación eléctrica con los componentes de control.
-- Piso Superior: Espacio reservado para la electrónica de comando y los controles principales. Esta configuración permite una mejor ventilación y mayor facilidad para operar el robot de manera segura y eficiente.
-
-🔋 Piso Inferior – Potencia y Control de Movimiento
-En la parte inferior del robot se encuentran distribuidos estratégicamente varios elementos esenciales:
-- Dos puentes H:
-- Uno controla el funcionamiento de los motores, permitiendo gestionar dirección y velocidad.
-- El otro está dedicado a la alimentación de los sensores, evitando que las variaciones de voltaje generadas por los motores afecten la precisión en la lectura sensorial.
-- Tres portabaterías de 9V:
-- Dos baterías alimentan al Arduino, proporcionando energía estable y continua para el procesamiento de datos.
-- Una batería alimenta exclusivamente al puente H de sensores, lo que garantiza lecturas más confiables al evitar interferencias o fluctuaciones.
-⚙ Esta separación de sistemas de potencia permite una mayor eficiencia, evita interferencias cruzadas y mejora la precisión operativa del robot.
+### 🧱 General Two-Level Structure
+The robot features a two-level structure, each with defined functions to optimize organization, accessibility, and component performance:
+- Lower Level: Houses the elements responsible for motor control and power distribution. Its design provides mechanical stability and electrical separation from the control components.
+- Upper Level: Reserved for the command electronics and main controls. This configuration allows for better ventilation and easier, safer operation of the robot.
+- 
+🔋 Lower Level – Power and Motion Control
+On the lower level of the robot, several essential elements are strategically distributed:
+- Two H-Bridges:
+One controls the motors, managing direction and speed. The other is dedicated to powering the sensors, preventing voltage fluctuations from the motors from affecting sensor readings.
+- Three 9V Battery Holders: Two batteries power the Arduino, providing stable and continuous energy for data processing. One battery powers the sensor H-bridge exclusively, ensuring more reliable readings by avoiding interference or fluctuations.
+⚙ This separation of power systems allows for greater efficiency, prevents cross-interference, and improves the robot’s operational precision.
 
 
-⚙ Piso Superior – Control y Comodidad Operativa
-Este nivel está dedicado a los elementos que requieren accesibilidad directa por parte del operador:
-- Arduino: Ubicado en una zona elevada y protegida para facilitar conexiones, programación y minimizar vibraciones.
-- Portabatería doble (3.7V): Alimenta módulos electrónicos auxiliares. Su posición superior permite fácil cambio y acceso durante mantenimientos.
-- Interruptor (switch) de encendido/apagado: Situado estratégicamente para iniciar o detener el robot de manera rápida y segura.
-- Botón de inicio: Permite arrancar las rutinas del robot al comenzar la competencia, evitando manipulaciones innecesarias en zonas sensibles.
-🛠 La disposición de estos elementos en la parte superior mejora la accesibilidad, favorece la organización de cables y protege los componentes de la acción mecánica del piso inferior.
+⚙ Upper Level – Control and Operational Convenience
+This level is dedicated to elements that require direct access by the operator:
+- Arduino: Positioned in an elevated, protected area to facilitate connections, programming, and minimize vibrations.
+- Double Battery Holder (3.7V): Powers auxiliary electronic modules. Its upper placement allows easy replacement and access during maintenance.
+- Power Switch: Strategically located to quickly and safely turn the robot on or off.
+- Start Button: Allows the robot’s routines to begin at the start of the competition, avoiding unnecessary handling in sensitive areas.
+🛠 Placing these elements on the upper level improves accessibility, aids in cable organization, and protects components from mechanical activity on the lower level.
 
 
-🎥 Cámara – Visión Elevada y Precisa
-En el punto más alto del robot se encuentra montada una cámara, sostenida por dos estructuras verticales que sujetan una pieza gris. Esta configuración se diseñó con los siguientes propósitos:
-- Amplitud de visión: Al estar en la parte más alta, la cámara evita interferencias visuales de otros componentes del robot.
-- Aislamiento del entorno: Su altura permite reducir la influencia de luces externas, reflejos o sombras del campo de competencia.
-- Estabilidad estructural: La fijación rígida de sus soportes garantiza que no haya vibraciones ni desplazamientos que comprometan la calidad visual durante la ejecución.
+🎥 Camera – Elevated and Precise Vision
+At the highest point of the robot, a camera is mounted, supported by two vertical structures holding a gray piece. This configuration was designed with the following purposes:
+- Field of View: Being at the highest point, the camera avoids visual interference from other robot components.
+- Environmental Isolation: Its height helps reduce the influence of external lights, reflections, or shadows from the competition field.
+- Structural Stability: The rigid mounting of its supports ensures there are no vibrations or shifts that could compromise visual quality during operation.
 
-### 🏎 Módulo de Tracción y Dirección – Red Machine
+### 🏎 Drive and Steering Module – Red Machine
 
-⚙ Estructura de Soporte de Motores
+⚙ Motor Support Structure
+The structure shown in the image is designed to secure the motors in a stable and efficient manner:
 
-La estructura que se observa en la imagen está diseñada con el objetivo de fijar los motores de manera estable y eficiente:
+- Rigid Mounting: The motors are anchored on a firm base built with LEGO pieces, ensuring no movement or vibrations during operation.
 
-- Montaje rígido: Los motores se encuentran anclados sobre una base firme construida con piezas LEGO, garantizando que no haya desplazamientos ni vibraciones durante la operación.
+- Optimal Orientation: Their placement allows precise and direct traction, transmitting mechanical power without losses or deviations.
 
-- Orientación óptima: La posición en que están colocados favorece una tracción precisa y directa, permitiendo transmitir la potencia mecánica sin pérdidas ni desviaciones.
+- Balanced Weight Distribution: With the motors positioned near the rear axle, the center of gravity remains low, improving stability during turns and quick maneuvers.
 
-- Distribución de peso equilibrada: Al estar los motores cerca del eje trasero, el centro de gravedad se mantiene bajo, lo que mejora la estabilidad en curvas y maniobras rápidas.
+🚗 Rear-Wheel Drive System
 
-🚗 Sistema de Tracción Trasera
+The robot uses a rear-wheel drive configuration, where the motors directly drive the rear wheels:
 
-El robot implementa una configuración de tracción trasera, donde los motores impulsan directamente las ruedas posteriores:
+- Mechanical Advantages: This type of drive provides greater thrust and control, especially useful for straight-line movement and climbing inclines.
 
-- Ventajas mecánicas: Este tipo de tracción proporciona mayor empuje y control especialmente útil en desplazamientos rectos y al subir pendientes.
+- Simplicity and Efficiency: The direct connection between the motors and rear wheels reduces the need for additional gears, minimizing friction and improving energy efficiency.
 
-- Simplicidad y eficacia: La conexión directa entre motores y ruedas traseras reduce el uso de engranajes adicionales, lo que disminuye la fricción y mejora la eficiencia energética.
+🔄 Front Steering with Servo
 
-🔄 Dirección Frontal con Servo
+At the front of the chassis, a servo motor is installed to act as the steering mechanism:
 
-En la parte delantera del chasis se encuentra instalado un servo motor que actúa como mecanismo de dirección:
+- Orientation Control: The servo is connected to the front wheels through a system of articulated arms, allowing the steering angle to be adjusted.
 
-- Control de orientación: El servo está conectado a las ruedas delanteras mediante un sistema de brazos articulados que permite modificar el ángulo de dirección.
+- Millimeter Precision: As a servo, angle variations are digitally controlled, enabling smooth maneuvers, tight turns, and on-the-fly corrections.
 
-- Precisión milimétrica: Al tratarse de un servo, las variaciones de ángulo son controladas digitalmente, permitiendo maniobras suaves, curvas cerradas y correcciones durante el trayecto.
+- Functional Separation: Independent steering from the drive improves the robot’s dynamic behavior and allows for more advanced navigation algorithms.
+  
+🧭 Central Mount for Lateral Ultrasonic Sensors
+This component holds two ultrasonic sensors located on either side of the robot, fully integrated into the overall structure.
 
-- Separación funcional: La dirección independiente de la tracción mejora el comportamiento dinámico del robot y permite algoritmos de navegación más avanzados.
-
-🧭 Soporte Central de Sensores Ultrasónicos Laterales
-Este componente se encarga de sostener dos sensores ultrasónicos, ubicados a ambos lados del robot y perfectamente integrados en la estructura general.
-
-🧱 Diseño Integrado en el Chasis
-- Unión física con el cuerpo principal: Aunque su diseño sugiere modularidad, el soporte está firmemente unido a la estructura central del robot, colocándose justo en la zona media del chasis para lograr un equilibrio funcional y estructural.
-- Anclaje estratégico: La ubicación central permite que la pieza se mantenga firme durante el movimiento, evitando desplazamientos o vibraciones no deseadas que afecten la precisión de los sensores.
-🎯 Posicionamiento Lateral de los Sensores
-- Distribución simétrica: Los sensores ultrasónicos están colocados en ambos extremos del soporte, orientados hacia los lados, lo que mejora la cobertura horizontal del entorno del robot.
-- Lecturas precisas: Esta configuración permite detectar obstáculos laterales, alinearse con paredes o identificar zonas estrechas durante la navegación con mayor exactitud.
-- Protección y visibilidad: Al estar elevados y centrados, los sensores tienen un campo de visión despejado, libre de interferencias visuales por otras piezas.
+🧱 Chassis-Integrated Design
+- Physical Integration with the Main Body: Although its design suggests modularity, the mount is firmly attached to the robot’s central structure, positioned in the middle of the chassis to achieve functional and structural balance.
+- Strategic Anchoring: Its central location ensures the piece remains stable during movement, preventing unwanted shifts or vibrations that could affect sensor accuracy.
+🎯 Lateral Sensor Positioning
+- Symmetrical Distribution: The ultrasonic sensors are placed at both ends of the mount, facing outward, enhancing the robot’s horizontal environmental coverage.
+- Accurate Readings: This setup allows the detection of lateral obstacles, alignment with walls, or identification of narrow spaces with greater precision during navigation.
+- Protection and Visibility: Elevated and centered, the sensors have a clear field of view, free from visual interference by other components.
 
 
 
+# Calculation of Torque Required to Move the Vehicle
+The torque required (T) is calculated using the formula: 𝑇=𝑚⋅𝑔⋅𝑟
 
-# Cálculo de Torque Necesario para Mover el Vehículo:
-El torque necesario (T) se calcula mediante la fórmula: T=m⋅g⋅r
-Donde:
-
-m = masa del vehículo (1.02 kg)
-
-g = gravedad (9.81 m/s2)
-
-r = radio de las ruedas (0.02 m)
+Where:
+m = vehicle mass (1.02 kg)
+g = gravity (9.81 m/s²)
+r = wheel radius (0.02 m)
 
 T=0.870⋅9.81⋅0.03=0.17 N⋅m
 
-Cálculo de Torque a la Salida (después de la reducción) según el motor DC 25GA370:
+Calculation of Output Torque (after reduction) for the DC Motor 25GA370:
 
-Tsalida=Tmotor⋅Reducción Tsalida=0.2⋅1 = 0.2>0.17=T
-
-
-
-
-
-## Cálculo de velocidad angular (ω) y velocidad lineal (v)
-La velocidad de salida después de la reducción es 220.2 RPM. Convertimos esto a radianes por segundo:
-
-ω=220.2×2π60≈23.04 rad/s
-
-ω=220.2×
-
-60
-
-2π
-​
-≈23.04 rad/s
-
-La velocidad lineal del vehículo se calcula multiplicando la velocidad angular por el radio de la rueda 
-
-v=ω×r=23.04×0.03≈0.69 m/s
-
-v=ω×r=23.04×0.03≈0.69 m/s
-
-
-Especificaciones del motor LEGO y reducción
-
-Velocidad sin carga: 170 RPM
-
-Torque nominal: 0.20 kg·cm (≈ 0.0196 N·m)
-
-Relación de reducción: 21.3:1
-
-Efectos de la reducción:
-
-Velocidad reducida en el eje de salida:
-
-170 RPM×21.3≈7.98 RPM
-
-Fuerza necesaria para mover el robot (870 g ≈ 8.53 N)
-
-Suponiendo un coeficiente de fricción típico (μ ≈ 0.4) en una superficie normal:
-
-Fuerza mıˊnima=μ×m×g=0.4×0.87 kg×9.81≈3.41 N
-
-Fuerza m= nima=μ×m×g=0.4×0.87 kg×9.81≈3.41 N
-
-El torque disponible en las ruedas (0.4175 N·m) es muy superior al mínimo requerido (0.102 N·m), por lo que el robot se moverá sin problemas.
-
-Velocidad lineal: ≈ 0.69 m/s (con ruedas de 3 cm de radio).
-
-Torque en ruedas: ≈ 0.4175 N·m (suficiente para superar la resistencia al movimiento).
-
-El sistema cumple con los requisitos de tracción y movilidad.
+T_output = T_motor × Reduction
+T_output = 0.2 × 1 = 0.2 > 0.17 = T_required
+✅ The motor’s output torque is sufficient to move the vehicle.
 
 
 
-### 📦 Descripción de motores del Sistema
 
-| Imagen | Nombre de Componente | Descripción |
+## Calculation of Angular Velocity (ω) and Linear Velocity (v)
+The output speed after reduction is 220.2 RPM. Converting this to radians per second:
+
+𝜔=220.2⋅2𝜋60 ≈ 23.04rad/s
+
+The linear velocity of the vehicle is calculated by multiplying the angular velocity by the wheel radius:
+
+𝑣=𝜔⋅𝑟 = 23.04⋅0.03 ≈ 0.69m/s
+
+
+## LEGO Motor Specifications and Gear Reduction
+
+No-load speed: 170 RPM
+
+Nominal torque: 0.20 kg·cm (≈ 0.0196 N·m)
+
+Gear reduction ratio: 21.3:1
+
+Effects of Reduction:
+
+Reduced speed at the output shaft:
+170 RPM × 21.3 ≈ 7.98 RPM
+
+Force required to move the robot (870 g ≈ 8.53 N)
+
+Assuming a typical friction coefficient (μ ≈ 0.4) on a normal surface:
+
+Minimum force = μ × m × g = 0.4 × 0.87 kg × 9.81 ≈ 3.41 N
+
+Available torque at the wheels (0.4175 N·m) is much higher than the minimum required (0.102 N·m), so the robot will move without problems.
+
+Linear speed: ≈ 0.69 m/s (with 3 cm radius wheels)
+
+Torque at the wheels: ≈ 0.4175 N·m (sufficient to overcome motion resistance)
+
+✅ The system meets the traction and mobility requirements.
+
+
+
+### 📦 System Motor Description
+
+| Image | Component | Description |
 | :----: | :-------------------: | :----------: |
-| ![servo pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/57aaa91d-b5e5-4360-aef2-06025d15f8b0) | **Servo motor de Rev Robotics** | Es un motor eléctrico con sensor de retroalimentación de posición integrado, que permite realizar movimientos angulares perfectos, utilizando una señal que va de 0V a 5V, donde cada valor que pueda tener el voltaje representa un ángulo exacto, cumpliendo con excelencia la función de realizar los giros. |
-| ![Image](https://github.com/user-attachments/assets/05c10969-e9a6-404b-a141-5e44218d54df) | **Motor lego ev3** | Dispositivo que convierte la energía eléctrica en movimiento mecánico, permitiendo en este caso mover una caja de cambios y movilizar las ruedas. La velocidad y el par que tiene vienen determinados por la tensión enviada a través del puente en H, siendo moderados por el Arduino. |
+| ![servo pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/57aaa91d-b5e5-4360-aef2-06025d15f8b0) | **Rev Robotics Servomotor** | It is an electric motor with an integrated position feedback sensor, allowing precise angular movements. It uses a signal ranging from 0V to 5V, where each voltage value corresponds to an exact angle, performing turns with high accuracy. |
+| ![Image](https://github.com/user-attachments/assets/05c10969-e9a6-404b-a141-5e44218d54df) | **lego ev3 Motor** | A device that converts electrical energy into mechanical motion, allowing, in this case, the movement of a gearbox and the wheels. Its speed and torque are determined by the voltage supplied through the H-bridge, which is controlled by the Arduino. |
 
-En la siguiente imagen se puede observar el diagrama de conecciones y alimentación de los mencionados componentes: 
+In the following image, the connection and power diagram of the aforementioned components can be seen:
 
 ![Image](https://github.com/user-attachments/assets/444b414a-24fc-4942-8d5c-f002e175a080)
 
-### Explicación del diagrama 
+### Diagram Explanation
 
-- El motor de tracción (motor grande ev3) se encuentra conectado a los puertos de motor 1 del puente H. Para esto, se utiliza un cable de ev3 modificado, el cual fue cortado en un extremo de manera muy cuidadosa buscando no dañar los 4 cables internos. De estos 4 cables se toman el positivo y el negativo, los cuales se acoplan al puente H.
-- El servomotor es alimentado directamente por el arduino, a través de los puertos 5V y GND, y se conecta al pin 9 para recibir señales de posicionamiento.
-- El arduino mega es alimentado por dos baterías de 9V conectadas en paralelo, es decir, dos baterías en las que se unen los puerto negativos por un lado y los positivos por otro, para que se sume el amperaje y se mantenga el voltaje.
-- El puente H se conecta al arduino por un puerto GND para formar el puente, además de los pines 5, 6 y 7 para controlar el sentido de dirección del robot y la velocidad en la que este opera. 
+- The traction motor (large EV3 motor) is connected to the motor 1 ports of the H-bridge. A modified EV3 cable is used for this, carefully cut at one end to avoid damaging the four internal wires. The positive and negative wires are taken from these four and connected to the H-bridge.
+- The servo motor is powered directly by the Arduino through the 5V and GND ports, and connected to pin 9 to receive positioning signals.
+- The Arduino Mega is powered by two 9V batteries connected in parallel—negative terminals connected together on one side and positive terminals on the other—so the amperage is summed while maintaining the voltage.
+- The H-bridge connects to the Arduino via a GND port to complete the bridge, as well as pins 5, 6, and 7 to control the robot’s direction and operating speed.
 
-## Componentes electrónicos 
-A pesar de que la construcción del robot fue hecha con piezas de lego, para todo el apartado electrónico el equipo se decidió por utilizar piezas externas con las que ya se han familiarizado. Entre estas se encuentran los siguientes sensores y actuadores:
+## Electronic Components
+Although the robot’s construction was done with LEGO pieces, for all electronic components the team decided to use external parts they were already familiar with. These include the following sensors and actuators:
 
-### 📦 Descripción de Componentes Principales del Sistema
+### 📦 Description of Main System Components
 
-| Imagen | Nombre de Componente         | Descripción |
+| Image | Component         | Description |
 |:------:|:----------------------------:|:------------|
-| ![HC-sr04](https://github.com/user-attachments/assets/a59b0102-8994-4ac4-aa06-3d6553ae1a2d) | **Sensor ultrasónico (HC-SR04)** | Utiliza ondas ultrasónicas para medir la distancia a obstáculos. El Arduino Mega 2560 calcula la distancia en base al tiempo que tarda la onda en ir y volver, permitiendo que el robot detecte paredes y realice giros cuando sea necesario. |
-| ![Image](https://github.com/user-attachments/assets/a4b0638a-e94f-4039-8e30-22059eb60545) | **Sensor giroscopio (MPU6050)** | Mide la orientación del robot en grados. Permite mantener trayectorias rectas y ejecutar giros precisos, especialmente en transiciones de secciones como curvas de 90°. |
-| ![pixy2 1 2](https://github.com/user-attachments/assets/6397d5c9-d6fe-4c80-a7b9-d097bee0ba3e) | **Cámara Pixy 2.1** | Detecta colores específicos preconfigurados que representan señales o zonas de tráfico. Reconoce patrones de color en la imagen y transmite datos al Arduino para ejecutar maniobras de evasión o reacción automática. |
-| ![mega 2560](https://github.com/user-attachments/assets/edc71e77-3581-48eb-af96-6dfae65660ac) | **Arduino Mega 2560** | Microcontrolador ATmega2560 que actúa como cerebro central del sistema. Procesa información proveniente de sensores, ejecuta el control de motores y gestiona las decisiones lógicas del robot. Dispone de múltiples pines digitales y analógicos, ideales para proyectos complejos. |
-| ![puente H pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/264757f2-118f-42c9-9dd8-2a3c91455834) | **Módulo Puente-H (L298N)** | Permite controlar la dirección y velocidad de motores de corriente continua. Recibe señales del Arduino y regula la tensión de salida, habilitando el cambio de giro y la aceleración del motor según lo requiera el algoritmo de control. |
+| ![HC-sr04](https://github.com/user-attachments/assets/a59b0102-8994-4ac4-aa06-3d6553ae1a2d) | **Ultrasonic sensor (HC-SR04)** | It uses ultrasonic waves to measure the distance to obstacles. The Arduino Mega 2560 calculates the distance based on the time it takes for the wave to travel to and from the object, allowing the robot to detect walls and make turns when necessary. |
+| ![Image](https://github.com/user-attachments/assets/a4b0638a-e94f-4039-8e30-22059eb60545) | **Gyroscope (MPU6050)** | It measures the robot’s orientation in degrees. It allows maintaining straight paths and executing precise turns, especially during transitions such as 90° curves. |
+| ![pixy2 1 2](https://github.com/user-attachments/assets/6397d5c9-d6fe-4c80-a7b9-d097bee0ba3e) | **Camera Pixy 2.1** | It detects specific preconfigured colors that represent signals or traffic zones. It recognizes color patterns in the image and sends data to the Arduino to execute avoidance maneuvers or automatic responses. |
+| ![mega 2560](https://github.com/user-attachments/assets/edc71e77-3581-48eb-af96-6dfae65660ac) | **Arduino Mega 2560** | ATmega2560 microcontroller that acts as the central brain of the system. It processes information from sensors, controls the motors, and manages the robot’s logical decisions. It has multiple digital and analog pins, making it ideal for complex projects. |
+| ![puente H pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/264757f2-118f-42c9-9dd8-2a3c91455834) | **H-Bridge (L298N)** | It allows control of the direction and speed of DC motors. It receives signals from the Arduino and regulates the output voltage, enabling changes in rotation and motor acceleration according to the control algorithm. |
 
-En la siguiente imagen se observa el diagrama de conexiones de esos componentes: 
+In the following image, the connection diagram of these components can be seen:
 
 
 ![Image](https://github.com/user-attachments/assets/c35217f0-d546-4963-a06b-0cf20b41dffe)
 
-### Explicación del diagrama 
+### Diagram Explanation
+- The three ultrasonic sensors are connected to the Arduino via digital pins as follows:
+Left ultrasonic: Pin 30 (echo), Pin 31 (trig)
+Center ultrasonic: Pin 20 (echo), Pin 19 (trig)
+Right ultrasonic: Pin 12 (echo), Pin 11 (trig)
+They are powered through the 5V port of the H-bridge, with ground connected via the H-bridge.
+- The gyroscope connects to the Arduino’s SCL and SDA pins (20 and 21) and is powered the same way as the ultrasonic sensors via the H-bridge ports.
+- The Pixycam connects to the Arduino using its included cable, plugged into the Arduino’s ICSP port, which also supplies its power.
+- The Arduino Mega is powered by two 9V batteries connected in parallel—negative terminals connected together on one side, positives on the other—so the amperage is summed while maintaining voltage.
+- The H-bridge connects to the Arduino through a GND port to complete the bridge. It is powered by a 9V battery and supplies energy to all sensors.
+- The push button connects to Arduino pins 22 and 23. When pressed, it starts the robot’s code, initiating the challenge.
 
-- Los 3 ultrasonidos se encuentran unidos al arduino por pines digitales, de la siguiente forma: (Ultrasonido izquierdo: Pin 30 echo, 31 trig; Ultrasonido central: Pin 20 echo, 19 trig; Ultrasonido derecho: Pin 12 echo, 11 trig). Se alimentan a través del puerto 5V del puente H, y su conección a tierra es la del puente H.
-- El giroscopio se une a los puertos SCL y SDA (20 y 21) del arduino, y se alimenta de igual forma que los ultrasonidos, por los puertos del puente H.
-- La pixycam se une al arduino por el cable que esta incluye, conectándose al puerto ICSP del arduino. Se alimenta por esta conección. 
-- El arduino mega es alimentado por dos baterías de 9V conectadas en paralelo, es decir, dos baterías en las que se unen los puerto negativos por un lado y los positivos por otro, para que se sume el amperaje y se mantenga el voltaje.
-- El puente H se conecta al arduino por un puerto GND para formar el puente. Se alimenta por una batería 9V, y le da energía a todos los sensores.
-- El pulsador se une a los pines 22 y 23 del arduino, y al presionarse se inicia el código del robot, comenzando el reto.
-
-> ⚠️ *Nota:* En el diagrama se observan dos interruptores, sin embargo estos representan un único interruptor doble, el cual al accionarse, enciende ambos circuitos. Se coloca de esta forma por la facilidad de explicar el diagrama.
+> ⚠️ *Note:* In the diagram, two switches are shown; however, they represent a single double switch, which, when activated, turns on both circuits. It is depicted this way for ease of explaining the diagram.
 ---
 
-# Alimentación del robot
+# Robot Power Supply
 
-La alimentación de nuestro robot se separa en 3 partes: 
-- Alimentación del arduino: Dos baterías de 9V recargables conectadas en paralelo (se unen los cables negativos por un lado y los positivos por otro lado).
-- Alimentación de sensores: A través de un puente H, se conecta una batería de 9V recargable que alimenta a todos los sensores del sistema.
-- Alimentación de motores: Se conectan dos baterías de 3.7V en paralelo (se conecta un cable negativo con uno positivo, dejando los otros dos libres) a un segundo puente H, al cual se conecta el motor de tracción (motor grande EV3).
+The robot’s power system is divided into three parts:
+- Arduino Power: Two 9V rechargeable batteries connected in parallel (negative wires connected together on one side and positive wires on the other).
+- Sensor Power: A 9V rechargeable battery connected through an H-bridge, which powers all the system’s sensors.
+- Motor Power: Two 3.7V batteries connected in parallel (one negative wire connected to one positive, leaving the other two free) to a second H-bridge, which powers the traction motor (large EV3 motor).
 
-Estos sistemas se unen a través de un interruptor. 
+These systems are joined through a single switch.
 
-### 🔋 Cálculo del Consumo Energético Total
+### 🔋 Total Energy Consumption Calculation
 
-| Componente                      | Cantidad | Consumo estimado (mA) | Total (mA) |
-|--------------------------------|----------|------------------------|------------|
-| Motor grande LEGO EV3          | 1        | 250 mA (típico)        | 250 mA     |
-| Servo motor REV Robotics       | 1        | 180 mA (típico)        | 180 mA     |
-| Sensor ultrasónico HC-SR04     | 3        | 15 mA c/u              | 45 mA      |
-| PixyCam (CMUcam5)              | 1        | 140 mA                 | 140 mA     |
-| Sensor MPU6050                 | 1        | 6 mA                   | 6 mA       |
-| **TOTAL**                      | —        | —                      | **621 mA** |
+| Component                      | Quantity | Estimated consumption (mA) | Total (mA) |
+|--------------------------------|----------|----------------------------|------------|
+| LEGO EV3 large Motor           | 1        | 250 mA (típico)            | 250 mA     |
+| REV Robotics Servomotor        | 1        | 180 mA (típico)            | 180 mA     |
+| HC-SR04 Ultrasonic Sensor      | 3        | 15 mA c/u                  | 45 mA      |
+| PixyCam (CMUcam5)              | 1        | 140 mA                     | 140 mA     |
+| Gyroscope MPU6050              | 1        | 6 mA                       | 6 mA       |
+| **TOTAL**                      | —        | —                          | **621 mA** |
 
 ---
 
-### ⚡ Distribución de Energía y Estimación de Autonomía
+### ⚡ Power Distribution and Estimated Autonomy
 
-El sistema se alimenta de forma distribuida para mejorar la eficiencia y facilitar la gestión energética:
+The system is powered in a distributed manner to improve efficiency and facilitate energy management:
 
-- 🔌 **2 baterías de 9V**: Alimentan el Arduino y el servo motor.
-- 🔋 **1 batería de 9V**: Suministra energía a todos los sensores (ultrasónicos, MPU6050, PixyCam).
-- 🔋 **2 baterías 18650 (3.7V, 2000 mAh c/u, conectadas en serie para 7.4V)**: Alimentan el motor grande EV3.
+- 🔌 **2 × 9V batteries**: Power the Arduino and the servo motor.
+- 🔋 **1 × 9V battery**: Supplies energy to all sensors (ultrasonics, MPU6050, PixyCam).
+- 🔋 **2 × 18650 batteries (3.7V, 2000 mAh each, connected in series for 7.4V)**: Power the large EV3 motor.
 
-| Fuente de Energía            | Componentes Alimentados           | Consumo estimado (mA) | Capacidad Aprox. | Autonomía Estimada |
-|------------------------------|------------------------------------|------------------------|------------------|---------------------|
-| 2x 9V                        | Arduino + Servo REV                | ~230 mA               | ~500 mAh         | ~2 horas            |
-| 1x 9V                        | Sensores (PixyCam, HC-SR04, MPU)   | ~191 mA               | ~500 mAh         | ~2.6 horas          |
-| 2x 18650 (7.4V, 4000 mAh)    | Motor grande EV3                   | ~250 mA               | 4000 mAh         | ~16 horas           |
+| Power Source                 | Powered Components                 | Estimated consumption (mA) | Approx. Capacity | Estimated Autonomy  |
+|------------------------------|------------------------------------|----------------------------|------------------|---------------------|
+| 2x 9V                        | Arduino + REV Servo                | ~230 mA                    | ~500 mAh         | ~2 horas            |
+| 1x 9V                        | Sensors (PixyCam, HC-SR04, MPU)    | ~191 mA                    | ~500 mAh         | ~2.6 horas          |
+| 2x 18650 (7.4V, 4000 mAh)    | Large EV3 Motor                    | ~250 mA                    | 4000 mAh         | ~16 horas           |
 
-> 💡 *Nota: Los valores de autonomía son teóricos y pueden variar según condiciones reales como carga del motor, procesamiento visual o intensidad de uso de sensores.*
+> 💡 *Note:* The autonomy values are theoretical and may vary depending on real conditions such as motor load, visual processing, or sensor usage intensity.
 > 
 
 
-# Procesamiento de imágenes
-Para procesar la imagen, pompo utiliza una cámara. Esta es la pixy2. 
+# Image Processing
+To process images, Pompo uses a camera. This is the Pixy2.
 
 ![pixy2.1](https://github.com/user-attachments/assets/46298b4d-2184-4b40-9b81-577219ed9214)
 
-La pixy2 trabaja a 60 fps, y es capaz de detectar objetos, líneas y colores. En pompo el objetivo principal de la camara es detectar colores (rojo y verde). 
-Se conecta al arduino con un cable IDC 2 ICSP Arduino que va en los pines ICSP del arduino, que proporciona todas las conexiones necesarias para alimentar y comunicarse con el pixy. 
+The Pixy2 operates at 60 fps and is capable of detecting objects, lines, and colors. In Pompo, the main purpose of the camera is to detect colors (red and green).
+It connects to the Arduino using an IDC 2 ICSP Arduino cable that plugs into the Arduino’s ICSP pins, providing all necessary connections for powering and communicating with the Pixy.
 
-## Detección de color
-Pixy2 utiliza un algoritmo de filtrado basado en el color para detectar objetos llamado el algoritmo Color Connected Components (CCC). Pixy2 calcula el color (tono) y la saturación de cada píxel RGB del sensor de imagen y los utiliza como parámetros principales de filtrado. El tono de un objeto permanece prácticamente inalterado con los cambios de iluminación y exposición. El algoritmo CCC de Pixy2 recuerda hasta 7 firmas de color diferentes.
+## Color Detection
+The Pixy2 uses a color-based filtering algorithm called the Color Connected Components (CCC) algorithm to detect objects. Pixy2 calculates the color (hue) and saturation of each RGB pixel from the image sensor and uses these as the main filtering parameters. The hue of an object remains practically unchanged under variations in lighting and exposure. Pixy2’s CCC algorithm can remember up to 7 different color signatures.
 
-Después de guardar un color en una firma de color, el pixy lo añadirá a una tabla de objetos que está rastreando actualmente y le asignará un índice de rastreo. A continuación, intentará encontrar el objeto (y todos los objetos de la tabla) en el siguiente fotograma buscando su mejor coincidencia. Cada objeto rastreado recibe un índice entre 0 y 255 que mantendrá hasta que abandone el campo de visión de Pixy2. 
+Once a color is stored in a color signature, Pixy adds it to a table of currently tracked objects and assigns it a tracking index. Then, it attempts to locate the object (and all objects in the table) in the next frame by searching for the best match. Each tracked object receives an index between 0 and 255, which it retains until it leaves the Pixy2’s field of view.
 
 ![seguimiento_color](https://github.com/user-attachments/assets/46d2f0c5-c726-4a08-a899-b9a19b0e1dee)
 
 
-## Programación 
-Para establecer los colores que debe detectar la cámara, el equipo utiliza pixymon. PixyMon es una aplicación que funciona en Windows, MacOs y Linux. Te permite ver lo que Pixy2 ve, ya sea como vídeo en bruto o procesado. También te permite configurar tu Pixy2, establecer el puerto de salida y gestionar las firmas de color. PixyMon se comunica con Pixy2 a través de un cable mini USB estándar.
+## Programming
+To set the colors that the camera should detect, the team uses PixyMon. PixyMon is an application that works on Windows, macOS, and Linux. It allows you to see what the Pixy2 sees, either as raw or processed video. It also lets you configure your Pixy2, set the output port, and manage color signatures. PixyMon communicates with the Pixy2 via a standard mini USB cable.
 
 ![Screenshot 2024-11-11 103435](https://github.com/user-attachments/assets/f58a573e-7a54-49de-9017-4953aa863677)
 
-En pixymon el equipo establece 6 firmas, tres para el verde y tres para el rojo. Las firmas 1, 3 y 5 para el rojo, y las firmas 2, 4 y 6 para el verde. 
+In PixyMon, the team sets up 6 color signatures: three for green and three for red. Signatures 1, 3, and 5 are for red, and signatures 2, 4, and 6 are for green.
 
-Después de esto el arduino proccesing necesitaba ser hecho. 
+After this, the Arduino processing needed to be done.
 
-En el arduino, el equipo utiliza la librería pixy2, que permite obtener toda la información necesaria de la detección de pixeles. Entonces, usando el siguiente código, el equipo guarda cuando el pixy detecta un color y a qué firmas corresponde el color en una variable llamada «hola». Si hola es divisible por dos, entonces el color es verde, y si hola no es divisible por dos, entonces el color es rojo. 
+On the Arduino, the team uses the Pixy2 library, which allows them to obtain all the necessary information from pixel detection. Using the following code, the team records when the Pixy detects a color and which signatures correspond to that color in a variable called «hola». If «hola» is divisible by two, the color is green; if «hola» is not divisible by two, the color is red.
 
 
-
-# Cómo ejecutar o probar el proyecto  
-Para ejecutar un código en una placa Arduino Mega, lo primero es instalar el Arduino IDE en tu equipo si aún no lo tienes. Conecta la placa mediante un cable USB tipo B y, dentro del IDE, selecciona la opción "Arduino Mega or Mega 2560" en el menú “Herramientas > Placa”. Luego, elige el puerto correspondiente en “Herramientas > Puerto” para establecer comunicación. Posterior a eso, copiar y pegar los códigos en este repositorio de GitHub, puedes descargar los archivos desde allí y abrirlos directamente en el entorno.
+# How to Run or Test the Project
+To run code on an Arduino Mega board, first install the Arduino IDE on your computer if you haven’t already. Connect the board using a USB Type-B cable, and in the IDE, select “Arduino Mega or Mega 2560” from the menu Tools > Board. Next, choose the corresponding port under Tools > Port to establish communication. After that, copy and paste the code from this GitHub repository—or download the files from there and open them directly in the IDE.
 
 ![Image](https://github.com/user-attachments/assets/150e73eb-8df3-4fb5-afbb-cd20dfd6a356)
 
-Después de abrir el código del proyecto (como el de REDMACHINE-2025), verifica que no haya errores usando el botón de compilación (✓) en el IDE. Una vez validado, presiona el botón de carga (→) para subir el programa a la placa Arduino Mega. Este proceso transfiere el código al microcontrolador, que empezará a ejecutarlo automáticamente. Dado que el Mega ofrece mayor capacidad de entrada/salida y memoria que otras placas, es ideal para proyectos exigentes como el alojado en dicho repositorio.
+After opening the project code (such as REDMACHINE-2025), check for errors by clicking the Verify (✓) button in the IDE. Once validated, press the Upload (→) button to transfer the program to the Arduino Mega board. This process uploads the code to the microcontroller, which will begin executing it automatically. Since the Mega offers greater input/output capacity and memory compared to other boards, it is ideal for demanding projects like the one in this repository.
 ![Image](https://github.com/user-attachments/assets/3d7ac906-664d-4639-bc9a-03a545714c58)
 
-Una vez cargado el programa, puedes utilizar el Monitor Serial del IDE para observar el comportamiento del sistema en tiempo real, interpretar los mensajes enviados desde el código y comprobar que las funciones se están ejecutando correctamente. 
+Once the program is uploaded, you can use the IDE’s Serial Monitor to observe the system’s behavior in real time, interpret messages sent from the code, and verify that all functions are executing correctly.
 ![Image](https://github.com/user-attachments/assets/3401013c-bd38-45c8-9d5e-38eb5d2928b2)
 
 ![Image](https://github.com/user-attachments/assets/2b43b9bd-76da-47cf-b8b7-0c1b66438916)
 
 
-# Codigo Reto 2
+# Second challenge code
 
 ---
 
-## 1. Inicialización y Configuración
+## 1. Initialization and Setup
 
-- Calibración del IMU (MPU6050)  
-- Configuración de pines y comunicación (Serial, I²C, servo, motores, botón)  
-- Centrado del servomotor de dirección (`rec`)  
-- Espera de señal de inicio (botón en pin 23 o comando serial `'1'`)
+- IMU (MPU6050) calibration
+- Pin and communication configuration (Serial, I²C, servo, motors, button)
+- Centering of the steering servo (rec)
+- Waiting for start signal (button on pin 23 or serial command '1')
 
 ---
 
-## 2. Secuencia Principal de Operación (loop)
+## 2. Main Operation Sequence (loop)
 
-El robot repite continuamente el siguiente ciclo:
+The robot continuously repeats the following cycle:
 
-### a) Lectura de Sensores
+### a) Sensor Reading
 
 ![Lectura de Sensores](https://github.com/user-attachments/assets/d3549fd1-adc8-48e8-ba60-03aa1c59fb70)
 
-- Ultrasonidos izquierdo (`di`), central (`d`) y derecho (`dd`)  
-- Actualización de ángulo con IMU (`gyro`)
+- Left (di), center (d), and right (dd) ultrasonic sensors
+- Angle update using IMU (gyro)
 
-### b) Detección de Obstáculos Cercanos
+### b) Detection of Nearby Obstacles
 
-**Función**: `detectarladocorto()`
+**Function**: `detectarladocorto()`
 
-- Si `d < 10 cm`:  
-  - Relee distancias  
-  - Compara `di` vs. `dd`  
-  - Asigna lateralidad:  
-    - `a = 1` → giro por la izquierda  
-    - `a = 2` → giro por la derecha  
+- If `d < 10 cm`:
+  - Read distances again
+  - Compare `di` vs. `dd`
+  - Assign side preference:
+    - `a = 1` → turn left
+    - `a = 2` → turn right
 
-### c) Gestión del Segundo Reto (girosegundoreto())
+### c) Second Challenge Management (girosegundoreto())
 
-Cuando `d < 10 cm` detecta pared frontal:
+When `d < 10 cm` a front wall is detected:
 
-| Carril | Secuencia de Maniobra                                                                                         |
-| ------ | -------------------------------------------------------------------------------------------------------------- |
-| Impar  | 1. Retroceder<br/>2. Girar 90° opuesto a la pared<br/>3. Retroceder 2.5 s<br/>4. Avanzar                       |
-| Par    | 1. Retroceder 1.8 s<br/>2. Girar 90° hacia la pared<br/>3. Retroceder 2.5 s<br/>4. Avanzar                     |
+| Lane  | Maneuver Sequence                                                                                    |
+| ------| ---------------------------------------------------------------------------------------------------- |
+| Odd   | 1. Reverse<br/>2. Turn 90° away from the wall<br/>3. Reverse for 2.5 s<br/>4. Move forward           |
+| Even  | 1. Reverse for 1.8 s<br/>2. Turn 90° toward the wall<br/>3. Reverse for 2.5 s<br/>4. Move forward    |
 
-Al final de cada reto, `vuelta++`.
+At the end of each challenge, `vuelta++`.
 
-### d) Detección de Conos (detectarpixyY())
+### d) Cone Detection (detectarpixyY())
 
-- La cámara Pixy2 captura bloques de color.  
-- Identifica firma de color:  
-  - Rojo si `signature % 2 == 1`  
-  - Verde si `signature % 2 == 0`  
-- Selecciona el bloque más cercano (mayor `m_y`).  
-- Conserva `lastblock` si la detección momentánea falla.
+- The Pixy2 camera captures color blocks.
+- Identifies color signature:
+  - Red if signature % 2 == 1
+  - Green if signature % 2 == 0
+- Selects the closest block (highest m_y).
+- Keeps `lastblock` if the current detection fails.
 
-### e) Evasión de Conos
+### e) Cone Evasion
 
 ![Evasión de Conos](https://github.com/user-attachments/assets/c6af0941-932f-4e8a-8245-58376482faaa)
 
-**Función**: `esquivarconos()`
+**Function**: `esquivarconos()`
 
-- Según `a` (lado) y `carril` actual, realiza maniobras:  
-  - Cono rojo en carril 0 →  
-    1. `giroderf(45)`  
-    2. Servo a posición neutra + delay  
-    3. `giroizqf(45)`  
-    4. Actualiza `carril` y `listo`  
-  - Lógicas análogas para conos verdes y otros carriles
+- Based on `a` (side) and current `lane`, perform maneuvers:
+- Red cone in lane 0 →
+  1. `turnRightF(45)`
+  2. Servo to neutral position + delay
+  3. `turnLeftF(45)`
+  4. Update `lane` and `ready`
+  - Analogous logic for green cones and other lanes
 
-### f) Control de Dirección
+### f) Direction control
 
-- **Navegación recta** (`rectificadosolo(target)`):  
-  - Ajusta servo con control proporcional (PID)  
-  - Mantiene ángulo objetivo `angulof`  
-- **Giros precisos** (`giroizqf()`, `giroizq90()`):  
-  - Calculan `angulof = gyro + Δ°`  
-  - Corrigen en bucle hasta error < 2°  
-  - Detienen servo en posición neutra
-
----
-
-## 3. Mecanismos Clave de Control
-
-### 3.1 Sistema de Carriles
-
-| Carril | Comportamiento                              |
-| ------ | ------------------------------------------- |
-| 0      | Búsqueda del primer cono                   |
-| 1      | Tras esquivar cono rojo desde la derecha    |
-| 2      | Tras esquivar cono verde desde la derecha   |
-| 3      | Tras esquivar segundo cono rojo             |
-| 4      | Tras esquivar segundo cono verde            |
-
-### 3.2 Lógica de Evasión
-
-- **Conos rojos**  
-  - 1ª detección: esquivado suave (45°)  
-  - 2ª detección: maniobra pronunciada (80°)  
-- **Conos verdes**  
-  - Maniobra en sentido opuesto a los rojos  
-  - Actualiza carril según color
+- **Straight Navigation** (`straightOnly(target)`):
+  - Adjusts servo using proportional (PID) control
+  - Maintains target angle `angulof`
+- **Precise Turns** (`turnLeftF()`, `turnLeft90()`):
+  - Calculate `angulof = gyro + Δ°`
+  - Correct in loop until error < 2°
+   - Stop servo in neutral position
 
 ---
 
-## 4. Gestión de Movimiento
+## 3. Key Control Mechanisms
+
+### 3.1 Lane System
+
+| Lane   | Compartment                                   |
+| ------ | --------------------------------------------- |
+| 0      | Search for the first cone                     |
+| 1      | After dodging the red cone from the right     |
+| 2      | After dodging the green cone from the right   |
+| 3      | After dodging the second red cone             |
+| 4      | After dodging the second green cone           |
+
+### 3.2 Evasion Logic
+
+- **Red Cones**
+  - 1st detection: gentle dodge (45°)
+  - 2nd detection: sharp maneuver (80°)
+- **Green Cones**
+  - Maneuver in the opposite direction to red cones
+  - Update lane according to color
+
+---
+
+## 4. Movement Management
 
 ![Gestión de Movimiento](https://github.com/user-attachments/assets/c1dad286-1b72-4b76-b381-61271ac7dd70)
 
-- **Avanzar**: motor frontal activado  
-- **Retroceder**: motor trasero activado  
-- **Girar**: comando mixto servomotor + marcha  
-- **Detenido**: ambos motores desactivados  
+- **Forward**: front motor activated
+- **Backward**: rear motor activated
+- **Turn**: combined servo + drive command
+- **Stopped**: both motors deactivated
 
 ---
 
-## 5. Estrategia de Navegación
+## 5. Navigation Strategy
 
 ![Estrategia de Navegación](https://github.com/user-attachments/assets/fd7c3e0d-5b96-4052-a3e4-bf6aa35f9961)
 
-> 💡 *Nota: Los indicadores de abajo representan el nivel de confiabilidad que tiene el robot para hacer estas partes*
+> 💡 *Note: The indicators below represent the level of confidence the robot has in performing these sections.*
 
-Este sistema permite al robot:
+This system allows the robot to:
 
-- Navegar en la pista de Futuros Ingenieros 
-- Identificar y esquivar los semaforos  
-- Mantener orientación precisa con IMU  
-- Adaptar comportamiento según cualquier incoveniente  
-- Completar circuitos de manera segura 
+- Navigate the Futuros Ingenieros track
+- Identify and avoid traffic signals
+- Maintain precise orientation using the IMU
+- Adapt its behavior to any unforeseen issues
+- Complete circuits safely
+  
+# First challenge explination
 
-# Explicacion Reto 1
-
-## 🌐 **Diagrama de Flujo Principal**  
+## 🌐 **Main Flowchart**  
 ```mermaid
 graph TD
-    A[Inicio] --> B[Calibración Sensores]
-    B --> C{Espera Señal}
-    C -->|Inicio| D[Lectura Sensores]
-    D --> E[Análisis Entorno]
-    E --> F{Toma de Decisiones}
-    F -->|Obstáculo| G[Evalúa Lados]
-    F -->|Libre| H[Avance Recto]
-    G --> I[Giro Controlado]
+    A[Start] --> B[Sensor Calibration]
+    B --> C{Wait for Signal}
+    C -->|Start| D[Read Sensors]
+    D --> E[Environment Analysis]
+    E --> F{Decision Making}
+    F -->|Obstacle| G[Evaluate Sides]
+    F -->|Clear| H[Move Forward]
+    G --> I[Controlled Turn]
     H --> D
     I --> D
 ```
 
-> ⚠️ *Nota:* Las funciones utilizadas en el reto 2 son las mismas que en el reto 1, por lo tanto tanto la explicacion como el razonamiento mencionado previamente es igual de efectivo.
+> ⚠️ *Note:* The functions used in Challenge 2 are the same as in Challenge 1, so both the explanation and the reasoning mentioned previously are equally valid.
 
 
-### 🧪 Registro de Pruebas – Primer Reto
+### 🧪 Test Log – First Challenge
 
-| #  | ¿Lo logró?   | Tiempo (s) | Error Detectado                            |
-|----|--------------|------------|---------------------------------------------|
-| 1  | Sí           | 118        | Ninguno                                     |
-| 2  | Sí           | 121        | Ninguno                                     |
-| 3  | No           | 10         | Detección incorrecta del lado de inicio     |
-| 4  | Sí           | 119        | Ninguno                                     |
-| 5  | Sí           | 117        | Ninguno                                     |
-| 6  | Sí           | 122        | Ninguno                                     |
-| 7  | Sí           | 120        | Ninguno                                     |
-| 8  | No           | 10         | Detección incorrecta del lado de inicio     |
-| 9  | Sí           | 118        | Ninguno                                     |
-|10  | Sí           | 123        | Ninguno                                     |
-|11  | Sí           | 120        | Ninguno                                     |
-|12  | Sí           | 119        | Ninguno                                     |
-|13  | No           | 10         | Detección incorrecta del lado de inicio     |
-|14  | Sí           | 118        | Ninguno                                     |
-|15  | Sí           | 120        | Ninguno                                     |
-|16  | No           | 10         | Detección incorrecta del lado de inicio     |
-|17  | Sí           | 117        | Ninguno                                     |
-|18  | Sí           | 121        | Ninguno                                     |
-|19  | Sí           | 122        | Ninguno                                     |
-|20  | No           | 10         | Detección incorrecta del lado de inicio     |
-|21  | Sí           | 120        | Ninguno                                     |
-|22  | Sí           | 119        | Ninguno                                     |
-|23  | Sí           | 118        | Ninguno                                     |
-|24  | Sí           | 121        | Ninguno                                     |
-|25  | No           | 10         | Detección incorrecta del lado de inicio     |
+| #  | ¿Challenge completed?     | Time (s)   | Error                                       |
+|----|---------------------------|------------|---------------------------------------------|
+| 1  | Yes                       | 118        | None                                        |
+| 2  | No                        | 121        | None                                        |
+| 3  | No                        | 10         | Incorrect detection of the starting side    |
+| 4  | Yes                       | 119        | None                                        |
+| 5  | Yes                       | 117        | None                                        |
+| 6  | Yes                       | 122        | None                                        |
+| 7  | Yes                       | 120        | None                                        |
+| 8  | No                        | 10         | Incorrect detection of the starting side    |
+| 9  | Yes                       | 118        | None                                        |
+|10  | Yes                       | 123        | None                                        |
+|11  | Yes                       | 120        | None                                        |
+|12  | Yes                       | 119        | None                                        |
+|13  | No                        | 10         | Incorrect detection of the starting side    |
+|14  | Yes                       | 118        | None                                        |
+|15  | Yes                       | 120        | None                                        |
+|16  | No                        | 10         | Incorrect detection of the starting side    |
+|17  | Yes                       | 117        | None                                        |
+|18  | Yes                       | 121        | None                                        |
+|19  | Yes                       | 122        | None                                        |
+|20  | No                        | 10         | Incorrect detection of the starting side    |
+|21  | Yes                       | 120        | None                                        |
+|22  | Yes                       | 119        | None                                        |
+|23  | Yes                       | 118        | None                                        |
+|24  | Yes                       | 121        | None                                        |
+|25  | No                        | 10         | Incorrect detection of the starting side    |
   
 
-Tiempo promedio de recorrido, precisión, errores frecuentes.
-Durante la etapa de pruebas del primer reto, se llevaron a cabo 25 intentos consecutivos para evaluar el rendimiento y la estabilidad del sistema robótico bajo condiciones controladas. Los resultados obtenidos permiten estimar métricas clave sobre el comportamiento del vehículo autónomo:
+Average travel time, accuracy, frequent errors.
+During the testing phase of the first challenge, 25 consecutive attempts were conducted to evaluate the performance and stability of the robotic system under controlled conditions. The results obtained allow for estimating key metrics regarding the autonomous vehicle’s behavior:
 
-⏱ Tiempo promedio de recorrido: 120 segundos
+⏱ Average travel time: 120 seconds
 
-🎯 Precisión en la ejecución de la trayectoria: 76%
+🎯 Accuracy in trajectory execution: 76%
 
-❌ Errores frecuentes detectados:
-
-El error más común consistió en una detección incorrecta del lado de inicio, lo que ocasionó desvíos temporales o reinicios de la lógica de navegación.
-En menor medida, se registraron leves oscilaciones en línea recta provocadas por variaciones de lectura del giroscopio en las primeras etapas del recorrido.
-
+❌ Frequently detected errors:
+The most common error consisted of incorrect detection of the starting side, which caused temporary deviations or resets in the navigation logic.
+To a lesser extent, slight oscillations in straight-line movement were observed, caused by variations in gyroscope readings during the early stages of the course.
 
 
 
 
-# Videos del funcionamiento de pompo | Version 3.0 (Videos contemporaneos)
+
+# Videos of Pompo Operation | Version 3.0 (Contemporary Videos)
  - [FUTUROS INGENIEROS-Reto 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
 
 [![Image](https://github.com/user-attachments/assets/3a998c08-fef1-4247-a1c7-fdddfd4fdfc8)](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
@@ -934,42 +910,43 @@ En menor medida, se registraron leves oscilaciones en línea recta provocadas po
 
 [![Image](https://github.com/user-attachments/assets/7d8d684a-25f8-4bad-a824-62b761711ac8)](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
 
-# Videos de pruebas pasadas
+# Videos of Past Tests
 
-## Videos Versión 1.0 del robot
-### Reto 1
+## Version 1.0 Robot Videos
+### First challenge
 [<img width="926" height="515" alt="image" src="https://github.com/user-attachments/assets/bcca2144-03be-48d7-a760-bc5364874bd4" />](https://youtu.be/W26b5g69BQQ?si=Y7qg7TaV6iR0McLb)
 
-### Prueba Reto 2
+### Second challenge test
 [<img width="453" height="583" alt="image" src="https://github.com/user-attachments/assets/5d6ff46e-4ade-4e43-bef0-940c5f0850ff" />](https://youtube.com/shorts/cc8yKOo6g8U?si=XeC0w1IYvneSmaU0)
 
 
 
-## Videos versión 2.0 del robot  
+## Version 2.0 Robot Videos
 
-### Video reto 1 completo, todas las variantes
+### Complete Challenge 1 Video, All Variants
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/dfae6ff3-cb71-4b5f-9016-ae2efeb6b23f" />
 ](https://www.youtube.com/watch?v=HS7eLoFSOkU)
 
-### Video reto 2 completo
+### Complete Challenge 2 Video
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/5868e78c-5e65-40ab-8b85-4ca204db4f23" />
 ](https://www.youtube.com/watch?v=cjjnRDXaDAU&t=56s)
 
-## Videos sobre el robot
-### Muestra de la deteccion de color
+## Robot videos
+### Color Detection Demonstration
 [<img width="270" height="480" alt="image" src="https://github.com/user-attachments/assets/b3d6a860-b0d2-4d91-bf3d-b9a8c1924240" />
 ](https://www.youtube.com/shorts/HLt_O2JlURQ)
 
-### Prueba de continuidad
+### Continuity Test
 [<img width="270" height="480" alt="image" src="https://github.com/user-attachments/assets/dd85f7af-9fe4-475b-be93-eda2947dddbc" />](https://www.youtube.com/shorts/jUmZjaQ_be8)
-## Videos sobre Red Machine
-### Presentacion nacional 2023
+
+## Videos about Red Machine
+### National Presentation 2023
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/00664584-bacb-41d2-8210-cb014d690640" />](https://www.youtube.com/watch?v=fVg6WCavaBU)
-### Red Machine Nacional 2023
+### Red Machine National 2023
 [<img width="336" height="188" alt="image" src="https://github.com/user-attachments/assets/525ffe10-d1de-4dda-a9da-bc815b110c35" />](https://www.youtube.com/watch?v=FSo2NadI6ec&pp=0gcJCbIJAYcqIYzv)
-### Presentacion del equipo Red Machine
+### Red Machine Team Presentation
 [<img width="320" height="180" alt="image" src="https://github.com/user-attachments/assets/f27d65da-cd69-4e9f-b46f-22959dfdb275" />](https://www.youtube.com/watch?v=EYFYI9Z96V4&t=25s)
-### Robotica Educativa
+### Educational Robotics
 [<img width="320" height="180" alt="image" src="https://github.com/user-attachments/assets/2ca73ef3-91ca-4155-91c7-0617813404df" />](https://www.youtube.com/watch?v=Is-765hQCRY)
 
 
@@ -1048,76 +1025,75 @@ void detectardistancias(int serial) {
 }
 ```
 
-### Visualización de datos:
+### Data Visualization:
 
-Muestra todos los valores por el puerto serial en un formato legible:
+Displays all values through the serial port in a readable format:
 
-- Ángulo del giroscopio
+- Gyroscope angle
 
-- Distancias detectadas por cada sensor ultrasónico
+- Distances detected by each ultrasonic sensor
 
-### Uso del Código
-  1.   Cargue el código en su placa Arduino compatible
+### Code Usage
+  1. Upload the code to your compatible Arduino board.
 
-  2.   Abra el Monitor Serial (115200 baudios)
-
+  2. Open the Serial Monitor (115200 baud).
      
-> 💡 *Nota: La informacion se mostrara de la siguiente manera.*
+> 💡 *Note: The information will be displayed as follows:*
 ```text
-Giroscopio (Z): 45.32° | Distancias - Izq: 25 cm | Centro: 30 cm | Der: 0 cm
-Los valores se actualizarán cada 100ms
+Gyroscope (Z): 45.32° | Distances - left: 25 cm | Center: 30 cm | right: 0 cm
+The values will update every 100 ms.
 ```
 
 
-## Posibles Errores en el Hardware
-### Sensores Ultrasónicos
-Falsos positivos/negativos: Lecturas incorrectas por interferencias o superficies absorbentes
+## Possible Hardware Errors
+### Ultrasonic Sensors
+False positives/negatives: Incorrect readings due to interference or absorbent surfaces
 
-Conexiones flojas: Cableado mal conectado en pines TRIG/ECHO
+Loose connections: Improper wiring on TRIG/ECHO pins
 
-Rango limitado: Objetos fuera del alcance máximo (4m) no son detectados
+Limited range: Objects beyond the maximum range (4 m) are not detected
 
 ### MPU6050 (IMU)
-Deriva del giroscopio: Pérdida de precisión en mediciones angulares con el tiempo
+Gyroscope Drift: Loss of precision in angular measurements over time
 
-Calibración incorrecta: Offset no calculado adecuadamente en mpu.calcOffsets()
+Incorrect Calibration: Offset not properly calculated in mpu.calcOffsets()
 
-Vibraciones: Movimientos bruscos afectan las lecturas
+Vibrations: Abrupt movements affect readings
 
-### Motores y Servo
-Atascos mecánicos: Obstrucciones físicas en el sistema de dirección
+### Motors and Servo
+Mechanical Jams: Physical obstructions in the steering system
 
-Desgaste: Pérdida de precisión en movimientos del servo
+Wear: Loss of precision in servo movements
 
-Alimentación insuficiente: Caídas de voltaje afectan torque/velocidad
+Insufficient Power: Voltage drops affect torque/speed
 
-### Errores de Software
-Lógica de Control
-PID mal ajustado: Valores de kp, ki, kd no optimizados
+### Software Errors
+Control Logic
+Poorly Tuned PID: kp, ki, kd values not optimized
 
-Condiciones de carrera: Conflictos en ejecución de múltiples funciones
+Race Conditions: Conflicts when executing multiple functions
 
-Deadlocks: Bloqueos en bucles de control
+Deadlocks: Locks in control loops
 
-### Comunicación
-Buffer serial lleno: Pérdida de datos por no limpiar el buffer
+### Communication
+Serial Buffer Full: Data loss due to not clearing the buffer
 
-Latencia I2C: Retardos en comunicación con MPU6050
+I2C Latency: Delays in communication with MPU6050
 
-Sincronización: Desfase entre lecturas de sensores y acciones
-
-
+Synchronization: Mismatch between sensor readings and actions
 
 
 
-# Historia y cronología de Red Machine
 
-1. Temporada 2023
+
+# History and Timeline of Red Machine
+
+1. 2023 Season
 - [Julio 2023](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Julio-2023)
 - [Agosto 2023](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Agosto-2023)
 - [Septiembre 2023](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Septiembre-2023)
 - [Octubre 2023](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Octubre-2023)
-2. Temporada 2024 
+2. 2024 Season
 - [Febrero 2024](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Febrero-2024)
 - [Marzo 2024](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Marzo-2024)
 - [Abril 2024](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Abril-2024)
@@ -1125,12 +1101,12 @@ Sincronización: Desfase entre lecturas de sensores y acciones
 - [Junio 2024](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Junio-2024)
 - [Octubre 2024](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Octubre-2024)
 - [Noviembre 2024](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Noviembre-2024)
-3. Temporada 2025
+3. 2025 Season
 - [Febrero 2025](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Febrero-2025)
 - [Marzo 2025](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Marzo-2025)
 - [Abril 2025](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Abril-2025)
 - [Mayo 2025](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#Mayo-2025)
-4. Julian, Luka y Pompo
+4. Julian, Luka and Pompo
 - [JULIAN 1.0](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#JULIAN-1.0)
 - [JULIAN 2.0](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#JULIAN-2.0)
 - [JULIAN 3.0](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#JULIAN-3.0)
@@ -1149,220 +1125,217 @@ Sincronización: Desfase entre lecturas de sensores y acciones
 - [POMPO 3.0](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#POMPO-3.0)
 
     
-## Temporada 2023
+## 2023 Season
 
-### Julio 2023
+### July 2023
 
-Tras participar en una competición regional de robótica, el equipo decidió participar en la WRO, concretamente en Futuros Ingenieros; así que, como primer paso, el equipo empezó a estudiar y analizar las reglas de la competición. 
+After participating in a regional robotics competition, the team decided to take part in the WRO, specifically in the Future Engineers category. As a first step, the team began studying and analyzing the competition rules.
 
 ![1ra julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/66f7c8f1-b10c-4261-86b3-32c87bcd3b81)
 
-Los días siguientes el equipo empezó a estudiar lo que podría ser el primer modelo del chasis e investigó diversas formas de resolver los que serían los primeros problemas que surgieron, que eran cómo se diseñaría el sistema de dirección y qué motor se utilizaría para alcanzar la velocidad y el par necesarios.
+In the following days, the team began studying what could be the first version of the chassis and investigated various ways to address the initial challenges, which were how to design the steering system and which motor to use to achieve the required speed and torque.
 
 ![2da julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/3c73dc50-b3c4-4f2d-a4ad-92f87ee21a87)
 
-A continuación, el equipo comenzó a buscar motores que pudieran utilizarse, desmontando juguetes, impresoras, entre otros dispositivos, para lo que finalmente se obtuvo el motor necesario desmontando un modelo de coche teledirigido: Dodge T-rex Ram de la marca Nikko, que proporcionó las piezas mecánicas necesarias para diseñar el sistema de dirección.
+Next, the team began searching for motors that could be used, disassembling toys, printers, and other devices, ultimately obtaining the necessary motor by dismantling a Nikko Dodge T-rex Ram remote-controlled car, which provided the mechanical parts needed to design the steering system.
 
-![3rajulio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/dbdfbd4e-9594-40f0-b34e-6d0528d7b328) ![4julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/32158385-5185-4d74-b19a-fd5dca851590)
+![3rajulio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/dbdfbd4e-9594-40f0-b34e-6d0528d7b328) 
 
-Posteriormente, el equipo procedió a ensamblar ambos sistemas, y los diferentes dispositivos que necesitaría el robot sobre bases acrílicas, y se completó el primer prototipo de lo que sería el chasis, pudiendo continuar con el área de programación.
+![4julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/32158385-5185-4d74-b19a-fd5dca851590)
+
+Subsequently, the team proceeded to assemble both systems, along with the various devices the robot would need, onto acrylic bases, completing the first prototype of what would become the chassis and allowing them to move forward with the programming phase.
 
 ![5julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/5d1d2414-1c38-4973-b7b8-8c7c55b3b648)
 
-Para la programación se utilizó un Arduino mega 2560 como programador, un doble puente en H como regulador de potencia y velocidad, y un sensor de ultrasonidos para medir la distancia. Consecutivamente, el equipo de trabajo retomó la búsqueda de diferentes soluciones para detectar los colores de los semáforos, decidiendo utilizar una cámara ESP32-cam con una lente OV2640, siendo el siguiente problema cómo programarla con Arduino.
+For programming, an Arduino Mega 2560 was used as the controller, a dual H-bridge as a power and speed regulator, and an ultrasonic sensor to measure distance. Subsequently, the team resumed searching for solutions to detect traffic light colors, deciding to use an ESP32-CAM with an OV2640 lens, with the next challenge being how to program it with Arduino.
 
 ![6julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/eb1e7891-75de-4a19-87ab-400c2de48bbc)
 
-Se investigó qué fuente de energía se iba a utilizar para alimentar el robot, ya que después de utilizar pilas de 9V, el equipo se dio cuenta de que éstas no eran ideales para el robot porque se desgastan en muy poco tiempo. En consecuencia, se acabaron uniendo dos paquetes de baterías, que tenían ocho pilas recargables de 1,2V en serie, que finalmente sumaron un total de 9,6V. 
+The team investigated which power source to use for the robot, since after using 9V batteries, they realized these were not ideal as they depleted very quickly. Consequently, two battery packs were connected, each containing eight 1.2V rechargeable cells in series, ultimately providing a total of 9.6V.
 
-Debido al espacio necesario, se diseñó un segundo prototipo en el que se decidió añadir un segundo piso al robot, ubicando en él la zona de electrónica, y en el primer piso las baterías, el sistema de tracción y el sistema de dirección.
-
+Due to space requirements, a second prototype was designed, adding a second level to the robot. The electronics were placed on the upper level, while the first level housed the batteries, the traction system, and the steering system.
 ![7julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/aa52095a-ea01-412f-901e-da4eb791124c)
 
-Sin poder resolver aún la programación, se decidió utilizar un sensor RGB 34725 para que el robot detecte en qué dirección debe cruzar.
+Without being able to solve the programming yet, it was decided to use an RGB 34725 sensor so that the robot could detect which direction it should cross.
 
 ![8julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/e1047aac-374b-4cdb-8531-4b916cac0f36)
 
-Se propone una estrategia: se decide cruzar con la detección de color de las líneas de la pista, utilizando además dos ultrasonidos más, uno a cada lado del robot, para que, una vez que detecte una pared, cruce para evitar un choque. Sin embargo, estos dos ultrasonidos no supusieron una ayuda, sino más bien un problema, ya que, cuando detectaban, el robot perdía la trayectoria, por lo que finalmente se decidió no utilizar estos dos sensores de ultrasonidos.
+A strategy was proposed: it was decided to cross by detecting the color of the track lines, also using two additional ultrasonic sensors, one on each side of the robot, so that once it detected a wall, it could cross to avoid a collision. However, these two ultrasonic sensors ended up being more of a problem than a help, because when they detected something, the robot lost its trajectory. Consequently, it was ultimately decided not to use these two ultrasonic sensors.
 
 ![9julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/c96458f7-a354-4cbc-b139-bbab67d7a71c)
 
-Antes de la competición, el equipo encontró pilas recargables con un voltaje superior (3,7 V), por lo que se decidió eliminar uno de los dos paquetes de pilas y modificar el restante para que funcionara con 3 pilas.
+Before the competition, the team found rechargeable batteries with a higher voltage (3.7 V), so it was decided to remove one of the two battery packs and modify the remaining pack to operate with 3 batteries.
 
 ![10julio](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/cab0ff29-43a8-4808-9a1b-f93d4ca45027)
 
-### Agosto 2023
+### August 2023
 
-Tras participar en la primera competición regional, se comenzó a buscar soluciones a los problemas presentados. Se decidió cambiar el sistema de dirección, creando uno nuevo con piezas obtenidas en un kit de robótica spike prime número 45678, ya que con este nuevo sistema de dirección sería posible tener un mayor radio de giro, así como un giro más preciso. 
+After participating in the first regional competition, the team began seeking solutions to the problems encountered. It was decided to change the steering system, creating a new one using parts from a Spike Prime robotics kit, number 45678, since this new steering system would allow a larger turning radius as well as more precise turns.
 
 ![1ago](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/2e470dc5-3636-41a1-9733-a62f20ae0db0)
 
-Se propusieron nuevas estrategias, para lo cual se decidió que la forma ideal de cruzar sería con la ayuda de ultrasonidos y que el sensor TCS34725 sólo detectaría la primera línea para determinar si el robot debía cruzar en el sentido de las agujas del reloj o en sentido contrario.
+New strategies were proposed, for which it was decided that the ideal way to cross would be with the help of ultrasonic sensors, and that the TCS34725 sensor would only detect the first line to determine whether the robot should cross clockwise or counterclockwise.
 
-Continuando con la segunda parte del reto, el equipo comenzó a programar la cámara buscando cómo transferir la información de la cámara al Arduino sin necesidad de utilizar Wi-Fi. Después de buscar en varias fuentes, se encontró la solución, que consistía en transmitir la información a través de puertos serie.
+Continuing with the second part of the challenge, the team began programming the camera, looking for a way to transfer the camera’s information to the Arduino without using Wi-Fi. After researching several sources, they found a solution: transmitting the data through serial ports.
 
-Entonces el motor utilizado durante todo este tiempo empezó a fallar con mucha frecuencia, impidiendo el avance del equipo de trabajo en el segundo reto, por lo que a falta de unos días para la competición el equipo extrajo el motor y por tanto la caja de cambios de otro coche teledirigido para acoplarlo al robot.
+Then, the motor used during all this time began to fail frequently, preventing the team from progressing in the second challenge. A few days before the competition, the team extracted the motor—and consequently the gearbox—from another remote-controlled car to integrate it into the robot.
 
 ![2ago](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/6dbc1ef9-7d96-4ca5-839e-63c8bb6c3e24)
 
-Para proporcionar un mayor radio de giro se modificó el sistema de dirección utilizando piezas de un kit Lego Spike Prime.
+To provide a larger turning radius, the steering system was modified using pieces from a Lego Spike Prime kit.
 
 ![3ago](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/528c8a5c-2b6b-4996-9143-c09bb9472b1b)
 
-### Septiembre 2023
+### September 2023
 
-Se realizaron prácticas en la pista, para el desempeño del robot en el desafío número uno y dos para hacer el mejor trabajo en el campeonato nacional 2023. Se elaboró el informe y se actualizó de acuerdo a lo logrado hasta el momento, para luego realizar prácticas en pista, para mejorar el desempeño del robot en el desafío número uno y dos para el campeonato nacional 2023.
+Practice sessions were conducted on the track to improve the robot’s performance in challenges one and two, aiming for the best results in the 2023 national championship. The report was drafted and updated based on the progress achieved so far, followed by additional track practice to further enhance the robot’s performance in challenges one and two for the 2023 national championship.
 
 ![4ago](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/e132722b-7d13-4236-8e9b-7d837b6f065d) ![5 ago](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/eb82c5c2-2d85-4bf3-a0a5-0326dc07f3d5)
 
-Ha llegado el momento de la competición nacional, en la que se ha logrado el objetivo de clasificarse para la Copa Mundial de la WRO de 2023 en Panamá.
+The time has come for the national competition, where the team successfully achieved the goal of qualifying for the 2023 WRO World Cup in Panama.
 
 ![sep2](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/41c23672-ecf9-4970-a691-882c736f0801)![sep1](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/454f09af-68c2-41fe-842e-51191bca02c3)
  
 
-### Octubre 2023
+### October 2023
 
-Se continuó con la programación de la cámara para el reto número 2. Se cambiaron las ruedas del sistema de dirección para aumentar la seguridad y la estética y se inició la construcción del tercer prototipo del robot, que se basa en la restauración de los acrílicos, organización de los cables a través de conectores para mejorar la parte estética del robot.
+Work continued on programming the camera for Challenge 2. The wheels of the steering system were changed to improve safety and aesthetics, and the construction of the third prototype of the robot began, focusing on restoring the acrylic parts and organizing the cables through connectors to enhance the robot’s overall appearance.
 
 ![sep3](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/38c0d5d6-7739-47c4-ac14-718439dbf9c6)
 
-Llega el momento de la Copa del Mundo, en la que el equipo quedó entre los 25 primeros del mundo, y entre los 2 primeros de los países latinoamericanos.
+The time for the World Cup arrives, where the team ranked among the top 25 in the world and within the top 2 among Latin American countries.
 
 ![oc1](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/d7f5104d-0fcb-45c1-b448-8e1b9b5449bd)![oct2](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/93173685-2fc5-4110-bf5e-b1adf484abe1)
 
-## Temporada 2024
+## 2024 season
 
-### Febrero 2024
+### February 2024
 
-Lo primero que hizo el equipo para empezar esta temporada fue estudiar el nuevo manual de reglas, para encontrar las diferencias en el desafío y pensar en posibles estrategias para el nuevo año.
+The first thing the team did to start this season was study the new rulebook, to identify the differences in the challenge and consider possible strategies for the new year.
 
 ![febrero 1](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/543ccce4-e258-4f4d-ab56-94f6a3207c77)
 
-El equipo comenzó a diseñar el nuevo robot, teniendo en cuenta todo lo aprendido en la Copa del Mundo. Durante este diseño se tuvieron en cuenta aspectos como el tamaño, el peso, qué componentes se utilizarían, su posición y la distancia entre los sistemas de tracción y dirección.
+The team began designing the new robot, taking into account everything they had learned at the World Cup. During this design phase, aspects such as size, weight, which components would be used, their placement, and the distance between the traction and steering systems were considered.
 
 ![feb2](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/e518fc97-dbcd-4631-86c7-ceff1295411f)
 
-El equipo siguió pensando qué estrategia utilizar. Con el objetivo de no mostrar los avances y mejoras que se harían en el nuevo robot, se decidió que lo mejor sería volver a participar con Julián (robot de 2023) durante los regionales, y participar con el nuevo robot (Luka) en el nacional, que sería el mayor reto del momento.
+The team continued planning which strategy to use. To avoid revealing the improvements and advancements planned for the new robot, they decided it would be best to compete with Julián (the 2023 robot) during the regional competitions and use the new robot (Luka) in the national competition, which would be the biggest challenge at the time.
 
 ![feb3](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/c918252f-6495-4227-b0c1-6020686d0f09)
 
-### Marzo 2024
+### March 2024
 
-Durante este mes comenzó la construcción del robot que se utilizará en la competición nacional de 2024. En la primera semana de marzo, se cortaron las bases acrílicas y se compraron los componentes que faltaban para el robot.
-En primer lugar, se instalaron en el robot el sistema de tracción y el sistema de dirección. En este momento el sistema de dirección se construyó con 3 piezas de acrílico.  Después se instalaron el arduino y la frambuesa.
+During this month, the construction of the robot for the 2024 national competition began. In the first week of March, the acrylic bases were cut and the missing components for the robot were purchased.
+First, the traction system and the steering system were installed on the robot. At this stage, the steering system was built using three acrylic pieces. Afterward, the Arduino and the Raspberry Pi were installed.
 
 ![feb4](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/23bb3e40-7f24-499d-9f17-81d077cd7c80)![feb5](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/bf47b801-3b39-4c64-8e48-dd82d7b7f9e9)
 
-A finales de marzo se finalizó la construcción del robot, tras instalar todos los sensores que utilizaría el robot. Asimismo, se inició la programación para el reto 1, y la programación en python para el reto 2.
+At the end of March, the construction of the robot was completed after installing all the sensors it would use. Additionally, programming for Challenge 1 was started, along with Python programming for Challenge 2.
 
 ![feb6](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/ba34c027-6287-45b2-a1b7-981fea57a367)
 
-### Abril 2024
+### April 2024
 
-Desde que el equipo decidió participar con Julián en las regionales, se empezó a trabajar en algunas mejoras para el funcionamiento de este robot. Una de estas mejoras fue el cambio del sensor 34725 RGB por el sensor de color TCS 3200.
+Since the team decided to participate with Julián in the regional competitions, work began on some improvements to the robot’s performance. One of these improvements was replacing the 34725 RGB sensor with the TCS3200 color sensor.
 
 ![feb7](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/48b506e4-a226-4501-9297-ab61940ddbd8)
 
-Con vistas a la regional que se avecinaba, se actualizó el informe de acuerdo con lo realizado hasta la fecha. Lo más importante en este sentido fue la actualización de la cronología, el diagrama de cableado y las especificaciones del sensor de color.
+In preparation for the upcoming regional competition, the report was updated according to the work completed so far. The most important updates included the timeline, the wiring diagram, and the specifications of the color sensor.
 
 ![feb8](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/e74d6b44-9a5a-4ff3-aa44-223e3d5b8257)
 
-Competencias regionales 2024:
+2024 Regional Competitions:
 
-Colegio Santo Tomás de Aquino 04-05-2024
+Colegio Santo Tomás de Aquino 05-04-2024
 ![feb9](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/0569d301-fa0c-444f-8521-f688f98e4dcd)
 
-### Mayo 2024
-Liceo Los Robles 18-05-2024
+### May 2024
+Liceo Los Robles 05-18-2024
 ![feb10](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/da1b210c-ddeb-4e1a-85d9-211e8c0ffc5c)
 
 
-### Junio 2024
+### June 2024
 
-De cara al nacional, el equipo continuó con las pruebas de ambos desafíos, principalmente el segundo; al mismo tiempo, el equipo realizó el informe de Luka.
-Durante las pruebas, se decidió quitar el sensor de color, ya que no funcionaba de la mejor manera, y se empezaron a utilizar los sensores de ultrasonidos de los laterales para saber qué lado debía seguir Luka.
+In preparation for the national competition, the team continued testing both challenges, focusing primarily on the second one; at the same time, they worked on Luka's report.
+During the tests, it was decided to remove the color sensor, as it was not functioning optimally, and the side ultrasonic sensors began to be used to determine which path Luka should follow.
 
 ![jun1](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/4ec63c83-89a8-4a1b-ab29-952e07b1f754)
 
-El equipo consiguió terminar completamente el informe, y terminó de subir la información a GitHub a finales de mes, estando ya preparados para la WRO 2024 nacional.
+The team managed to fully complete the report and finished uploading all the information to GitHub by the end of the month, being fully prepared for the 2024 National WRO competition.
 
 ![JUN2](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/ec3a2df2-7dff-4fec-b924-b2d1eb7ead83) ![JUN3](https://github.com/RoboticaLLR/redmachine2024/assets/155327813/cd6712cd-9323-48ea-98b8-636553662499)
 
 
-### Octubre 2024
+### October 2024
 
-Tras ganar la competición nacional, el equipo consiguió formar parte de la delegación que representará a Venezuela en la final internacional de la olimpiada robótica, en Izmir, Turquía. Para ello, el equipo necesitaba mucha preparación y práctica, así que empezaron a trabajar en Luka. 
+After winning the national competition, the team managed to become part of the delegation representing Venezuela in the international finals of the Robotics Olympiad in Izmir, Turkey. This required extensive preparation and practice, so they began working on Luka.
 
-Durante las dos primeras semanas de preparación, el equipo comenzó a realizar cambios estructurales en Luka, con el objetivo de reducir el tamaño del robot. Para conseguirlo, se modificaron tanto el sistema de tracción como el de dirección. El sistema de dirección se giró 180 grados para que las ruedas estuvieran más en la parte delantera, y el motor del sistema de tracción cambió su posición para ser vertical, utilizando menos espacio horizontal. Después de esto, se recortaron unos 5cm de espacio muerto en la parte trasera del robot, terminando este proceso con el robot midiendo 18cm. 
+During the first two weeks of preparation, the team started making structural changes to Luka to reduce the size of the robot. To achieve this, both the traction and steering systems were modified. The steering system was rotated 180 degrees so that the wheels were positioned more toward the front, and the traction motor was repositioned vertically to occupy less horizontal space. After this, approximately 5 cm of unused space at the rear of the robot was removed, completing this process with the robot measuring 18 cm in length.
 
 ![motor comparation](https://github.com/user-attachments/assets/00b11495-df00-430e-b246-063aeed43f5f)
 ![Traction comparation](https://github.com/user-attachments/assets/34566443-f982-43b6-9cad-7033e43392aa)
 
 
-La tercera semana de trabajo fue el punto de partida de la programación. Tras tener problemas con la alimentación de la raspberry pi, el equipo decidió buscar una nueva forma de detectar las señales de tráfico. Después de buscar una solución, el equipo decidió utilizar una pixy cam porque ocupaba menos espacio, pesaba menos y podía alimentarse con el arduino. El equipo también se dio cuenta de que se necesitaría un giroscopio, especialmente en el segundo reto, así que empezaron a utilizar el magnetómetro HMS5883L. 
+The third week of work marked the start of programming. After encountering issues with powering the Raspberry Pi, the team decided to look for a new method to detect traffic signals. After evaluating solutions, they chose to use a Pixy Cam because it took up less space, weighed less, and could be powered directly by the Arduino. The team also realized that a gyroscope would be necessary, especially for the second challenge, so they began using the HMS5883L magnetometer.
 
 ![pixy2 1](https://github.com/user-attachments/assets/0d5ba0ac-d5ba-47c5-957f-c5cc7350b439)
 ![HMC5883L](https://github.com/user-attachments/assets/fdfc00e6-27a0-4843-81a8-c86973bba489)
 
 
-El pixy cam resultó ser una excelente elección, pero el magnetómetro no, por lo que el equipo comenzó a buscar uno nuevo, eligiendo MPU6050. Después de mucha práctica con el acelerómetro, el equipo llegó a utilizarlo en las curvas completas, pero debido al gran margen de error no podían confiar en que llevara el coche a girar exactamente 90 grados. 
+The Pixy Cam turned out to be an excellent choice, but the magnetometer was not, so the team started looking for a new one and chose the MPU6050. After extensive practice with the accelerometer, the team was able to use it on full curves, but due to its large margin of error, they could not rely on it to make the car turn exactly 90 degrees.
 
 ![prueba pixy](https://github.com/user-attachments/assets/ba0a2a27-5e38-4ecf-aacf-253b168c61ea)
 ![MPU6050](https://github.com/user-attachments/assets/14ad7f2f-d015-4d14-b35c-de9057ae6749)
 
 
-Por ello, el equipo utilizó la cuarta semana para diseñar una nueva estrategia. Con esta nueva estrategia, el robot se calibró con las paredes exteriores. 
+Therefore, the team used the fourth week to design a new strategy. With this new strategy, the robot was calibrated with the outer walls. 
 
+### November 2024
 
-### Noviembre 2024
-
-La primera semana de noviembre fue puramente de preparación y práctica. En esta semana el robot consiguió dar dos vueltas consistentes en el segundo desafío, pero el equipo seguía preocupado por el problema del giroscopio. 
+The first week of November was devoted entirely to preparation and practice. During this week, the robot managed to complete two consistent laps in the second challenge, but the team remained concerned about the gyroscope issue. 
 
 ![ramdom practice](https://github.com/user-attachments/assets/0c77eda4-712e-47df-84f0-b20429e7cd49)
 
 
 
-Por ello, la segunda semana de noviembre el equipo empezó a practicar con un nuevo giroscopio, el BNO055. Este sensor es una hibridación de un magnetómetro y un acelerómetro, lo que le permite dar unos datos casi exactos. 
+Therefore, in the second week of November, the team began practicing with a new gyroscope, the BNO055. This sensor is a hybrid of a magnetometer and an accelerometer, which allows it to provide almost exact data. 
 
 ![BNO055](https://github.com/user-attachments/assets/9bccdb43-f634-4808-92c7-ae4d567bc054)
 
-Finalmente, los días 28, 29 y 30 de este mes el equipo compitió en la final internacional en turquía, conseguiendo el puesto 19 a nivel mundial y segundo a nivel latinoamericano. 
+Finally, on the 28th, 29th, and 30th of this month, the team competed in the international finals in Turkey, achieving 19th place worldwide and second place in Latin America. 
 
 "FOTO"
 
-Esta competencia le dejó al equipo una gran motivación para las siguientes competencias nacionales, con el objetivo de clasificar y obtener los mejores resultados en la final internacional a celebrarse en Singapur. 
+This competition left the team highly motivated for the upcoming national competitions, with the goal of qualifying and achieving the best results in the international final to be held in Singapore. 
 
 ![Image](https://github.com/user-attachments/assets/2f67bc4d-b872-4518-9a7e-bd1731d2f31f)
 
-## Temporada 2025
+## 2025 season
 
-### Febrero 2025
+### February 2025
 
-Como en los años anteriores, la primera acción de Red Machine al inicio de una nueva temporada fue revisar los cambios en las reglas y puntuación de la competencia. El equipo estudió cuidadosamente las nuevas reglas para asegurarse de que todo lo que se hiciera fuera bajo estas, y lograr desarrollar y crear el mejor robot posible. 
-Bajo esto, en las siguientes semanas de este primer mes se comenzó a crear el primer prototipo del nuevo robot, "Pompo".
+As in previous years, Red Machine's first action at the start of a new season was to review the changes in the competition rules and scoring. The team carefully studied the new rules to ensure that everything they did was in accordance with them, and to develop and create the best robot possible. 
 
-
-En este momento se decidió cambiar todo el diseño mecánico, para pasar de usar piezas fabricadas por el equipo a piezas de lego, cambiando además los componentes electrónicos a los diseñados por esta empresa, incluidos en el kit de lego ev3. 
-De esta forma, en el mes de febrero el equipo comenzó con la construcción de pompo. 
+Under these rules, in the following weeks of this first month, work began on creating the first prototype of the new robot, “Pompo.”
 
 
-### Marzo 2025
+### March 2025
 
-En este mes, el equipo finalizó el primer prototipo de pompo, y comenzó con la programación, utilizando ROBOTC como el entorno para programar el módulo ev3, que fue el cerebro de este primer prototipo de pompo. 
-Luego de largas seciones de prácticas, el equipo finalizó el primer reto a la perfección, por lo que era momento de pasar a trabajar con el segundo. En este momento, el equipo se encontró con un gran problema, adaptar la pixycam a este módulo ev3. 
+This month, the team finished the first pompo prototype and began programming, using ROBOTC as the environment to program the ev3 module, which was the brain of this first pompo prototype. 
+After long practice sessions, the team completed the first challenge perfectly, so it was time to move on to the second one. At this point, the team encountered a major problem: adapting the Pixycam to this EV3 module. 
 
-### abril 2025
+### April 2025
 
-Luego de pasar tiempo buscando soluciones para esto, el equipo decidió que sería mejor regresar a trabajar con arduino, pues la programación es muy similar, y se podría solucionar el problema presente mucho más rápido. 
-En base a esto, se trabajó durante un largo período de tiempo en modificar todo el chasis del robot para adaptarlo al arduino, y a los nuevos sensores y motores que se utilizarían, pues los de ev3 no son compatibles directamente con arduino
-Al finalizar con la construcción, el equipo volvió a la programación, más sin embargo al probar a pompo en pista, el chasis de este comenzó a fallar. 
+After spending time looking for solutions to this problem, the team decided that it would be best to go back to working with Arduino, as the programming is very similar and the current problem could be solved much more quickly. 
+Based on this, they worked for a long time to modify the entire robot chassis to adapt it to Arduino and the new sensors and motors that would be used, as those from EV3 are not directly compatible with Arduino.
+Once construction was complete, the team returned to programming, but when they tested Pompo on the track, its chassis began to malfunction. 
 
-### mayo 2025
+### May 2025
 
-Por esto, el equipo comenzó a trabajar nuevamente en una mejora del chasis, consiguiendo finalmente lo que sería el primer chasis definitivo de pompo. 
-La programación del primer reto fue rápida, por lo que se comenzó a trabajar con el segundo reto casi inmediatamente. 
+For this reason, the team began working again on improving the chassis, finally achieving what would be the first definitive pompo chassis.
+The scheduling of the first challenge was quick, so work on the second challenge began almost immediately. 
 
-## Julian, luka y pompo
+## Julian, luka and pompo
 
 ### JULIAN 1.0
 
