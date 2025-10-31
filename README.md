@@ -4,7 +4,7 @@
 
 This repository contains all the materials needed to create "pompo", the autonomous robot built by the team "Red Machine", with the goal of participating in the Futuros Ingenieros category in the different stages of WRO Venezuela, in its 2025 edition.
 
-![Image](https://github.com/user-attachments/assets/86d8b3ba-9f00-4d94-9a0b-7fb3f87d222e)
+![Image](https://github.com/user-attachments/assets/1cbe6250-ba27-41c2-bb0b-d5abe1c41ac8)
 
 
 # INDEX - REDMACHINE 2025
@@ -184,7 +184,7 @@ Passionate about continuous learning, creative problem solving, and collaboratin
 
 ---
 
-![red machine 2024](https://github.com/RoboticaLLR/redmachine2024/assets/146040533/d5bb5fc0-b1bd-47a8-9ac3-c190587ae5ae)
+![Image](https://github.com/user-attachments/assets/b1555ddb-f7c7-47b6-b690-13382831a981)
 
 
 # Development stages (Previous robot versions)
@@ -1384,9 +1384,7 @@ The scheduling of the first challenge was quick, so work on the second challenge
 ![Image](https://github.com/user-attachments/assets/40842456-c271-4c38-b15f-77bbeb7e6772)
 
 
-- [POMPO 2.0](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#POMPO-2.0)
 
-- [POMPO 3.0](https://github.com/Samu4035/REDMACHINE-2025/blob/main/t-photos/Historia.md#POMPO-3.0)
 
 
 
