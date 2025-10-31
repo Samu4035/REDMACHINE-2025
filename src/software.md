@@ -1,37 +1,37 @@
-# Diseño del software
+# Software design
 
-1. Análisis de imágenes
+1. Image analysis 
 -  [Procesamiento de imágenes](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Procesamiento-de-imágenes)
 -  [Detección de color](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Detección-de-color)
 -  [Programación](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Programación)
 -  [Sistema de Control de Robot](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Sistema-de-Control-de-Robot)
 
-# Procesamiento de imágenes
-Para procesar la imagen, Luka utiliza una cámara. Esta es la pixy2. 
+# Image Processing
+To process images, Pompo uses a camera. This is the Pixy2.
 
 ![pixy2.1](https://github.com/user-attachments/assets/46298b4d-2184-4b40-9b81-577219ed9214)
 
-La pixy2 trabaja a 60 fps, y es capaz de detectar objetos, líneas y colores. En luka el objetivo principal de la camara es detectar colores (rojo y verde). 
-Se conecta al arduino con un cable IDC 2 ICSP Arduino que va en los pines ICSP del arduino, que proporciona todas las conexiones necesarias para alimentar y comunicarse con el pixy. 
+The Pixy2 operates at 60 fps and is capable of detecting objects, lines, and colors. In Pompo, the main purpose of the camera is to detect colors (red and green).
+It connects to the Arduino using an IDC 2 ICSP Arduino cable that plugs into the Arduino’s ICSP pins, providing all necessary connections for powering and communicating with the Pixy.
 
-## Detección de color
-Pixy2 utiliza un algoritmo de filtrado basado en el color para detectar objetos llamado el algoritmo Color Connected Components (CCC). Pixy2 calcula el color (tono) y la saturación de cada píxel RGB del sensor de imagen y los utiliza como parámetros principales de filtrado. El tono de un objeto permanece prácticamente inalterado con los cambios de iluminación y exposición. El algoritmo CCC de Pixy2 recuerda hasta 7 firmas de color diferentes.
+## Color Detection
+The Pixy2 uses a color-based filtering algorithm called the Color Connected Components (CCC) algorithm to detect objects. Pixy2 calculates the color (hue) and saturation of each RGB pixel from the image sensor and uses these as the main filtering parameters. The hue of an object remains practically unchanged under variations in lighting and exposure. Pixy2’s CCC algorithm can remember up to 7 different color signatures.
 
-Después de guardar un color en una firma de color, el pixy lo añadirá a una tabla de objetos que está rastreando actualmente y le asignará un índice de rastreo. A continuación, intentará encontrar el objeto (y todos los objetos de la tabla) en el siguiente fotograma buscando su mejor coincidencia. Cada objeto rastreado recibe un índice entre 0 y 255 que mantendrá hasta que abandone el campo de visión de Pixy2. 
+Once a color is stored in a color signature, Pixy adds it to a table of currently tracked objects and assigns it a tracking index. Then, it attempts to locate the object (and all objects in the table) in the next frame by searching for the best match. Each tracked object receives an index between 0 and 255, which it retains until it leaves the Pixy2’s field of view.
 
 ![seguimiento_color](https://github.com/user-attachments/assets/46d2f0c5-c726-4a08-a899-b9a19b0e1dee)
 
 
-## Programación 
-Para establecer los colores que debe detectar la cámara, el equipo utiliza pixymon. PixyMon es una aplicación que funciona en Windows, MacOs y Linux. Te permite ver lo que Pixy2 ve, ya sea como vídeo en bruto o procesado. También te permite configurar tu Pixy2, establecer el puerto de salida y gestionar las firmas de color. PixyMon se comunica con Pixy2 a través de un cable mini USB estándar.
+## Programming
+To set the colors that the camera should detect, the team uses PixyMon. PixyMon is an application that works on Windows, macOS, and Linux. It allows you to see what the Pixy2 sees, either as raw or processed video. It also lets you configure your Pixy2, set the output port, and manage color signatures. PixyMon communicates with the Pixy2 via a standard mini USB cable.
 
 ![Screenshot 2024-11-11 103435](https://github.com/user-attachments/assets/f58a573e-7a54-49de-9017-4953aa863677)
 
-En pixymon el equipo establece 6 firmas, tres para el verde y tres para el rojo. Las firmas 1, 3 y 5 para el rojo, y las firmas 2, 4 y 6 para el verde. 
+In PixyMon, the team sets up 6 color signatures: three for green and three for red. Signatures 1, 3, and 5 are for red, and signatures 2, 4, and 6 are for green.
 
-Después de esto el arduino proccesing necesitaba ser hecho. 
+After this, the Arduino processing needed to be done.
 
-En el arduino, el equipo utiliza la librería pixy2, que permite obtener toda la información necesaria de la detección de pixeles. Entonces, usando el siguiente código, el equipo guarda cuando el pixy detecta un color y a qué firmas corresponde el color en una variable llamada «hola». Si hola es divisible por dos, entonces el color es verde, y si hola no es divisible por dos, entonces el color es rojo. 
+On the Arduino, the team uses the Pixy2 library, which allows them to obtain all the necessary information from pixel detection. Using the following code, the team records when the Pixy detects a color and which signatures correspond to that color in a variable called «hola». If «hola» is divisible by two, the color is green; if «hola» is not divisible by two, the color is red.
 
 # Sistema de Control de Robot
 
@@ -39,173 +39,193 @@ En el arduino, el equipo utiliza la librería pixy2, que permite obtener toda la
 
 ---
 
-# Explicacion Codigo Reto 2
-
-
----
-
-## 1. Inicialización y Configuración
-
-- Calibración del IMU (MPU6050)  
-- Configuración de pines y comunicación (Serial, I²C, servo, motores, botón)  
-- Centrado del servomotor de dirección (`rec`)  
-- Espera de señal de inicio (botón en pin 23 o comando serial `'1'`)
+# Second challenge code
 
 ---
 
-## 2. Secuencia Principal de Operación (loop)
+## 1. Initialization and Setup
 
-El robot repite continuamente el siguiente ciclo:
+- IMU (MPU6050) calibration
+- Pin and communication configuration (Serial, I²C, servo, motors, button)
+- Centering of the steering servo (rec)
+- Waiting for start signal (button on pin 23 or serial command '1')
 
-### a) Lectura de Sensores
+---
+
+## 2. Main Operation Sequence (loop)
+
+The robot continuously repeats the following cycle:
+
+### a) Sensor Reading
 
 ![Lectura de Sensores](https://github.com/user-attachments/assets/d3549fd1-adc8-48e8-ba60-03aa1c59fb70)
 
-- Ultrasonidos izquierdo (`di`), central (`d`) y derecho (`dd`)  
-- Actualización de ángulo con IMU (`gyro`)
+- Left (di), center (d), and right (dd) ultrasonic sensors
+- Angle update using IMU (gyro)
 
-### b) Detección de Obstáculos Cercanos
+### b) Detection of Nearby Obstacles
 
-**Función**: `detectarladocorto()`
+**Function**: `detectarladocorto()`
 
-- Si `d < 10 cm`:  
-  - Relee distancias  
-  - Compara `di` vs. `dd`  
-  - Asigna lateralidad:  
-    - `a = 1` → giro por la izquierda  
-    - `a = 2` → giro por la derecha  
+- If `d < 10 cm`:
+  - Read distances again
+  - Compare `di` vs. `dd`
+  - Assign side preference:
+    - `a = 1` → turn left
+    - `a = 2` → turn right
 
-### c) Gestión del Segundo Reto (girosegundoreto())
+### c) Second Challenge Management (girosegundoreto())
 
-Cuando `d < 10 cm` detecta pared frontal:
+When `d < 10 cm` a front wall is detected:
 
-| Carril | Secuencia de Maniobra                                                                                         |
-| ------ | -------------------------------------------------------------------------------------------------------------- |
-| Impar  | 1. Retroceder<br/>2. Girar 90° opuesto a la pared<br/>3. Retroceder 2.5 s<br/>4. Avanzar                       |
-| Par    | 1. Retroceder 1.8 s<br/>2. Girar 90° hacia la pared<br/>3. Retroceder 2.5 s<br/>4. Avanzar                     |
+| Lane  | Maneuver Sequence                                                                                    |
+| ------| ---------------------------------------------------------------------------------------------------- |
+| Odd   | 1. Reverse<br/>2. Turn 90° away from the wall<br/>3. Reverse for 2.5 s<br/>4. Move forward           |
+| Even  | 1. Reverse for 1.8 s<br/>2. Turn 90° toward the wall<br/>3. Reverse for 2.5 s<br/>4. Move forward    |
 
-Al final de cada reto, `vuelta++`.
+At the end of each challenge, `vuelta++`.
 
-### d) Detección de Conos (detectarpixyY())
+### d) Cone Detection (detectarpixyY())
 
-- La cámara Pixy2 captura bloques de color.  
-- Identifica firma de color:  
-  - Rojo si `signature % 2 == 1`  
-  - Verde si `signature % 2 == 0`  
-- Selecciona el bloque más cercano (mayor `m_y`).  
-- Conserva `lastblock` si la detección momentánea falla.
+- The Pixy2 camera captures color blocks.
+- Identifies color signature:
+  - Red if signature % 2 == 1
+  - Green if signature % 2 == 0
+- Selects the closest block (highest m_y).
+- Keeps `lastblock` if the current detection fails.
 
-### e) Evasión de Conos
+### e) Cone Evasion
 
 ![Evasión de Conos](https://github.com/user-attachments/assets/c6af0941-932f-4e8a-8245-58376482faaa)
 
-**Función**: `esquivarconos()`
+**Function**: `esquivarconos()`
 
-- Según `a` (lado) y `carril` actual, realiza maniobras:  
-  - Cono rojo en carril 0 →  
-    1. `giroderf(45)`  
-    2. Servo a posición neutra + delay  
-    3. `giroizqf(45)`  
-    4. Actualiza `carril` y `listo`  
-  - Lógicas análogas para conos verdes y otros carriles
+- Based on `a` (side) and current `lane`, perform maneuvers:
+- Red cone in lane 0 →
+  1. `turnRightF(45)`
+  2. Servo to neutral position + delay
+  3. `turnLeftF(45)`
+  4. Update `lane` and `ready`
+  - Analogous logic for green cones and other lanes
 
-### f) Control de Dirección
+### f) Direction control
 
-- **Navegación recta** (`rectificadosolo(target)`):  
-  - Ajusta servo con control proporcional (PID)  
-  - Mantiene ángulo objetivo `angulof`  
-- **Giros precisos** (`giroizqf()`, `giroizq90()`):  
-  - Calculan `angulof = gyro + Δ°`  
-  - Corrigen en bucle hasta error < 2°  
-  - Detienen servo en posición neutra
-
----
-
-## 3. Mecanismos Clave de Control
-
-### 3.1 Sistema de Carriles
-
-| Carril | Comportamiento                              |
-| ------ | ------------------------------------------- |
-| 0      | Búsqueda del primer cono                   |
-| 1      | Tras esquivar cono rojo desde la derecha    |
-| 2      | Tras esquivar cono verde desde la derecha   |
-| 3      | Tras esquivar segundo cono rojo             |
-| 4      | Tras esquivar segundo cono verde            |
-
-### 3.2 Lógica de Evasión
-
-- **Conos rojos**  
-  - 1ª detección: esquivado suave (45°)  
-  - 2ª detección: maniobra pronunciada (80°)  
-- **Conos verdes**  
-  - Maniobra en sentido opuesto a los rojos  
-  - Actualiza carril según color
+- **Straight Navigation** (`straightOnly(target)`):
+  - Adjusts servo using proportional (PID) control
+  - Maintains target angle `angulof`
+- **Precise Turns** (`turnLeftF()`, `turnLeft90()`):
+  - Calculate `angulof = gyro + Δ°`
+  - Correct in loop until error < 2°
+   - Stop servo in neutral position
 
 ---
 
-## 4. Gestión de Movimiento
+## 3. Key Control Mechanisms
+
+### 3.1 Lane System
+
+| Lane   | Compartment                                   |
+| ------ | --------------------------------------------- |
+| 0      | Search for the first cone                     |
+| 1      | After dodging the red cone from the right     |
+| 2      | After dodging the green cone from the right   |
+| 3      | After dodging the second red cone             |
+| 4      | After dodging the second green cone           |
+
+### 3.2 Evasion Logic
+
+- **Red Cones**
+  - 1st detection: gentle dodge (45°)
+  - 2nd detection: sharp maneuver (80°)
+- **Green Cones**
+  - Maneuver in the opposite direction to red cones
+  - Update lane according to color
+
+---
+
+## 4. Movement Management
 
 ![Gestión de Movimiento](https://github.com/user-attachments/assets/c1dad286-1b72-4b76-b381-61271ac7dd70)
 
-- **Avanzar**: motor frontal activado  
-- **Retroceder**: motor trasero activado  
-- **Girar**: comando mixto servomotor + marcha  
-- **Detenido**: ambos motores desactivados  
+- **Forward**: front motor activated
+- **Backward**: rear motor activated
+- **Turn**: combined servo + drive command
+- **Stopped**: both motors deactivated
 
 ---
 
-## 5. Estrategia de Navegación
+## 5. Navigation Strategy
 
 ![Estrategia de Navegación](https://github.com/user-attachments/assets/fd7c3e0d-5b96-4052-a3e4-bf6aa35f9961)
 
-Este sistema permite al robot:
+> 💡 *Note: The indicators below represent the level of confidence the robot has in performing these sections.*
 
-- Navegar en entornos desconocidos  
-- Identificar y esquivar obstáculos dinámicos  
-- Mantener orientación precisa con IMU  
-- Adaptar comportamiento según patrones de color  
-- Completar circuitos con múltiples vueltas  
+This system allows the robot to:
 
-### 🧪 Registro de Pruebas – Primer Reto
+- Navigate the Futuros Ingenieros track
+- Identify and avoid traffic signals
+- Maintain precise orientation using the IMU
+- Adapt its behavior to any unforeseen issues
+- Complete circuits safely
+  
+# First challenge explination
 
-| #  | ¿Lo logró?   | Tiempo (s) | Error Detectado                            |
-|----|--------------|------------|---------------------------------------------|
-| 1  | Sí           | 118        | Ninguno                                     |
-| 2  | Sí           | 121        | Ninguno                                     |
-| 3  | No           | 10         | Detección incorrecta del lado de inicio     |
-| 4  | Sí           | 119        | Ninguno                                     |
-| 5  | Sí           | 117        | Ninguno                                     |
-| 6  | Sí           | 122        | Ninguno                                     |
-| 7  | Sí           | 120        | Ninguno                                     |
-| 8  | No           | 10         | Detección incorrecta del lado de inicio     |
-| 9  | Sí           | 118        | Ninguno                                     |
-|10  | Sí           | 123        | Ninguno                                     |
-|11  | Sí           | 120        | Ninguno                                     |
-|12  | Sí           | 119        | Ninguno                                     |
-|13  | No           | 10         | Detección incorrecta del lado de inicio     |
-|14  | Sí           | 118        | Ninguno                                     |
-|15  | Sí           | 120        | Ninguno                                     |
-|16  | No           | 10         | Detección incorrecta del lado de inicio     |
-|17  | Sí           | 117        | Ninguno                                     |
-|18  | Sí           | 121        | Ninguno                                     |
-|19  | Sí           | 122        | Ninguno                                     |
-|20  | No           | 10         | Detección incorrecta del lado de inicio     |
-|21  | Sí           | 120        | Ninguno                                     |
-|22  | Sí           | 119        | Ninguno                                     |
-|23  | Sí           | 118        | Ninguno                                     |
-|24  | Sí           | 121        | Ninguno                                     |
-|25  | No           | 10         | Detección incorrecta del lado de inicio     |
+## 🌐 **Main Flowchart**  
+```mermaid
+graph TD
+    A[Start] --> B[Sensor Calibration]
+    B --> C{Wait for Signal}
+    C -->|Start| D[Read Sensors]
+    D --> E[Environment Analysis]
+    E --> F{Decision Making}
+    F -->|Obstacle| G[Evaluate Sides]
+    F -->|Clear| H[Move Forward]
+    G --> I[Controlled Turn]
+    H --> D
+    I --> D
+```
+
+> ⚠️ *Note:* The functions used in Challenge 2 are the same as in Challenge 1, so both the explanation and the reasoning mentioned previously are equally valid.
+
+### 🧪 Test Log – First Challenge
+
+| #  | ¿Challenge completed?     | Time (s)   | Error                                       |
+|----|---------------------------|------------|---------------------------------------------|
+| 1  | Yes                       | 118        | None                                        |
+| 2  | No                        | 121        | None                                        |
+| 3  | No                        | 10         | Incorrect detection of the starting side    |
+| 4  | Yes                       | 119        | None                                        |
+| 5  | Yes                       | 117        | None                                        |
+| 6  | Yes                       | 122        | None                                        |
+| 7  | Yes                       | 120        | None                                        |
+| 8  | No                        | 10         | Incorrect detection of the starting side    |
+| 9  | Yes                       | 118        | None                                        |
+|10  | Yes                       | 123        | None                                        |
+|11  | Yes                       | 120        | None                                        |
+|12  | Yes                       | 119        | None                                        |
+|13  | No                        | 10         | Incorrect detection of the starting side    |
+|14  | Yes                       | 118        | None                                        |
+|15  | Yes                       | 120        | None                                        |
+|16  | No                        | 10         | Incorrect detection of the starting side    |
+|17  | Yes                       | 117        | None                                        |
+|18  | Yes                       | 121        | None                                        |
+|19  | Yes                       | 122        | None                                        |
+|20  | No                        | 10         | Incorrect detection of the starting side    |
+|21  | Yes                       | 120        | None                                        |
+|22  | Yes                       | 119        | None                                        |
+|23  | Yes                       | 118        | None                                        |
+|24  | Yes                       | 121        | None                                        |
+|25  | No                        | 10         | Incorrect detection of the starting side    |
   
 
-Tiempo promedio de recorrido, precisión, errores frecuentes.
-Durante la etapa de pruebas del primer reto, se llevaron a cabo 25 intentos consecutivos para evaluar el rendimiento y la estabilidad del sistema robótico bajo condiciones controladas. Los resultados obtenidos permiten estimar métricas clave sobre el comportamiento del vehículo autónomo:
+Average travel time, accuracy, frequent errors.
+During the testing phase of the first challenge, 25 consecutive attempts were conducted to evaluate the performance and stability of the robotic system under controlled conditions. The results obtained allow for estimating key metrics regarding the autonomous vehicle’s behavior:
 
-⏱ Tiempo promedio de recorrido: 120 segundos
+⏱ Average travel time: 120 seconds
 
-🎯 Precisión en la ejecución de la trayectoria: 76%
+🎯 Accuracy in trajectory execution: 76%
 
-❌ Errores frecuentes detectados:
+❌ Frequently detected errors:
+The most common error consisted of incorrect detection of the starting side, which caused temporary deviations or resets in the navigation logic.
+To a lesser extent, slight oscillations in straight-line movement were observed, caused by variations in gyroscope readings during the early stages of the course.
 
-El error más común consistió en una detección incorrecta del lado de inicio, lo que ocasionó desvíos temporales o reinicios de la lógica de navegación.
-En menor medida, se registraron leves oscilaciones en línea recta provocadas por variaciones de lectura del giroscopio en las primeras etapas del recorrido.
