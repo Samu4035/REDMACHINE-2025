@@ -1,10 +1,10 @@
 # Index
-- [Motores](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Análisis-del-funcionamiento-de-los-motores)
-- [Sensores](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Sensores)
-- [Camera](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Cámara)
-- [Placas controladora](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Placas-controladoras)
-- [Alimentación del robot](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Alimentación-del-robot)
- 
+- [Motors](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Analysis-of-Motor-Function)
+- [Sensors](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Sensors)
+- [Camera](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Camera)
+- [Controller Boards](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Controller-Boards)
+- [Robot Power Supply](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Robot-Power-Supply)
+- [Connection Diagrams](https://github.com/Samu4035/REDMACHINE-2025/blob/main/schemes/Hardware.md#Connection-Diagrams-🔌)
 
 
 
@@ -196,9 +196,9 @@ To better understand Pompo's electrical circuits, the connection diagrams for ou
 
 ## Sensors diagram
 
-![Image](https://github.com/user-attachments/assets/c35217f0-d546-4963-a06b-0cf20b41dffe)
+<img width="1000" height="560" alt="Image" src="https://github.com/user-attachments/assets/5dff59cf-70bc-4497-ae3c-e04c4a344cda" />
 
 ## Motors diagram
 
-![Image](https://github.com/user-attachments/assets/444b414a-24fc-4942-8d5c-f002e175a080)
+<img width="1000" height="570" alt="Image" src="https://github.com/user-attachments/assets/3c6ce305-ddb9-4906-b1e0-248059342b02" />
 
