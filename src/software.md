@@ -1,10 +1,10 @@
 # Software design
 
 1. Image analysis 
--  [Procesamiento de imágenes](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Procesamiento-de-imágenes)
--  [Detección de color](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Detección-de-color)
--  [Programación](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Programación)
--  [Sistema de Control de Robot](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Sistema-de-Control-de-Robot)
+-  [Image Processing](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Image-Processing)
+-  [Color Detection](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Color-Detection)
+-  [Programming](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Programming)
+-  [Robot Control System](https://github.com/Samu4035/REDMACHINE-2025/blob/main/src/software.md#Robot-Control-System)
 
 # Image Processing
 To process images, Pompo uses a camera. This is the Pixy2.
@@ -33,9 +33,9 @@ After this, the Arduino processing needed to be done.
 
 On the Arduino, the team uses the Pixy2 library, which allows them to obtain all the necessary information from pixel detection. Using the following code, the team records when the Pixy detects a color and which signatures correspond to that color in a variable called «hola». If «hola» is divisible by two, the color is green; if «hola» is not divisible by two, the color is red.
 
-# Sistema de Control de Robot
+# Robot Control System
 
-> Flujo de Operación y Lógica de Navegación para Competencia WRO
+> Operational Flow and Navigation Logic for WRO Competition
 
 ---
 
