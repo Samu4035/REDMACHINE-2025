@@ -11,19 +11,24 @@
 # Analysis of Motor Function
 The following section will display aspects of the function of the 2 motors of our robot.
 
-## EV3 Motor 🤖
-A large EV3 servo motor was used for the traction of "Pompo" (likely the robot's name or a part of it).
+## Core Hex Motor 🤖
+Pompo will be moved with a core hex motor on the singapore international final
 
-- Installation: Multiple Lego pieces were used to design a base on which this motor is supported, resulting in a precise height to ensure the wheels are at a desired height from the floor.
-Furthermore, for its connection, the cable included in the Lego Mindstorms kit was modified: one end was left intact, and the other end was cut. The two power cables found inside were then taken out and connected to an H-bridge.
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/8922ec08-101c-4448-b789-c760ab75a786" />
 
-- Precision: It uses tachometric feedback (rotation sensor) with a precision of 1 degree, allowing for very exact control of position and movement.
+This motor is powered by a 2-pin JST-VH connector 
 
-- Speed: It can rotate at a speed of 160–170 revolutions per minute (RPM).
- 
-- Torque (Force Couple):
-     Operating Torque: 20 N·cm (approximately 30 oz/in).
-     Stall Torque: 40 N·cm (approximately 60 oz/in).
+ <img width="350" height="162" alt="image" src="https://github.com/user-attachments/assets/ec27b42b-3b34-449f-83bb-d370657d37c3" />
+
+- Installation: To use this motor in the way the team requires, a 5 mm hexagonal shaft is used, with one end protruding from each side of the motor. The shaft has a length of 11.8 cm and is made of stainless steel. On each end of this shaft, a traction wheel with a diameter of 90 mm was mounted. Finally, these wheels were secured to the shaft using collars equipped with a set screw that tightens against the shaft.
+     This structure is hold by lego pieces, from the same kit as the rest of the robot parts.
+
+<img width="350" height="213" alt="image" src="https://github.com/user-attachments/assets/8712e999-2f0c-4b86-b412-c33114f4bd1b" />
+  
+- Weight: 7 ounces
+- Torque: 3.2 N·m
+- Operating Voltage: 12 V
+- No-load Speed: 125 RPM
 
 
 
@@ -174,22 +179,22 @@ Pompo uses a single controller board: an Arduino Mega 2560. The Arduino is in ch
 
 
 # Robot Power Supply 
-Pompo uses three individual power supply systems.
+Pompo uses 6 3.7v batteries, separated in two circuits. 
 
 ## Motor Power Circuit 
-This circuit uses three batteries, each containing approximately 4V. The three batteries are connected in series, so the voltage is summed. The H-bridge is the electrical component that receives this energy and uses it to power the ultrasonic sensors and the traction motor.
-To connect the batteries, the team uses two battery packs of two batteries each, but one of them is modified to only use a single battery.
+This circuit uses three batteries. The three batteries are connected in series, so the voltage is summed. The H-bridge is the electrical component that receives this energy and uses it to power the the traction motor.
+To connect the batteries, the team uses a battery pack of three batteries. 
 
-![2 packs de baterias 4V 4](https://github.com/user-attachments/assets/7a6248cc-fc05-4bf4-bfd4-aad78766bb06)
+![Image](https://github.com/user-attachments/assets/e7250a7d-5828-49bc-a399-e2548bfe98c0)
 
 
-## Arduino Circuit 
-This circuit uses two 9V batteries connected in parallel, which adds the amperage while maintaining the same 9V. It connects directly to the Arduino board, which powers the Pixy camera and the servomotor. Each of these components is powered by a 5V output pin from the Arduino.
+## Arduino and sensors Circuit 
+This circuit uses the other 3 batteries, connected as well in series. The three batteries separate into two voltage regulators, one for the sensors and one for the arduino.
+The one that powers the sensors (gyroscope and ultrasounds) is regulated on 5v, and the one for the arduino is regulated on 8,4v. The arduino powers the servomotor and the pixycam. 
 
-![Primera foto 9 voltios 2](https://github.com/user-attachments/assets/79c1b298-762f-4a96-95a9-bb6aa8bb3e1f)
 
-## Sensor Circuit 
-This final circuit uses a third 9V battery connected to an H-bridge, through which the sensors (ultrasonic sensors and gyroscope) are powered.
+![Image](https://github.com/user-attachments/assets/5f144b9a-23f3-45e2-8a0a-afb06ec5d2e8)
+
 
 # Connection Diagrams 🔌
 To better understand Pompo's electrical circuits, the connection diagrams for our robot are presented below:
