@@ -983,7 +983,7 @@ At the end of each challenge, `vuelta++`.
 
 ### e) Cone Evasion
 
-![Image](https://github.com/user-attachments/assets/64362f2f-3c24-47a1-b3b4-10f2daf70115)
+![Image](https://github.com/user-attachments/assets/b8e48f9c-0892-4aee-8f8e-a41d55fdda9b)
 
 **Function**: `esquivarconos()`
 
