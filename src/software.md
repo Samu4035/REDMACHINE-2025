@@ -58,7 +58,7 @@ The robot continuously repeats the following cycle:
 
 ### a) Sensor Reading
 
-![Lectura de Sensores](https://github.com/user-attachments/assets/d3549fd1-adc8-48e8-ba60-03aa1c59fb70)
+![Image](https://github.com/user-attachments/assets/6496631f-be33-45af-bd3b-c67be9789e6a)
 
 - Left (di), center (d), and right (dd) ultrasonic sensors
 - Angle update using IMU (gyro)
@@ -96,7 +96,7 @@ At the end of each challenge, `vuelta++`.
 
 ### e) Cone Evasion
 
-![Evasión de Conos](https://github.com/user-attachments/assets/c6af0941-932f-4e8a-8245-58376482faaa)
+![Image](https://github.com/user-attachments/assets/11149693-e2b5-4f58-b53c-3f1adab23f74)
 
 **Function**: `esquivarconos()`
 
@@ -145,7 +145,7 @@ At the end of each challenge, `vuelta++`.
 
 ## 4. Movement Management
 
-![Gestión de Movimiento](https://github.com/user-attachments/assets/c1dad286-1b72-4b76-b381-61271ac7dd70)
+![Image](https://github.com/user-attachments/assets/affec79d-c905-4b42-a9fe-b4767e4f590f)
 
 - **Forward**: front motor activated
 - **Backward**: rear motor activated
@@ -156,7 +156,7 @@ At the end of each challenge, `vuelta++`.
 
 ## 5. Navigation Strategy
 
-![Estrategia de Navegación](https://github.com/user-attachments/assets/fd7c3e0d-5b96-4052-a3e4-bf6aa35f9961)
+![Image](https://github.com/user-attachments/assets/bcd25a06-a224-424a-aae5-0cf70fd2294a)
 
 > 💡 *Note: The indicators below represent the level of confidence the robot has in performing these sections.*
 
