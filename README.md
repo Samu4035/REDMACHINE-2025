@@ -10,66 +10,47 @@ This repository contains all the materials needed to create "pompo", the autonom
 # INDEX - REDMACHINE 2025
 
 ## 📌 MAIN CONTENT
-1. [Documento de ingeniería / Red Machine](#documento-de-ingeniería--red-machine)
-2. [Miembros del equipo](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#miembros-de-red-machine)
+1. [Engineering Document / Red Machine](#Engineering-Document--red-machine)
+2. [Red-Machine-Members](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#Red-Machine-Members)
    - [Juan Diego Cano Barros](#-juan-diego-cano-barros)
    - [Samuel José Galban Franco](#-samuel-josé-galban-franco)
    - [Angel Saúl Rodriguez Guerra](#-angel-saúl-rodriguez-guerra)
-3. [Etapas del desarrollo (Versiones anteriores del robot)](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#etapas-del-desarrollo-versiones-anteriores-del-robot)
-   - [Sistema Mecánico](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#sistema-mec%C3%A1nico-)
-      - [Versión 1.0 (Versión desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#versi%C3%B3n-10-versi%C3%B3n-desactualizada)
-      - [Versión 2.0 (Versión desactualizada)](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#versi%C3%B3n-20-versi%C3%B3n-desactualizada)
-4. [Fotos del robot](#fotos-del-robot-todos-los-ángulos)
-5. [Diseño mecánico](#diseño-mecánico)
-   - [Guía de Ensamblaje Mecánico](#-guía-de-ensamblaje-mecánico--red-machine)
-   - [Estructura General](#-estructura-general-de-doble-piso)
-   - [Sistema de Tracción](#-módulo-de-tracción-y-dirección--red-machine)
-6. [Componentes electrónicos](#componentes-electrónicos)
-   - [Descripción de Componentes](#-descripción-de-componentes-principales-del-sistema)
-   - [Diagramas de Conexión](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#explicaci%C3%B3n-del-diagrama-1)
-7. [Alimentación del robot](#alimentación-del-robot)
-   - [Cálculo de Consumo](#-cálculo-del-consumo-energético-total)
-8. [Procesamiento de imágenes](#procesamiento-de-imágenes)
-   - [Detección de color](#detección-de-color)
-9. [Cómo ejecutar o probar el proyecto](#cómo-ejecutar-o-probar-el-proyecto)
-10. [Explicación Código Reto 2](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#codigo-reto-2)
-11. [Explicación Reto 1](#explicacion-reto-1)
-12. [Videos del funcionamiento](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-del-funcionamiento-de-pompo--version-30-videos-contemporaneos)
-   - [FUTUROS INGENIEROS-Reto 1 Variante 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
-   - [FUTUROS INGENIEROS - Reto 1 Variante 2](https://youtu.be/rjQujXqtAJU?feature=shared)
-   - [FUTUROS INGENIEROS - Reto 1 Variante 3](https://youtu.be/9T3Q66ES2Qw?feature=shared)
-   - [FUTUROS INGENIEROS - Reto 1 Variante 4](https://youtu.be/tL3BE26AJaA?feature=shared)
-   - [FUTUROS INGENIEROS-Reto 2](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
-
-13. [Videos de pruebas pasadas](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-de-pruebas-pasadas)
-- [Videos version 1.0 del robot](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-versi%C3%B3n-10-del-robot)
-  - [Reto 1](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#reto-1)
-  - [Prueba Reto 2](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#prueba-reto-2)
-- [Videos version 2.0 del robot](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-versi%C3%B3n-20-del-robot)
-  - [Reto 1](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#video-reto-1-completo-todas-las-variantes)
-  - [Reto 2](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#video-reto-2-completo)
-- [Videos sobre el robot](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-sobre-el-robot)
-  - [Muestra de la deteccion de robot](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-sobre-el-robot)
-  - [Muestra de la prueba de continuidad](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#prueba-de-continuidad)
-- [Videos sobre Red Machine](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#videos-sobre-red-machine)
-   - [Presentacion nacional 2023](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#presentacion-nacional-2023)
-   - [Red Machine Nacional 2023](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#red-machine-nacional-2023)
-   - [Presentacion del equipo Red Machine](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#presentacion-del-equipo-red-machine)
-   - [Presentacion de Robotica Educativa](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#robotica-educativa)
+3. [Development Stages (Previous robot versions)](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#Development-stages-Previous-robot-versions)
+4. [Robot Photos](#Robot-Photos-All-Angles)
+5. [Mechanical desing](#Mechanical-Design)
+   - [Mechanical Assembly Guide](#-Mechanical-Assembly-Guide--red-machine)
+   - [General Structure](#-General-Structure)
+   - [Drive and Steering Module](#-Drive-and-Steering-Module--red-machine)
+6. [Electronic Components](#Electronic-Components)
+   - [Description of Main System Components](#-Description-of-Main-System-Components)
+7. [Robot Power Supply](#Robot-Power-Supply)
+   - [Consumption calculation](#-Total-Energy-Consumption-Calculation)
+8. [Image Processing](#Image-Processing)
+   - [Color Detection](#Color-Detection)
+9. [How to Run or Test the Project ](#How-to-Run-or-Test-the-Project)
+10. [Second Challenge Code](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#Second-Challenge-Code)
+11. [First Challenge Explination](#First-Challenge-Explination)
+12. [Videos](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#Videos-of-Pompo-Operation--Version-3.0-Contemporary-Videos)
+   - [Future Engineers - Challenge 1 Variant 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
+   - [Future Engineers - Challenge 1 Variant 2](https://youtu.be/rjQujXqtAJU?feature=shared)
+   - [Future Engineers - Challenge 1 Variant 3](https://youtu.be/9T3Q66ES2Qw?feature=shared)
+   - [Future Engineers - Challenge 1 Variant 4](https://youtu.be/tL3BE26AJaA?feature=shared)
+   - [Future Engineers-Reto 2](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
+13. [Videos of Past Tests](https://github.com/Samu4035/REDMACHINE-2025/tree/main?tab=readme-ov-file#Videos-of-Past-Tests)
 14. [Troubleshooting](#troubleshooting)
-15. [Historia y cronología](#historia-y-cronología-de-red-machine)
-    - [Temporada 2023](#temporada-2023)
-    - [Temporada 2024](#temporada-2024)
-    - [Temporada 2025](#temporada-2025)
-    - [Evolución de Robots](#julian-luka-y-pompo)
+15. [History and Timeline](#History-and-Timeline-of-Red-Machine)
+    - [2023 Season](#2023-Season)
+    - [2024 Season](#2024-Season)
+    - [2025 Season](#2025-Season)
+    - [Robots Evolution](#julian-luka-and-pompo)
 
 ## 📂 REPOSITORY STRUCTURE
-- [t-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/t-photos) - Fotos del equipo y competencias
-- [v-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/v-photos) - Fotos del vehículo
-- [schemes/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/schemes) - Diagramas esquemáticos
-- [src/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/src) - Código fuente
-- [models/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/models) - Diseños 3D
-- [otros/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/otros) - Archivos adicionales
+- [t-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/t-photos) - Team photos
+- [v-photos/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/v-photos) - Vehicle photos
+- [schemes/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/schemes) - Eschematic diagrams
+- [src/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/src) - Code
+- [models/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/models) - 3D Designs
+- [otros/](https://github.com/Samu4035/REDMACHINE-2025/tree/main/otros) - Other archives
 
 # Repository contents
 
@@ -187,11 +168,13 @@ Passionate about continuous learning, creative problem solving, and collaboratin
 ![Image](https://github.com/user-attachments/assets/b1555ddb-f7c7-47b6-b690-13382831a981)
 
 
-# Development stages (Previous robot versions)
+# Development stages (Previous robot versions) 
 
+   
 # Mechanical System ⚙
-# Version 1.0 (Outdated version)
-
+<details> 
+<summary> Version 1.0 (Outdated version) </summary>
+   
 ## Steering
 The robot's steering subsystem is located at the rear to provide a larger turning radius. It was built with LEGO pieces from a robotics kit called the LEGO Spike Prime Kit, combining these parts with the wheels from a Ford Mustang remote-controlled (RC) car, to which a Rev Robotics servo motor was adapted. It was later programmed via an Arduino Mega 2560, with the servo connected to the Arduino's GND, 5V and pin 4.
 
@@ -231,8 +214,10 @@ The robot has two tiers, both built from acrylic. On the robot's first deck the 
 
 <img width="389" height="260" alt="image" src="https://github.com/user-attachments/assets/a6617536-7171-4381-b28b-26efdd3696a0" />
 
+</details>
 
-# Version 2.0 (Outdated version)
+<details>   
+<summary> Version 2.0 (Outdated version) </summary>
 During this period, the robot's design was consistently one of the team's biggest challenges throughout all phases of the competition. The acrylic bases used in the early competitions did not work because they had many imperfections, which caused the traction and steering systems to be poorly positioned and resulted in a very poor overall layout. Despite all this, that chassis gave us an idea of how to design a new one, so after the 2023 national competition new acrylic bases were used—this time laser-cut. After that, the chassis looked really good in every respect.
 
 
@@ -394,13 +379,13 @@ The wiring diagram is shown to clearly illustrate the entire circuit.
 <img width="902" height="800" alt="image" src="https://github.com/user-attachments/assets/e57dac87-f6b7-4770-b92f-e6bfa5c1c409" />
 
 
+</details>
 
 
 
-
-
-# Final Robot Design | Version 3.0 (Updated Version)
-From this point onward, the repository describes the parts and materials used to build the most updated version of the robot.
+<details>   
+<summary>Version 3.0 (Outdated Version)</summary>
+This robot was the "pompo" that took the team to qualify for the 2025 international wro final, to celebrate at singapore. 
 
 # Robot Photos (All Angles)
 
@@ -651,6 +636,254 @@ The system is powered in a distributed manner to improve efficiency and facilita
 > 
 
 
+</details>
+
+
+# Final Robot Design | Version 4.0 (Updated Version)
+From this point onward, the repository describes the parts and materials used to build the most updated version of the robot.
+
+# Robot Photos (All Angles)
+
+| ![Image](https://github.com/user-attachments/assets/14271e4b-1f9b-4a74-8fcf-66e73f9fc82b)  |  ![Image](https://github.com/user-attachments/assets/9e76a937-a387-4877-b13a-9a915ea0efae)  |  ![Image](https://github.com/user-attachments/assets/9eaf6f0c-fd75-4ea3-ac08-469621ed5d6d) |
+| :----: | :-------------------: | :----------: |
+| ![Image](https://github.com/user-attachments/assets/aa1e5e9f-fea9-453e-89ec-e9cf4c57a55f)  |  ![Image](https://github.com/user-attachments/assets/20bc6525-0518-4fa4-9c3a-f1a7d3760ac4)  |  ![Image](https://github.com/user-attachments/assets/e6117a09-9902-4833-95d0-30610d4ed44d)|
+
+
+# Mechanical Design
+"Pompo" is an autonomous robot designed using LEGO pieces to achieve the highest possible precision and stability during competition rounds. These pieces were taken from a LEGO Spike Prime Kit, code 45678, and a Spike Prime Expansion Set, code 45681.
+The rationale for using LEGO pieces for Pompo’s body is based on the well-known efficiency of robots built this way, considering the positive results and the ease of assembly they provide.
+Additionally, in the "v-photos" section, photos of Pompo’s design are displayed, allowing efficient visualization and analysis of all components, pieces, and structures. The "models" folder contains the original 3D diagram files.
+Below are photos of the 3D design of the various LEGO bases used in the structure (the original design file can be found in the "models" section):
+
+| ![Image](https://github.com/user-attachments/assets/b8b703ad-207a-40cb-9d6d-22b93ccc1fe6)  | ![Image](https://github.com/user-attachments/assets/57b46007-689c-4e62-b8a3-665fbf1aa79b)  | ![Image](https://github.com/user-attachments/assets/826a2fbd-0fa2-44dc-8012-1f34441f83c5) |
+| :----: | :-------------------: | :----------: |
+| ![Image](https://github.com/user-attachments/assets/9939ff3c-f402-4287-861d-1b49806da297) |  ![Image](https://github.com/user-attachments/assets/e7dc4f32-59a5-43c2-9829-c7d8ec883efb)  | ![Image](https://github.com/user-attachments/assets/1ea5b718-4665-43c0-9a71-e6b98047b361) |
+
+## 🛠 Mechanical Assembly Guide – Red Machine
+To start, the main chassis structure is built. This base must be sturdy and symmetrical, as it will support the single rear motor and the front servo motor. It is essential to secure both components firmly, ensuring the motor is perfectly aligned to drive the robot, while the servo has freedom of movement to control steering.
+Once these key elements are fixed, the central structural support is mounted. This piece runs through the chassis and stabilizes the entire base. It also serves as the backbone connecting the sides and provides greater rigidity for the installation of the upper levels.
+With a firm and balanced chassis, the first deck of the robot is constructed. This platform must be placed at an appropriate height to allow space for wiring below and serve as a base for installing electrical components. Then, the second deck is elevated using structural spacers that ensure a parallel and stable platform. This second level will house the Arduino, buttons, and other control devices.
+Finally, the entire structure is checked to ensure that every part is aligned, level, and securely fastened. At this stage, small adjustments can be made to correct tilts, reinforce joints, and prepare the base for wiring and mounting the electronic modules.
+
+### 🧱 General Structure
+The robot features a two-level structure, each with defined functions to optimize organization, accessibility, and component performance:
+- Lower Level: Houses the ultrasound sensors (4) and the elements responsible for robot movement (servomotor and motor).
+Its design provides mechanical stability and the best ultrasounds position posible to accomplish the challenges.
+- Upper Level: Reserved for the command electronics, main controls and powering. This configuration allows for better ventilation and easier, safer operation of the robot.
+
+  
+⚙ Lower Level – Motion Control
+On the lower level of the robot, several essential elements are strategically distributed:
+- Ultrasound sensors: Used to meassure pompo´s distance to the walls.
+- Motor: Movement source of pompo.
+- Servomotor: The motor that allows pompo to turn with an excellent precision. 
+
+🔋 Upper Level – Control and Operational Convenience
+This level is dedicated to elements that require direct access by the operator:
+- Arduino: Positioned in an elevated, protected area to facilitate connections, programming, and minimize vibrations.
+- Battery Holders: Power source of the whole robot. Its upper placement allows easy replacement and access during maintenance.
+- Voltage regulators: Allows each component to receive the necessary voltage for optimal performance.
+- Power Switch: Strategically located to quickly and safely turn the robot on or off.
+- Start Button: Allows the robot’s routines to begin at the start of the competition, avoiding unnecessary handling in sensitive areas.
+🛠 Placing these elements on the upper level improves accessibility, aids in cable organization, and protects components from mechanical activity on the lower level.
+
+
+🎥 Camera – Elevated and Precise Vision
+At the highest point of the robot, a camera is mounted, supported by two vertical structures holding a gray piece. This configuration was designed with the following purposes:
+- Field of View: Being at the highest point, the camera avoids visual interference from other robot components.
+- Environmental Isolation: Its height helps reduce the influence of external lights, reflections, or shadows from the competition field.
+- Structural Stability: The rigid mounting of its supports ensures there are no vibrations or shifts that could compromise visual quality during operation.
+
+### 🏎 Drive and Steering Module – Red Machine
+
+⚙ Motor Support Structure
+The structure shown in the image is designed to secure the motors in a stable and efficient manner:
+
+- Rigid Mounting: The motors are anchored on a firm base built with LEGO pieces, ensuring no movement or vibrations during operation.
+
+- Optimal Orientation: Their placement allows precise and direct traction, transmitting mechanical power without losses or deviations.
+
+- Balanced Weight Distribution: With the motors positioned near the rear axle, the center of gravity remains low, improving stability during turns and quick maneuvers.
+
+🚗 Rear-Wheel Drive System
+
+The robot uses a rear-wheel drive configuration, where the motors directly drive the rear wheels:
+
+- Mechanical Advantages: This type of drive provides greater thrust and control, especially useful for straight-line movement and climbing inclines.
+
+- Simplicity and Efficiency: The direct connection between the motors and rear wheels reduces the need for additional gears, minimizing friction and improving energy efficiency.
+
+🔄 Front Steering with Servo
+
+At the front of the chassis, a servo motor is installed to act as the steering mechanism:
+
+- Orientation Control: The servo is connected to the front wheels through a system of articulated arms, allowing the steering angle to be adjusted.
+
+- Millimeter Precision: As a servo, angle variations are digitally controlled, enabling smooth maneuvers, tight turns, and on-the-fly corrections.
+
+- Functional Separation: Independent steering from the drive improves the robot’s dynamic behavior and allows for more advanced navigation algorithms.
+  
+🧭 Central Mount for Lateral Ultrasonic Sensors
+This component holds two ultrasonic sensors located on either side of the robot, fully integrated into the overall structure.
+
+🧱 Chassis-Integrated Design
+- Physical Integration with the Main Body: Although its design suggests modularity, the mount is firmly attached to the robot’s central structure, positioned in the middle of the chassis to achieve functional and structural balance.
+- Strategic Anchoring: Its central location ensures the piece remains stable during movement, preventing unwanted shifts or vibrations that could affect sensor accuracy.
+🎯 Lateral Sensor Positioning
+- Symmetrical Distribution: The ultrasonic sensors are placed at both ends of the mount, facing outward, enhancing the robot’s horizontal environmental coverage.
+- Accurate Readings: This setup allows the detection of lateral obstacles, alignment with walls, or identification of narrow spaces with greater precision during navigation.
+- Protection and Visibility: Elevated and centered, the sensors have a clear field of view, free from visual interference by other components.
+
+
+
+# Calculation of Torque Required to Move the Vehicle
+The torque required (T) is calculated using the formula: 𝑇=𝑚⋅𝑔⋅𝑟
+
+Where:
+m = vehicle mass (1.02 kg)
+g = gravity (9.81 m/s²)
+r = wheel radius (0.02 m)
+
+T=0.870⋅9.81⋅0.03=0.17 N⋅m
+
+Calculation of Output Torque (after reduction) for the hex core motor:
+
+T_output = T_motor × Reduction
+T_output = 0.2 × 1 = 0.2 > 0.17 = T_required
+✅ The motor’s output torque is sufficient to move the vehicle.
+
+
+
+
+## Calculation of Angular Velocity (ω) and Linear Velocity (v)
+The output speed after reduction is 220.2 RPM. Converting this to radians per second:
+
+𝜔=220.2⋅2𝜋60 ≈ 23.04rad/s
+
+The linear velocity of the vehicle is calculated by multiplying the angular velocity by the wheel radius:
+
+𝑣=𝜔⋅𝑟 = 23.04⋅0.03 ≈ 0.69m/s
+
+
+## Hex core motor Specifications and Gear Reduction
+
+No-load speed: 125 RPM
+
+Nominal torque: 32.6 kg·cm (≈ 3.2 N·m)
+
+Gear reduction ratio: 72:1
+
+Effects of Reduction:
+
+Reduced speed at the output shaft:
+9000 RPM ÷ 72 ≈ 125 RPM (internal motor free speed ≈ 9000 RPM → output after 72:1 gearbox = 125 RPM)
+
+Force required to move the robot (870 g ≈ 8.53 N)
+
+Assuming a typical friction coefficient (μ ≈ 0.4) on a normal surface:
+
+Minimum force = μ × m × g = 0.4 × 0.87 kg × 9.81 ≈ 3.41 N
+
+Torque required at the wheel to overcome that force:
+T_required = F_min × r = 3.41 N × 0.045 m ≈ 0.154 N·m
+
+Available torque at the wheels (stall torque at output): 3.2 N·m is much higher than the minimum required (0.154 N·m), so the robot will move without problems.
+
+Linear speed: ≈ 0.59 m/s (with 4.5 cm radius wheels)
+
+Torque at the wheels: ≈ 3.2 N·m (≈ 32.6 kg·cm) (sufficient to overcome motion resistance)
+
+✅ The system meets the traction and mobility requirements.
+
+
+
+### 📦 System Motor Description
+
+| Image | Component | Description |
+| :----: | :-------------------: | :----------: |
+| ![servo pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/57aaa91d-b5e5-4360-aef2-06025d15f8b0) | **Rev Robotics Servomotor** | It is an electric motor with an integrated position feedback sensor, allowing precise angular movements. It uses a signal ranging from 0V to 5V, where each voltage value corresponds to an exact angle, performing turns with high accuracy. |
+| ![Image](https://github.com/user-attachments/assets/05c10969-e9a6-404b-a141-5e44218d54df) | **Hex Core Motor** | A device that converts electrical energy into mechanical motion, allowing, in this case, the movement of a gearbox and the wheels. Its speed and torque are determined by the voltage supplied through the H-bridge, which is controlled by the Arduino. |
+
+In the following image, the connection and power diagram of the aforementioned components can be seen:
+
+<img width="473" height="266" alt="Image" src="https://github.com/user-attachments/assets/bd72008b-f9a4-41e6-81d2-09fdc377d229" />
+
+### Diagram Explanation
+
+- The traction motor (hex core motor) is connected to the motor 1 ports of the H-bridge. A modified jh-2 cable, carefully cut at one end to avoid damaging the internal wires. The positive and negative wires are connected to the H-bridge.
+- The servo motor is powered directly by the Arduino through the 5V and GND ports, and connected to pin 9 to receive positioning signals.
+- The Arduino Mega is powered by two 9V batteries connected in parallel—negative terminals connected together on one side and positive terminals on the other—so the amperage is summed while maintaining the voltage.
+- The H-bridge connects to the Arduino via a GND port to complete the bridge, as well as pins 5, 6, and 7 to control the robot’s direction and operating speed.
+
+## Electronic Components
+Although the robot’s construction was done with LEGO pieces, for all electronic components the team decided to use external parts they were already familiar with. These include the following sensors and actuators:
+
+### 📦 Description of Main System Components
+
+| Image | Component         | Description |
+|:------:|:----------------------------:|:------------|
+| ![HC-sr04](https://github.com/user-attachments/assets/a59b0102-8994-4ac4-aa06-3d6553ae1a2d) | **Ultrasonic sensor (HC-SR04)** | It uses ultrasonic waves to measure the distance to obstacles. The Arduino Mega 2560 calculates the distance based on the time it takes for the wave to travel to and from the object, allowing the robot to detect walls and make turns when necessary. |
+| ![Image](https://github.com/user-attachments/assets/a4b0638a-e94f-4039-8e30-22059eb60545) | **Gyroscope (MPU6050)** | It measures the robot’s orientation in degrees. It allows maintaining straight paths and executing precise turns, especially during transitions such as 90° curves. |
+| ![pixy2 1 2](https://github.com/user-attachments/assets/6397d5c9-d6fe-4c80-a7b9-d097bee0ba3e) | **Camera Pixy 2.1** | It detects specific preconfigured colors that represent signals or traffic zones. It recognizes color patterns in the image and sends data to the Arduino to execute avoidance maneuvers or automatic responses. |
+| ![mega 2560](https://github.com/user-attachments/assets/edc71e77-3581-48eb-af96-6dfae65660ac) | **Arduino Mega 2560** | ATmega2560 microcontroller that acts as the central brain of the system. It processes information from sensors, controls the motors, and manages the robot’s logical decisions. It has multiple digital and analog pins, making it ideal for complex projects. |
+| ![puente H pequeño](https://github.com/RoboticaLLR/RedMachine/assets/146040533/264757f2-118f-42c9-9dd8-2a3c91455834) | **H-Bridge (L298N)** | It allows control of the direction and speed of DC motors. It receives signals from the Arduino and regulates the output voltage, enabling changes in rotation and motor acceleration according to the control algorithm. |
+
+In the following image, the connection diagram of these components can be seen:
+
+
+<img width="1000" height="563" alt="Image" src="https://github.com/user-attachments/assets/9f9b6800-dbac-48e1-bca2-16d8b3da3931" />
+
+### Diagram Explanation
+- The three ultrasonic sensors are connected to the Arduino via digital pins as follows:
+Left ultrasonic: Pin 30 (echo), Pin 31 (trig)
+Center lower ultrasonic: Pin 19 (echo), Pin 18 (trig)
+center upper ultrasonic: Pin 39 (echo), Pin 38 (trig)
+Right ultrasonic: Pin 31 (echo), Pin 30 (trig)
+They are powered with 5V from the voltage regulator.
+- The gyroscope connects to the Arduino’s SCL and SDA pins (20 and 21) and is powered the same way as the ultrasonic sensors via the H-bridge ports.
+- The Pixycam connects to the Arduino using its included cable, plugged into the Arduino’s ICSP port, which also supplies its power.
+- The Arduino Mega is powered with 8.4V from a voltage regulator
+- The H-bridge connects to the Arduino through a GND port to complete the bridge. It is powered by a battery pack and powers the motor.
+- The push button connects to Arduino pins 22 and 23. When pressed, it starts the robot’s code, initiating the challenge.
+
+
+
+
+# Robot Power Supply
+
+The robot’s power system is divided in two circuits:
+- Motor Power Circuit: This circuit uses three batteries. The three batteries are connected in series, so the voltage is summed. The H-bridge is the electrical component that receives this energy and uses it to power the the traction motor. To connect the batteries, the team uses a battery pack of three batteries. 
+- Arduino and sensors Circuit : This circuit uses the other 3 batteries, connected as well in series. The three batteries separate into two voltage regulators, one for the sensors and one for the arduino. The one that powers the sensors (gyroscope and ultrasounds) is regulated on 5v, and the one for the arduino is regulated on 8,4v. The arduino powers the servomotor and the pixycam.  These systems are joined through a single switch.
+
+### 🔋 Total Energy Consumption Calculation
+
+| Component                      | Quantity | Estimated consumption (mA) | Total (mA) |
+|--------------------------------|----------|----------------------------|------------|
+| Hex Core Motor                 | 1        | 1200 mA (típico)           | 1200 mA    |
+| REV Robotics Servomotor        | 1        | 180 mA (típico)            | 180 mA     |
+| HC-SR04 Ultrasonic Sensor      | 3        | 15 mA c/u                  | 45 mA      |
+| PixyCam (CMUcam5)              | 1        | 140 mA                     | 140 mA     |
+| Gyroscope MPU6050              | 1        | 6 mA                       | 6 mA       |
+| **TOTAL**                      | —        | —                          | **1571 mA**|
+
+---
+
+### ⚡ Power Distribution and Estimated Autonomy
+
+The system is powered in a distributed manner to improve efficiency and facilitate energy management:
+
+- 🔋 **3 × 18650 batteries (3.7V, 2000 mAh each, connected in series for 11.1V)**: Goes through two voltage regulators, one for the arduino and one for the sensors.
+- 🔋 **3 × 18650 batteries (3.7V, 2000 mAh each, connected in series for 11.1V)**: Power the Hex Core Motor.
+
+| Power Source                 | Powered Components                 | Estimated consumption (mA) | Approx. Capacity | Estimated Autonomy  |
+|------------------------------|------------------------------------|----------------------------|------------------|---------------------|
+| 3x 3.7V (regulator at 8.4V)  | Arduino + REV Servo + pixycam      | ~240 mA                    | ~500 mAh         | ~1,45 hours         |
+| 3x 3.7V (regulator at 5V)    | Sensors (HC-SR04, MPU)             | ~64 mA                     | ~500 mAh         | ~15,6 hours         |
+| 3x 18650 (11.1V, 6000 mAh)   | Hex core motor                     | ~1200 mA                   | 6000 mAh         | ~5 horas            |
+
+> 💡 *Note:* The autonomy values are theoretical and may vary depending on real conditions such as motor load, visual processing, or sensor usage intensity.
+> 
+
 # Image Processing
 To process images, Pompo uses a camera. This is the Pixy2.
 
@@ -712,7 +945,7 @@ The robot continuously repeats the following cycle:
 
 ### a) Sensor Reading
 
-![Lectura de Sensores](https://github.com/user-attachments/assets/d3549fd1-adc8-48e8-ba60-03aa1c59fb70)
+![Image](https://github.com/user-attachments/assets/dee63061-442e-4067-b0c1-cc213df7ea58)
 
 - Left (di), center (d), and right (dd) ultrasonic sensors
 - Angle update using IMU (gyro)
@@ -750,7 +983,7 @@ At the end of each challenge, `vuelta++`.
 
 ### e) Cone Evasion
 
-![Evasión de Conos](https://github.com/user-attachments/assets/c6af0941-932f-4e8a-8245-58376482faaa)
+![Image](https://github.com/user-attachments/assets/64362f2f-3c24-47a1-b3b4-10f2daf70115)
 
 **Function**: `esquivarconos()`
 
@@ -799,7 +1032,7 @@ At the end of each challenge, `vuelta++`.
 
 ## 4. Movement Management
 
-![Gestión de Movimiento](https://github.com/user-attachments/assets/c1dad286-1b72-4b76-b381-61271ac7dd70)
+![Image](https://github.com/user-attachments/assets/5100f8c1-d589-4317-9fa1-4258c544b165)
 
 - **Forward**: front motor activated
 - **Backward**: rear motor activated
@@ -810,7 +1043,7 @@ At the end of each challenge, `vuelta++`.
 
 ## 5. Navigation Strategy
 
-![Estrategia de Navegación](https://github.com/user-attachments/assets/fd7c3e0d-5b96-4052-a3e4-bf6aa35f9961)
+![Image](https://github.com/user-attachments/assets/ac0857c0-0214-4632-828f-7edab9c61a61)
 
 > 💡 *Note: The indicators below represent the level of confidence the robot has in performing these sections.*
 
