@@ -1122,7 +1122,7 @@ To a lesser extent, slight oscillations in straight-line movement were observed,
 
 
 # Videos of Pompo Operation | Version 4.0 (Contemporary Videos)
- - [FUTUROS INGENIEROS-Reto 1](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
+ - [FUTUROS INGENIEROS-Reto 1](https://youtu.be/CjBNKwZItjU?si=RbLFW8f5QDIhQeZr)
 
 [![Image](https://github.com/user-attachments/assets/3a998c08-fef1-4247-a1c7-fdddfd4fdfc8)](https://youtu.be/I5WXGXlZpG4?si=D2IsjQdoafDccQmA)
 
@@ -1139,7 +1139,7 @@ To a lesser extent, slight oscillations in straight-line movement were observed,
 [![Image](https://github.com/user-attachments/assets/3a998c08-fef1-4247-a1c7-fdddfd4fdfc8)](https://youtu.be/tL3BE26AJaA?feature=shared)
  
 
-- [FUTUROS INGENIEROS-Reto 2](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
+- [FUTUROS INGENIEROS-Reto 2](https://youtu.be/8Gt1CYyhZDY?si=SEqzEk_4BAJFHUys)
 
 [![Image](https://github.com/user-attachments/assets/7d8d684a-25f8-4bad-a824-62b761711ac8)](https://youtu.be/XvPb05R_A2o?si=kEyuvRi_PKU7EDct)
 
